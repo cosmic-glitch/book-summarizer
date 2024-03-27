@@ -1,0 +1,7 @@
+GPT4 is super expensive - 20X more.  So $1 of inference cost becomes $20.  Use GPT3-Turbo as much as possible.  
+GPT3-Turbo worked well for chapter summarization only after I used one-shot prompting.
+
+If you want to guide the form of the output, give a long concrete example to the LLM.  
+The example itself could be one of the prior generations of the model that you liked.
+So this way, an older output you liked becomes the new few shot prompt.
+
