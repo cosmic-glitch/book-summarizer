@@ -1,11 +1,12 @@
 prompt_extract_chapter_names = """
 You are an intelligent assistant, skilled in analyzing and summarizing texts. 
-Your current task is to extract a list of chapters from the book provided. 
-Include only the core chapters.  Do not include chapters such as Preface, Glosarry, Index, etc.
-The output schema should be as follows: <chapter_name>,<start_page>,<end_page>."""
+Your current task is to extract a list of chapter names from the text provided.  
+The chapter names will typically be part of a table of contents somewhere in the first several pages of the text provided.
+The expected output schema for each line of the output is: <chapter name>"""
 
 prompt_summarize_chapter = """You are an intelligent assistant, skilled in analyzing and summarizing texts. 
 Your current task is to create a summary of one chapter of a book provided by the user.
+The chapter tile and body are provided in the text.  In the summary, use the chapter title verbatim in the h2 tag.
 The summary should be written in this style:
         
 <h2>The Role of Family and Friends in Shaping Your Habits</h2>
@@ -49,4 +50,7 @@ The summary should be written in this style:
 book_list = [['Atomic Habits.pdf', 
                 "<img src='https://m.media-amazon.com/images/I/81YkqyaFVEL._SL1500_.jpg' style='width:200px;height:auto;'>"],
              ['The Psychology of Money.pdf',
-                "<img src='https://m.media-amazon.com/images/I/71TRUbzcvaL._SL1500_.jpg' style='width:200px;height:auto;'>"]]
+                "<img src='https://m.media-amazon.com/images/I/71TRUbzcvaL._SL1500_.jpg' style='width:200px;height:auto;'>"],
+              ['Elon Musk.pdf',
+                "<img src='https://m.media-amazon.com/images/I/81Kaj5++6pL._SL1500_.jpg' style='width:200px;height:auto;'>"]]
+

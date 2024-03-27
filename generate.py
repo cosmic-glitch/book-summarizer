@@ -6,6 +6,7 @@ from pdfminer.layout import LAParams
 from pdfminer.pdfpage import PDFPage
 
 input_dir = 'input'
+input_books_dir = 'input/books'
 processing_dir = 'processing'
 output_dir = 'output'
 
@@ -21,6 +22,7 @@ def invoke_llm(modelname, sysprompt, userprompt):
     return completion.choices[0].message.content
     
 def extract_text_from_pdf(pdf_path):
+    print(pdf_path)
     assert os.path.exists(pdf_path)
     
     extracted_text = ""  # Initialize the string to accumulate text
@@ -35,13 +37,13 @@ def extract_text_from_pdf(pdf_path):
     return extracted_text.replace('\t', ' ')
 
 def extract_chapter_names(text):
-    return invoke_llm("gpt4", data.prompt_extract_chapter_names, text)
+    return invoke_llm("gpt3", data.prompt_extract_chapter_names, text)
 
 def summarize_chapter(text):
     return invoke_llm("gpt3", data.prompt_summarize_chapter, text)
 
 def summarize_book(pdf_name, cover_image):
-    pdf_path = input_dir + "/" + pdf_name
+    pdf_path = input_books_dir + "/" + pdf_name
 
     path = processing_dir + "/" + pdf_name[:-4] + '_paginated.txt'
     if not os.path.exists(path):
