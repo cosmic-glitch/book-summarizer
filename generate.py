@@ -101,8 +101,11 @@ def main():
     toc = ''
     for book in data.book_list:
         summarize_book(book[0], book[1])
-        toc += book[1] + f"<br><a href='{book[0][:-4].replace(' ', '_')}_summary.html'>{book[0][:-4]}</a><br><br>"
-    toc = f"<html><body><h1>Book Summaries</h1>{toc}</body></html>"
+        toc += f"""<div class="book">
+                        {book[1].replace('200px', '100px')}
+                        <a href='{book[0][:-4].replace(' ', '_')}_summary.html'>{book[0][:-4]}</a>
+                    </div>\n"""
+    toc = open(input_dir + "/index_template.html", 'r').read().replace("<books>", toc)
     open(output_dir + "/index.html", 'w').write(toc)
 
 main()
