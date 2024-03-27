@@ -4,13 +4,11 @@ import data
 from pdfminer.high_level import extract_text
 from pdfminer.layout import LAParams
 from pdfminer.pdfpage import PDFPage
+import json
 
-input_dir = 'input'
-input_books_dir = 'input/books'
-processing_dir = 'processing'
-output_dir = 'output'
+cfg = json.load(open('config.json', 'r'))
 
-os.environ['OPENAI_API_KEY'] = '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'
+os.environ['OPENAI_API_KEY'] = cfg['openai_api_key']
 client = openai.OpenAI()
 
 def invoke_llm(modelname, sysprompt, userprompt):
@@ -36,43 +34,44 @@ def extract_text_from_pdf(pdf_path):
     
     return extracted_text.replace('\t', ' ')
 
-def extract_chapter_names(text):
-    return invoke_llm("gpt3", data.prompt_extract_chapter_names, text)
+def validate_chapter_names(chapter_names):
+    assert len(chapter_names) > 0
+    assert len(chapter_names.split('\n')) > 1
+
+    prev = 0
+    for line in chapter_names.split('\n'):
+        flds = line.split(';')
+        print(line)
+        assert len(flds) == 3
+        assert int(flds[2]) - int(flds[1]) >= 1 and int(flds[2]) - int(flds[1]) < 50
+        assert int(flds[1]) > prev
+        prev = int(flds[1])
 
 def summarize_chapter(text):
     return invoke_llm("gpt3", data.prompt_summarize_chapter, text)
 
 def summarize_book(pdf_name, cover_image):
-    pdf_path = input_books_dir + "/" + pdf_name
+    pdf_path = cfg['input_books_dir'] + "/" + pdf_name
 
-    path = processing_dir + "/" + pdf_name[:-4] + '_paginated.txt'
+    path = cfg['processing_dir'] + "/" + pdf_name[:-4] + '_paginated.txt'
     if not os.path.exists(path):
         pdf_text = extract_text_from_pdf(pdf_path)
         open(path, 'w').write(pdf_text)
     else:
         pdf_text = open(path, 'r').read()
 
-    path = processing_dir + "/" + pdf_name[:-4] + '_paginated_top_only.txt'
-    if not os.path.exists(path):
-        pdf_text_top_only = pdf_text[:50000]
-        open(path, 'w').write(pdf_text_top_only)
-    else:
-        pdf_text_top_only = open(path, 'r').read()
-
-    path = processing_dir + "/" + pdf_name[:-4] + '_chapters.txt'
-    if not os.path.exists(path):
-        chapter_names = extract_chapter_names(pdf_text_top_only)
-        open(path, 'w').write(chapter_names)
-    else:
-        chapter_names = open(path, 'r').read()
+    path = cfg['input_dir'] + "/" + pdf_name[:-4] + '_chapters.txt'
+    assert os.path.exists(path)
+    chapter_names = open(path, 'r').read()
+    validate_chapter_names(chapter_names)
 
     chapters = chapter_names.split('\n')
     overall_summary = ''
     for c in chapters:
-        chapN = c.split(',')
+        chapN = c.split(';')
 
         print(chapN[0])
-        path = processing_dir + "/" + pdf_name[:-4] + '_' + chapN[0] + '.txt'
+        path = cfg['processing_dir'] + "/" + pdf_name[:-4] + '_' + chapN[0] + '.txt'
         if not os.path.exists(path):
             start = pdf_text.find(f"<page{chapN[1]}>")
             end = pdf_text.find(f"<page{chapN[2]}>")
@@ -82,7 +81,7 @@ def summarize_book(pdf_name, cover_image):
         else:
             chap_text = open(path, 'r').read()
 
-        path = processing_dir + "/" + pdf_name[:-4] + '_' + chapN[0] + '_summary.html'
+        path = cfg['processing_dir'] + "/" + pdf_name[:-4] + '_' + chapN[0] + '_summary.html'
         if not os.path.exists(path):
             chapN_summary = summarize_chapter(chap_text)
             open(path, 'w').write(chapN_summary)
@@ -93,7 +92,7 @@ def summarize_book(pdf_name, cover_image):
 
     overall_summary = f"<html><body><h1>Book Summary: {pdf_name[:-4]}</h1>{cover_image}" + overall_summary + "</body></html>"
 
-    path = output_dir + "/" + pdf_name[:-4].replace(' ', '_') + '_summary.html'
+    path = cfg['output_dir'] + "/" + pdf_name[:-4].replace(' ', '_') + '_summary.html'
     if not os.path.exists(path):
         open(path, 'w').write(overall_summary)
     else:
@@ -107,7 +106,7 @@ def main():
                         {book[1].replace('200px', '100px')}
                         <a href='{book[0][:-4].replace(' ', '_')}_summary.html'>{book[0][:-4]}</a>
                     </div>\n"""
-    toc = open(input_dir + "/index_template.html", 'r').read().replace("<books>", toc)
-    open(output_dir + "/index.html", 'w').write(toc)
+    toc = open(cfg['input_dir'] + "/index_template.html", 'r').read().replace("<books>", toc)
+    open(cfg['output_dir'] + "/index.html", 'w').write(toc)
 
 main()

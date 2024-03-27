@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Summaries</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h1 {
+            color: #01070ee1;
+        }
+        a {
+            text-decoration: none;
+            color: #0066cc;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .book {
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            display: grid;
+            grid-template-columns: auto repeat(4, 1fr);
+            align-items: center;
+            gap: 10px;
+        }
+        .book img {
+            margin-right: 20px;
+            border-radius: 5px;
+            width: 100px;
+            height: auto;
+        }
+        .book div, .book a {
+            font-size: 16px;
+        }
+        .book a {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Book Summaries</h1>
+    <div class="book">
+        <img src='https://m.media-amazon.com/images/I/81YkqyaFVEL._SL1500_.jpg'>
+        <div>James Clear</div>
+        <a href='#short-summary'>Short Summary</a>
+        <a href='#long-summary'>Chapter-by-Chapter</a>
+        <a href='#purchase-link'>Purchase</a>
+    </div>
+    <div class="book">
+        <img src='https://m.media-amazon.com/images/I/71TRUbzcvaL._SL1500_.jpg'>
+        <div>Morgan Housel</div>
+        <a href='#short-summary'>Short Summary</a>
+        <a href='#long-summary'>Chapter-by-Chapter</a>
+        <a href='#purchase-link'>Purchase</a>
+    </div>
+    <div class="book">
+        <img src='https://m.media-amazon.com/images/I/81Kaj5++6pL._SL1500_.jpg'>
+        <div>Ashlee Vance</div>
+        <a href='#short-summary'>Short Summary</a>
+        <a href='#long-summary'>Chapter-by-Chapter</a>
+        <a href='#purchase-link'>Purchase</a>
+    </div>
+</body>
+</html>

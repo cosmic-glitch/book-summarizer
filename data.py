@@ -52,5 +52,7 @@ book_list = [['Atomic Habits.pdf',
              ['The Psychology of Money.pdf',
                 "<img src='https://m.media-amazon.com/images/I/71TRUbzcvaL._SL1500_.jpg' style='width:200px;height:auto;'>"],
               ['Elon Musk.pdf',
-                "<img src='https://m.media-amazon.com/images/I/81Kaj5++6pL._SL1500_.jpg' style='width:200px;height:auto;'>"]]
+                "<img src='https://m.media-amazon.com/images/I/81Kaj5++6pL._SL1500_.jpg' style='width:200px;height:auto;'>"],
+              ['The 48 Laws of Power.pdf',
+                "<img src='https://m.media-amazon.com/images/I/61TGMFe69UL._SL1500_.jpg' style='width:200px;height:auto;'>"],]
 

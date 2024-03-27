@@ -1,0 +1,7 @@
+{
+    "input_dir": "input",
+    "input_books_dir": "input/books",
+    "processing_dir": "processing",
+    "output_dir": "output",
+    "openai_api_key": "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"
+}
