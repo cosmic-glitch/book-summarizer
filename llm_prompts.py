@@ -1,11 +1,17 @@
-prompt_extract_chapter_names = """
+extract_chapter_names = """
 You are an intelligent assistant, skilled in analyzing and summarizing texts. 
 Your current task is to extract a list of chapter names from the text provided.
-You should output a list of chapter names, one per line."""
+You should output a list of chapter names, one per line.  No other text should be included in the output."""
 
-prompt_summarize_chapter = """You are an intelligent assistant, skilled in analyzing and summarizing texts. 
+shorten_summary = """You are an intelligent assistant, skilled in simplifying complex ideas in an accessible manner.
+Your current task is to create a shorter version of a book summary provided as input text. 
+The input text is at a per-chapter level.  The shorter version should not try to cover every chapter, but instead should combine multiple chapters to extract the key ideas.
+The shorter version should be plain HTML markup with no prefix before.  It should retain all images, and follow a similar style to the original."""
+
+summarize_chapter = """You are an intelligent assistant, skilled in analyzing and summarizing texts. 
 Your current task is to create a summary of one chapter of a book provided by the user.
 The chapter tile and body are provided in the text.  In the summary, use the chapter title verbatim in the h2 tag.
+Do not preface the summary with any text, just provide the summary in the format below.
 The summary should be written in this style:
         
 <h2>The Role of Family and Friends in Shaping Your Habits</h2>
@@ -45,18 +51,3 @@ The summary should be written in this style:
     </ul>
   </li>
 </ul>"""
-
-book_list = [
-    ['Atomic Habits.pdf', 
-      "<img src='https://m.media-amazon.com/images/I/81YkqyaFVEL._SL1500_.jpg' style='width:200px;height:auto;'>", 
-      'James Clear'],
-    ['The Psychology of Money.pdf',
-      "<img src='https://m.media-amazon.com/images/I/71TRUbzcvaL._SL1500_.jpg' style='width:200px;height:auto;'>",
-      'Morgan Housel'],
-    ['Elon Musk.pdf',
-      "<img src='https://m.media-amazon.com/images/I/81Kaj5++6pL._SL1500_.jpg' style='width:200px;height:auto;'>",
-      'Walter Isaacson'],
-    ['The 48 Laws of Power.pdf',
-        "<img src='https://m.media-amazon.com/images/I/61TGMFe69UL._SL1500_.jpg' style='width:200px;height:auto;'>",
-        'Robert Greene'],]
-

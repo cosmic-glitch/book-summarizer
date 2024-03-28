@@ -4,5 +4,33 @@
     "processing_dir": "processing",
     "output_dir": "output",
     "openai_api_key": "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",
-    "anthropic_api_key": "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"
+    "anthropic_api_key": "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",
+    "books": [
+        {
+            "name": "Atomic Habits",
+            "cover": "<img src='https://m.media-amazon.com/images/I/81YkqyaFVEL._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "James Clear",
+            "affiliate_link": "https://amzn.to/4acJHI6"
+        },
+        {
+            "name": "The Psychology of Money",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71TRUbzcvaL._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "Morgan Housel",
+            "affiliate_link": "https://amzn.to/4adMtNl"
+        },
+        {
+            "name": "Elon Musk",
+            "cover": "<img src='https://m.media-amazon.com/images/I/81Kaj5++6pL._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "Walter Isaacson",
+            "affiliate_link": "https://amzn.to/43ES9NL",
+            "toc_start": 627,
+            "toc_end": 637
+        },
+        {
+            "name": "The 48 Laws of Power",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61TGMFe69UL._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "Robert Greene",
+            "affiliate_link": "https://amzn.to/3J1YFo8"
+        }
+    ]
 }

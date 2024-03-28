@@ -11,7 +11,7 @@ openai_client = openai.OpenAI()
 os.environ['ANTHROPIC_API_KEY'] = cfg['anthropic_api_key']
 anthropic_client = anthropic.Anthropic()
 
-def invoke_llm(modelname, sysprompt, userprompt):
+def invoke(modelname, sysprompt, userprompt):
     model_mapping = {
         "gpt3": "gpt-3.5-turbo-0125",
         "gpt4": "gpt-4-0125-preview",
@@ -32,4 +32,4 @@ def invoke_llm(modelname, sysprompt, userprompt):
             model=model_mapping[modelname],
             max_tokens=4096,
             messages=[{"role": "user", "content": sysprompt + '\nFull Text:\n' + userprompt}])
-        return message.content
+        return message.content[0].text
