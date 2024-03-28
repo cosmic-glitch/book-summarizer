@@ -1,8 +1,7 @@
 prompt_extract_chapter_names = """
 You are an intelligent assistant, skilled in analyzing and summarizing texts. 
-Your current task is to extract a list of chapter names from the text provided.  
-The chapter names will typically be part of a table of contents somewhere in the first several pages of the text provided.
-The expected output schema for each line of the output is: <chapter name>"""
+Your current task is to extract a list of chapter names from the text provided.
+You should output a list of chapter names, one per line."""
 
 prompt_summarize_chapter = """You are an intelligent assistant, skilled in analyzing and summarizing texts. 
 Your current task is to create a summary of one chapter of a book provided by the user.
@@ -47,12 +46,17 @@ The summary should be written in this style:
   </li>
 </ul>"""
 
-book_list = [['Atomic Habits.pdf', 
-                "<img src='https://m.media-amazon.com/images/I/81YkqyaFVEL._SL1500_.jpg' style='width:200px;height:auto;'>"],
-             ['The Psychology of Money.pdf',
-                "<img src='https://m.media-amazon.com/images/I/71TRUbzcvaL._SL1500_.jpg' style='width:200px;height:auto;'>"],
-              ['Elon Musk.pdf',
-                "<img src='https://m.media-amazon.com/images/I/81Kaj5++6pL._SL1500_.jpg' style='width:200px;height:auto;'>"],
-              ['The 48 Laws of Power.pdf',
-                "<img src='https://m.media-amazon.com/images/I/61TGMFe69UL._SL1500_.jpg' style='width:200px;height:auto;'>"],]
+book_list = [
+    ['Atomic Habits.pdf', 
+      "<img src='https://m.media-amazon.com/images/I/81YkqyaFVEL._SL1500_.jpg' style='width:200px;height:auto;'>", 
+      'James Clear'],
+    ['The Psychology of Money.pdf',
+      "<img src='https://m.media-amazon.com/images/I/71TRUbzcvaL._SL1500_.jpg' style='width:200px;height:auto;'>",
+      'Morgan Housel'],
+    ['Elon Musk.pdf',
+      "<img src='https://m.media-amazon.com/images/I/81Kaj5++6pL._SL1500_.jpg' style='width:200px;height:auto;'>",
+      'Walter Isaacson'],
+    ['The 48 Laws of Power.pdf',
+        "<img src='https://m.media-amazon.com/images/I/61TGMFe69UL._SL1500_.jpg' style='width:200px;height:auto;'>",
+        'Robert Greene'],]
 

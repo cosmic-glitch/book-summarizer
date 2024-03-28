@@ -3,20 +3,19 @@
 # more research is needed to automate
 
 import json
+import openai
+import data
+import os
+import llm
 
-with open('config.json', 'r') as config_file:
-    cfg = json.load(config_file)
-
-os.environ['OPENAI_API_KEY'] = cfg['openai_api_key']
-client = openai.OpenAI()
+cfg = json.load(open('config.json', 'r'))
 
 def extract_chapter_names(text):
-    return invoke_llm("gpt3", data.prompt_extract_chapter_names, text)
+    return llm.invoke_llm("opus", data.prompt_extract_chapter_names, text)
 
-path = cfg['processing_dir'] + "/" + pdf_name[:-4] + '_paginated_top_only.txt'
-if not os.path.exists(path):
-    pdf_text_top_only = pdf_text[:50000]
-    open(path, 'w').write(pdf_text_top_only)
-else:
-    pdf_text_top_only = open(path, 'r').read()
-
+def main():
+    path = cfg['processing_dir'] + "/Elon Musk_paginated.txt"
+    top_bytes = open(path, 'r').read()[100000:150000]
+    print(extract_chapter_names(top_bytes))
+    
+main()

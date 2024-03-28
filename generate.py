@@ -1,23 +1,13 @@
 import os
 import openai
 import data
+import llm
 from pdfminer.high_level import extract_text
 from pdfminer.layout import LAParams
 from pdfminer.pdfpage import PDFPage
 import json
 
 cfg = json.load(open('config.json', 'r'))
-
-os.environ['OPENAI_API_KEY'] = cfg['openai_api_key']
-client = openai.OpenAI()
-
-def invoke_llm(modelname, sysprompt, userprompt):
-    completion = client.chat.completions.create(
-        model=("gpt-4-0125-preview" if modelname=="gpt4" else "gpt-3.5-turbo-0125"),
-        messages=[
-            {"role": "system", "content": sysprompt},
-            {"role": "user", "content": userprompt}])
-    return completion.choices[0].message.content
     
 def extract_text_from_pdf(pdf_path):
     print(pdf_path)
@@ -48,7 +38,7 @@ def validate_chapter_names(chapter_names):
         prev = int(flds[1])
 
 def summarize_chapter(text):
-    return invoke_llm("gpt3", data.prompt_summarize_chapter, text)
+    return llm.invoke_llm("gpt3", data.prompt_summarize_chapter, text)
 
 def summarize_book(pdf_name, cover_image):
     pdf_path = cfg['input_books_dir'] + "/" + pdf_name
@@ -106,7 +96,15 @@ def main():
                         {book[1].replace('200px', '100px')}
                         <a href='{book[0][:-4].replace(' ', '_')}_summary.html'>{book[0][:-4]}</a>
                     </div>\n"""
-    toc = open(cfg['input_dir'] + "/index_template.html", 'r').read().replace("<books>", toc)
+        
+        f"""<div class="book">
+            {book[1].replace('200px', '100px')}
+            <div>{book[2]}</div>
+            <a href='{book[0][:-4].replace(' ', '_')}_short_summary.html'>Short Summary</a>
+            <a href='{book[0][:-4].replace(' ', '_')}_summary.html'>Chapter Summary</a>
+            <a href='#purchase-link'>Purchase</a>
+        </div>"""
+    toc = open(cfg['input_dir'] + "/index_experimental.html", 'r').read().replace("$placeholder$", toc)
     open(cfg['output_dir'] + "/index.html", 'w').write(toc)
 
 main()

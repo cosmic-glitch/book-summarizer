@@ -10,7 +10,7 @@
             background-color: #f4f4f4;
             color: #333;
             padding: 20px;
-            max-width: 800px;
+            max-width: 1200px;
             margin: auto;
         }
         h1 {
@@ -29,15 +29,21 @@
             margin-bottom: 20px;
             padding: 10px;
             border-radius: 5px;
-            display: flex;
+            display: grid;
+            grid-template-columns: auto repeat(4, 1fr);
             align-items: center;
+            gap: 10px;
         }
         .book img {
             margin-right: 20px;
             border-radius: 5px;
+            width: 100px;
+            height: auto;
+        }
+        .book div, .book a {
+            font-size: 16px;
         }
         .book a {
-            font-size: 18px;
             font-weight: bold;
         }
     </style>
