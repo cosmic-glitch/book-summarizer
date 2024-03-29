@@ -3,8 +3,8 @@
 # more research is needed to automate
 
 import json
-import llm_prompts
-import llm_api
+import src.llm_prompts as llm_prompts
+import src.llm_api as llm_api
 
 cfg = json.load(open('config.json', 'r'))
 
