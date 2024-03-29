@@ -107,7 +107,7 @@ def main():
             <a href='{bk['affiliate_link']}'>Buy On Amazon</a>
         </div>"""
     
-    toc = open(cfg['input_dir'] + "/index_experimental.html", 'r').read().replace("$placeholder$", toc)
+    toc = open(cfg['input_dir'] + "/index_template.html", 'r').read().replace("$placeholder$", toc)
     open(cfg['output_dir'] + "/index.html", 'w').write(toc)
 
 main()
