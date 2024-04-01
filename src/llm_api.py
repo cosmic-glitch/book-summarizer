@@ -2,6 +2,7 @@ import os
 import json
 import openai
 import anthropic
+import time
 
 cfg = json.load(open('config.json', 'r'))
 
@@ -11,7 +12,7 @@ openai_client = openai.OpenAI()
 os.environ['ANTHROPIC_API_KEY'] = cfg['anthropic_api_key']
 anthropic_client = anthropic.Anthropic()
 
-def invoke(modelname, sysprompt, userprompt):
+def invoke(modelname, sysprompt, userprompt, assistantprompt=''):
     model_mapping = {
         "gpt3": "gpt-3.5-turbo-0125",
         "gpt4": "gpt-4-0125-preview",
@@ -28,11 +29,22 @@ def invoke(modelname, sysprompt, userprompt):
                 {"role": "user", "content": userprompt}])
         return completion.choices[0].message.content
     else:
-        message = anthropic_client.messages.create(
-            model=model_mapping[modelname],
-            max_tokens=4096,
-            messages=[{"role": "user", "content": sysprompt + '\nFull Text:\n' + userprompt}])
-        return message.content[0].text
+        try:
+            message = anthropic_client.messages.create(
+                model=model_mapping[modelname],
+                max_tokens=4096,
+                system=sysprompt,
+                messages=[
+                    {"role": "user", "content": userprompt}])
+            resp = message.content[0].text
+            if resp.startswith('Here is'):
+                resp = resp[resp.find('\n')+1:]
+            return resp
+        except anthropic.RateLimitError as e:
+            print(f"Rate limited. Waiting 60 seconds...{e}")
+            time.sleep(60) # anthropic is rate limited
+            return invoke(modelname, sysprompt, userprompt)
+
     
 # invoke the model N times and pick the one response that is most frequent
 def invoke_N_times(modelname, sysprompt, userprompt, N):

@@ -7,7 +7,9 @@ import llm_prompts as llm_prompts
 import llm_api as llm_api
 import os
 
-# takes a book's config block as input, and produces a file with chapter metadata
+cfg = json.load(open('config.json', 'r'))
+
+# takes a book's config block as input and produces a file with chapter metadata
 def gen_chapter_metadata(bk):
     if os.path.exists(cfg['processing_dir'] + bk['name'] + '_chapters.txt'):
         return
@@ -25,12 +27,12 @@ def gen_chapter_metadata(bk):
     end_offset = book_short.find(f"<page {bk['content_end']+1}>")
     body = book_short[start_offset:end_offset]
 
-    text = f'TOC ->> {toc}\nBODY ->> {body}'
-    chap_metadata = llm_api.invoke("gpt4", llm_prompts.extract_chapter_names, text)
+    text = f'\nTOC ->> {toc}\nBODY ->> {body}\n'
+    chap_metadata = llm_api.invoke("gpt4", llm_prompts.extract_chapter_names, text, 'The chapters along with the page numbers are:')
 
     open(cfg['processing_dir'] + bk['name'] + '_chapters.txt', 'w').write(chap_metadata)
 
-cfg = json.load(open('config.json', 'r'))
-for bk in cfg['books']:
-    print(f'Processing {bk["name"]}...')
-    gen_chapter_metadata(bk)
+if __name__ == '__main__':
+    for bk in cfg['books']:
+        print(f'Processing {bk["name"]}...')
+        gen_chapter_metadata(bk)

@@ -1,10 +1,11 @@
 import os
 import llm_prompts
-import llm_api as llm_api
+import llm_api
+import json
 from pdfminer.high_level import extract_text
 from pdfminer.layout import LAParams
 from pdfminer.pdfpage import PDFPage
-import json
+from gen_chapter_metadata import gen_chapter_metadata
 
 cfg = json.load(open('config.json', 'r'))
     
@@ -35,19 +36,19 @@ def validate_chapter_names(chapter_names):
         prev = int(flds[1])
 
 def summarize_chapter(text):
-    return llm_api.invoke("gpt3", llm_prompts.summarize_chapter, text)
-
+    return llm_api.invoke("sonnet", llm_prompts.summarize_chapter, text)
+    
 def shorten_summary(text):
     return llm_api.invoke("opus", llm_prompts.shorten_summary, text)
 
-def gen_summary(book_name, cover_image):
-    print(book_name)
-    pdf_path = cfg['input_books_dir'] + book_name + '.pdf'
+# takes a book config block as input and generates the summary
+def gen_summary(bk):
+    print(bk['name'])
 
-    path = cfg['processing_dir'] + book_name + '_paginated.txt'
-    path_short = cfg['processing_dir'] + book_name + '_paginated_short.txt'
+    path = cfg['processing_dir'] + bk['name']  + '_paginated.txt'
+    path_short = cfg['processing_dir'] + bk['name']  + '_paginated_short.txt'
     if not os.path.exists(path) or not os.path.exists(path_short):
-        pages = extract_pages_from_pdf(pdf_path)
+        pages = extract_pages_from_pdf(cfg['input_books_dir'] + bk['name'] + '.pdf')
         pdf_text = '\n'.join(f'<page {i}>\n{page}' for i, page in enumerate(pages, start=1))
         pdf_text_short = '\n'.join(f'<page {i}>\n{page[:100]}' for i, page in enumerate(pages, start=1))
         open(path, 'w').write(pdf_text)
@@ -56,9 +57,14 @@ def gen_summary(book_name, cover_image):
         pdf_text = open(path, 'r').read()
         pdf_text_short = open(path_short, 'r').read()
 
-    path = cfg['input_dir'] + book_name + '_chapters.txt'
-    assert os.path.exists(path)
-    chapter_names = open(path, 'r').read()
+    path = cfg['input_dir'] + bk['name'] + '_chapters.txt'
+    if not os.path.exists(path):
+        path = cfg['processing_dir'] + bk['name'] + '_chapters.txt'
+        if not os.path.exists(path):
+            gen_chapter_metadata(bk)
+        chapter_names = open(path, 'r').read()
+    else:
+        chapter_names = open(path, 'r').read()
     validate_chapter_names(chapter_names)
 
     chapters = chapter_names.split('\n')
@@ -67,7 +73,7 @@ def gen_summary(book_name, cover_image):
         chapN = c.split(';')
 
         print('\t' + chapN[0])
-        path = cfg['processing_dir'] + book_name + '_' + chapN[0] + '.txt'
+        path = cfg['processing_dir'] + bk['name'] + '_' + chapN[0] + '.txt'
         if not os.path.exists(path):
             start = pdf_text.find(f"<page{chapN[1]}>")
             end = pdf_text.find(f"<page {int(chapN[2])+1}>")
@@ -77,7 +83,7 @@ def gen_summary(book_name, cover_image):
         else:
             chap_text = open(path, 'r').read()
 
-        path = cfg['processing_dir'] + book_name + '_' + chapN[0] + '_summary.html'
+        path = cfg['processing_dir'] + bk['name'] + '_' + chapN[0] + '_summary.html'
         if not os.path.exists(path):
             chapN_summary = summarize_chapter(chap_text)
             open(path, 'w').write(chapN_summary)
@@ -86,11 +92,11 @@ def gen_summary(book_name, cover_image):
 
         overall_summary += chapN_summary
 
-    overall_summary = f"<html><body><h1>Book Summary: {book_name}</h1>{cover_image}" + overall_summary + "</body></html>"
-    path = cfg['output_dir'] + book_name.replace(' ', '_') + '_summary.html'
+    overall_summary = f"<html><body><h1>Book Summary: {bk['name']}</h1>{bk['cover']}" + overall_summary + "</body></html>"
+    path = cfg['output_dir'] + bk['name'].replace(' ', '_') + '_summary.html'
     open(path, 'w').write(overall_summary)
 
-    path = cfg['output_dir'] + book_name.replace(' ', '_') + '_short_summary.html'
+    path = cfg['output_dir'] + bk['name'].replace(' ', '_') + '_short_summary.html'
     if not os.path.exists(path):
         short_summary = shorten_summary(overall_summary)
         open(path, 'w').write(short_summary)
@@ -99,7 +105,7 @@ def main():
     toc = ''
 
     for bk in cfg['books']:
-        gen_summary(bk['name'], bk['cover'].replace('100px', '200px'))
+        gen_summary(bk)
 
         bk_prefix = bk['name'].replace(' ', '_')
 

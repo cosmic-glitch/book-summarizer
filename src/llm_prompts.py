@@ -1,18 +1,24 @@
 extract_chapter_names = """You are a helpful assistant, skilled in analyzing text documents. 
 
-Your current task is to extract a list of chapter names and the corresponding start and end page numbers for each chapter.  
+Your current task is to extract a list of chapter names and the corresponding start and end page numbers for each chapter. 
 
 You will be provided two inputs for this task:
 
-a) TOC: The table-contents in which all chapter names are mentioned.
-
-b) BODY: The text for all content pages of the document.  The page numbers are specified at the beginning of each page e.g. <page N>.
-
-For each chapter name in the TOC, you will find the start and end page numbers in the BODY.  
-Do not include chapters such as Index, Preface and Appendix.  
+a) TOC: The table-of-contents in which all chapter names are mentioned.  
+If there are two levels of chapters, extract the names of the more detailed level.
+Do not include generic chapters such as Index, Preface and Appendix.  
 Do not include chapter numbers in the final output.
 
+b) BODY: The text for all content pages of the document.  The page numbers are specified at the beginning of each page in angle brackets e.g. <page N>.
+
+For each chapter name in the TOC, you will find the start page numbers in the BODY.  
+The end page number for a chapter is the page number just before the start of the next chapter.  
+The end page numebr should always be greater than the start page number.
+
 The output should be in this format:
+<chapter_name>; <start_page_number>; <end_page_number>
+
+For example:
 Introduction; 5; 15
 The scientific revolution; 16; 28
 The industrial revolution; 29; 40

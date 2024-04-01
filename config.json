@@ -45,6 +45,26 @@
             "toc_end": 16,
             "content_start": 25,
             "content_end": 453
+        },
+        {
+            "name": "Sapiens",
+            "cover": "<img src='https://m.media-amazon.com/images/I/716E6dQ4BXL._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "Yuval Harari",
+            "affiliate_link": "https://amzn.to/3IWyn73",
+            "toc_start": 7,
+            "toc_end": 8,
+            "content_start": 13,
+            "content_end": 464
+        },
+        {
+            "name": "12 Rules for Life",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61BRxtp9qtL._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "Jordan Peterson",
+            "affiliate_link": "https://amzn.to/3vA7hPX",
+            "toc_start": 4,
+            "toc_end": 4,
+            "content_start": 24,
+            "content_end": 275
         }
     ]
 }
