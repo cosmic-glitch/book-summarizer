@@ -33,3 +33,11 @@ def invoke(modelname, sysprompt, userprompt):
             max_tokens=4096,
             messages=[{"role": "user", "content": sysprompt + '\nFull Text:\n' + userprompt}])
         return message.content[0].text
+    
+# invoke the model N times and pick the one response that is most frequent
+def invoke_N_times(modelname, sysprompt, userprompt, N):
+    responses = []
+    for i in range(N):
+        response = invoke(modelname, sysprompt, userprompt)
+        responses.append(response)
+    return max(set(responses), key = responses.count)

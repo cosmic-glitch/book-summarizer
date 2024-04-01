@@ -1,6 +1,6 @@
 import os
 import llm_prompts
-import llm_api
+import llm_api as llm_api
 from pdfminer.high_level import extract_text
 from pdfminer.layout import LAParams
 from pdfminer.pdfpage import PDFPage
@@ -8,19 +8,19 @@ import json
 
 cfg = json.load(open('config.json', 'r'))
     
-def extract_text_from_pdf(pdf_path):
+def extract_pages_from_pdf(pdf_path):
     assert os.path.exists(pdf_path)
     
-    extracted_text = ""  # Initialize the string to accumulate text
-    page_count = 1       # Initialize page counter
+    page_count = 1
+    pages = []
     
     with open(pdf_path, 'rb') as file:
         for page in PDFPage.get_pages(file, caching=True, check_extractable=True):
             text = extract_text(file, page_numbers=[page_count-1], laparams=LAParams())
-            extracted_text += f"<page {page_count}>\n{text}\n"
+            pages.append(text)
             page_count += 1
     
-    return extracted_text.replace('\t', ' ')
+    return pages
 
 def validate_chapter_names(chapter_names):
     assert len(chapter_names) > 0
@@ -42,16 +42,21 @@ def shorten_summary(text):
 
 def gen_summary(book_name, cover_image):
     print(book_name)
-    pdf_path = cfg['input_books_dir'] + "/" + book_name + '.pdf'
+    pdf_path = cfg['input_books_dir'] + book_name + '.pdf'
 
-    path = cfg['processing_dir'] + "/" + book_name + '_paginated.txt'
-    if not os.path.exists(path):
-        pdf_text = extract_text_from_pdf(pdf_path)
+    path = cfg['processing_dir'] + book_name + '_paginated.txt'
+    path_short = cfg['processing_dir'] + book_name + '_paginated_short.txt'
+    if not os.path.exists(path) or not os.path.exists(path_short):
+        pages = extract_pages_from_pdf(pdf_path)
+        pdf_text = '\n'.join(f'<page {i}>\n{page}' for i, page in enumerate(pages, start=1))
+        pdf_text_short = '\n'.join(f'<page {i}>\n{page[:100]}' for i, page in enumerate(pages, start=1))
         open(path, 'w').write(pdf_text)
+        open(path_short, 'w').write(pdf_text_short)
     else:
         pdf_text = open(path, 'r').read()
+        pdf_text_short = open(path_short, 'r').read()
 
-    path = cfg['input_dir'] + "/" + book_name + '_chapters.txt'
+    path = cfg['input_dir'] + book_name + '_chapters.txt'
     assert os.path.exists(path)
     chapter_names = open(path, 'r').read()
     validate_chapter_names(chapter_names)
@@ -62,7 +67,7 @@ def gen_summary(book_name, cover_image):
         chapN = c.split(';')
 
         print('\t' + chapN[0])
-        path = cfg['processing_dir'] + "/" + book_name + '_' + chapN[0] + '.txt'
+        path = cfg['processing_dir'] + book_name + '_' + chapN[0] + '.txt'
         if not os.path.exists(path):
             start = pdf_text.find(f"<page{chapN[1]}>")
             end = pdf_text.find(f"<page {int(chapN[2])+1}>")
@@ -72,7 +77,7 @@ def gen_summary(book_name, cover_image):
         else:
             chap_text = open(path, 'r').read()
 
-        path = cfg['processing_dir'] + "/" + book_name + '_' + chapN[0] + '_summary.html'
+        path = cfg['processing_dir'] + book_name + '_' + chapN[0] + '_summary.html'
         if not os.path.exists(path):
             chapN_summary = summarize_chapter(chap_text)
             open(path, 'w').write(chapN_summary)
@@ -82,10 +87,10 @@ def gen_summary(book_name, cover_image):
         overall_summary += chapN_summary
 
     overall_summary = f"<html><body><h1>Book Summary: {book_name}</h1>{cover_image}" + overall_summary + "</body></html>"
-    path = cfg['output_dir'] + "/" + book_name.replace(' ', '_') + '_summary.html'
+    path = cfg['output_dir'] + book_name.replace(' ', '_') + '_summary.html'
     open(path, 'w').write(overall_summary)
 
-    path = cfg['output_dir'] + "/" + book_name.replace(' ', '_') + '_short_summary.html'
+    path = cfg['output_dir'] + book_name.replace(' ', '_') + '_short_summary.html'
     if not os.path.exists(path):
         short_summary = shorten_summary(overall_summary)
         open(path, 'w').write(short_summary)
@@ -107,7 +112,7 @@ def main():
             <a href='{bk['affiliate_link']}'>Buy On Amazon</a>
         </div>"""
     
-    toc = open(cfg['input_dir'] + "/index_template.html", 'r').read().replace("$placeholder$", toc)
-    open(cfg['output_dir'] + "/index.html", 'w').write(toc)
+    toc = open(cfg['input_dir'] + "index_template.html", 'r').read().replace("$placeholder$", toc)
+    open(cfg['output_dir'] + "index.html", 'w').write(toc)
 
 main()

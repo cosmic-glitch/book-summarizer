@@ -1,7 +1,27 @@
-extract_chapter_names = """
-You are an intelligent assistant, skilled in analyzing and summarizing texts. 
-Your current task is to extract a list of chapter names from the text provided.
-You should output a list of chapter names, one per line.  No other text should be included in the output."""
+extract_chapter_names = """You are a helpful assistant, skilled in analyzing text documents. 
+
+Your current task is to extract a list of chapter names and the corresponding start and end page numbers for each chapter.  
+
+You will be provided two inputs for this task:
+
+a) TOC: The table-contents in which all chapter names are mentioned.
+
+b) BODY: The text for all content pages of the document.  The page numbers are specified at the beginning of each page e.g. <page N>.
+
+For each chapter name in the TOC, you will find the start and end page numbers in the BODY.  
+Do not include chapters such as Index, Preface and Appendix.  
+Do not include chapter numbers in the final output.
+
+The output should be in this format:
+Introduction; 5; 15
+The scientific revolution; 16; 28
+The industrial revolution; 29; 40
+The information revolusion; 41; 55
+...
+
+In the output, do not add any introductory text such as 'Here is the list...'"""
+
+# Only the first 100 characters from each page will be provided, since the chapter names occur at the beginning of a page.  
 
 shorten_summary = """You are an intelligent assistant, skilled in simplifying complex ideas in an accessible manner.
 Your current task is to create a shorter version of a book summary provided as input text. 
