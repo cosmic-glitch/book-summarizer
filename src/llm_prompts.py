@@ -22,7 +22,7 @@ For example:
 Introduction; 5; 15
 The scientific revolution; 16; 28
 The industrial revolution; 29; 40
-The information revolusion; 41; 55
+The information revolution; 41; 55
 ...
 
 In the output, do not add any introductory text such as 'Here is the list...'"""
