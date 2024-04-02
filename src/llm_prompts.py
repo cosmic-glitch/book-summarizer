@@ -13,7 +13,7 @@ b) BODY: The text for all content pages of the document.  The page numbers are s
 
 For each chapter name in the TOC, you will find the start page numbers in the BODY.  
 The end page number for a chapter is the page number just before the start of the next chapter.  
-The end page numebr should always be greater than the start page number.
+The end page number should always be greater than the start page number.
 
 The output should be in this format:
 <chapter_name>; <start_page_number>; <end_page_number>
