@@ -6,6 +6,9 @@ from pdfminer.high_level import extract_text
 from pdfminer.layout import LAParams
 from pdfminer.pdfpage import PDFPage
 from gen_chapter_metadata import gen_chapter_metadata
+import ebooklib
+from ebooklib import epub
+from bs4 import BeautifulSoup
 
 cfg = json.load(open('config.json', 'r'))
     
@@ -22,6 +25,27 @@ def extract_pages_from_pdf(pdf_path):
             page_count += 1
     
     return pages
+    
+def extract_items_from_epub(epub_path):
+    book = epub.read_epub(epub_path)
+    items = []
+
+    for item in book.get_items():
+        if item.get_type() == ebooklib.ITEM_DOCUMENT:
+            soup = BeautifulSoup(item.content, 'html.parser')
+            text = soup.get_text(separator='\n', strip=True)
+            items.append(text)
+    
+    return items
+
+def extract_epub_toc(epub_path):
+    book = epub.read_epub(epub_path)
+    
+    toc = book.get_item_with_id('toc').get_content()
+    soup = BeautifulSoup(toc, 'html.parser')
+    toc = soup.get_text(separator='\n', strip=True)
+
+    return toc
 
 def validate_chapter_names(chapter_names):
     assert len(chapter_names) > 0
@@ -42,7 +66,7 @@ def shorten_summary(text):
     return llm_api.invoke("opus", llm_prompts.shorten_summary, text)
 
 # takes a book config block as input and generates the summary
-def gen_summary(bk):
+def gen_summary_pdf(bk):
     print(bk['name'])
 
     path = cfg['processing_dir'] + bk['name']  + '_paginated.txt'
@@ -57,14 +81,10 @@ def gen_summary(bk):
         pdf_text = open(path, 'r').read()
         pdf_text_short = open(path_short, 'r').read()
 
-    path = cfg['input_dir'] + bk['name'] + '_chapters.txt'
+    path = cfg['processing_dir'] + bk['name'] + '_chapters.txt'
     if not os.path.exists(path):
-        path = cfg['processing_dir'] + bk['name'] + '_chapters.txt'
-        if not os.path.exists(path):
-            gen_chapter_metadata(bk)
-        chapter_names = open(path, 'r').read()
-    else:
-        chapter_names = open(path, 'r').read()
+        gen_chapter_metadata(bk)
+    chapter_names = open(path, 'r').read()
     validate_chapter_names(chapter_names)
 
     chapters = chapter_names.split('\n')
@@ -101,11 +121,50 @@ def gen_summary(bk):
         short_summary = shorten_summary(overall_summary)
         open(path, 'w').write(short_summary)
 
+# takes a book config block as input and generates the summary
+def gen_summary_epub(bk):
+    print(bk['name'])
+
+    path = cfg['input_books_dir'] + bk['name']  + '.epub'
+    items = extract_items_from_epub(path)[int(bk['content_start_item'])-1:int(bk['content_end_item'])]
+
+    overall_summary = ''
+    for i, item in enumerate(items, start=1):
+        print(f'\tItem {i}')
+        path = cfg['processing_dir'] + bk['name'] + f'_item {i}.txt'
+        if not os.path.exists(path):
+            open(path, 'w').write(item)
+        else:
+            item = open(path, 'r').read()
+
+        path = cfg['processing_dir'] + bk['name'] + f'_item {i}_summary.html'
+        if not os.path.exists(path):
+            item_summary = summarize_chapter(item)
+            open(path, 'w').write(item_summary)
+        else:
+            item_summary = open(path, 'r').read()
+
+        overall_summary += item_summary
+
+    overall_summary = f"<html><body><h1>Book Summary: {bk['name']}</h1>{bk['cover']}" + overall_summary + "</body></html>"
+    path = cfg['output_dir'] + bk['name'].replace(' ', '_') + '_summary.html'
+    open(path, 'w').write(overall_summary)
+
+    path = cfg['output_dir'] + bk['name'].replace(' ', '_') + '_short_summary.html'
+    if not os.path.exists(path):
+        short_summary = shorten_summary(overall_summary)
+        open(path, 'w').write(short_summary)
+
 def main():
     toc = ''
 
     for bk in cfg['books']:
-        gen_summary(bk)
+        if os.path.exists(cfg['input_books_dir'] + bk['name'] + '.pdf'):
+            gen_summary_pdf(bk)
+        elif os.path.exists(cfg['input_books_dir'] + bk['name'] + '.epub'):
+            gen_summary_epub(bk)
+        else:
+            assert False, f"Book {bk['name']} not found"
 
         bk_prefix = bk['name'].replace(' ', '_')
 
