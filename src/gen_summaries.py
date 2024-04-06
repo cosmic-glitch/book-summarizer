@@ -63,10 +63,10 @@ def summarize_chapter(text):
     return llm_api.invoke("sonnet", llm_prompts.summarize_chapter, text)
     
 def shorten_summary(text):
-    return llm_api.invoke("opus", llm_prompts.shorten_summary, text)
+    return llm_api.invoke("gpt4", llm_prompts.shorten_summary, text)
 
 # takes a book config block as input and generates the summary
-def gen_summary_pdf(bk):
+def gen_summary_pdf(bk): 
     print(bk['name'])
 
     path = cfg['processing_dir'] + bk['name']  + '_paginated.txt'
@@ -170,11 +170,13 @@ def main():
 
         # add book to index.html
         toc += f"""<div class="book">
+            <div class="book-title">{bk['name']}</div>
             {bk['cover']}
-            <div>{bk['author']}</div>
-            <a href='{bk_prefix}_short_summary.html'>5 minute Summary</a>
-            <a href='{bk_prefix}_summary.html'>30 min Summary</a>
-            <a href='{bk['affiliate_link']}'>Buy On Amazon</a>
+            <div class="book-links">
+                <a href='{bk_prefix}_short_summary.html'>Short Summary</a>
+                <a href='{bk_prefix}_summary.html'>Chapter-level Summary</a>
+                <a href='{bk['affiliate_link']}'>Buy On Amazon</a>
+            </div>
         </div>"""
     
     toc = open(cfg['input_dir'] + "index_template.html", 'r').read().replace("$placeholder$", toc)

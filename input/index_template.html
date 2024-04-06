@@ -7,50 +7,86 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #f5f5dc;
             color: #333;
             padding: 20px;
-            max-width: 1200px;
+            max-width: 2000px;
             margin: auto;
         }
+
         h1 {
             color: #01070ee1;
+            text-align: center;
         }
-        a {
-            text-decoration: none;
-            color: #0066cc;
+
+        .intro {
+            text-align: center;
+            margin-bottom: 10px;
+            font-style: italic;
+            color: #555;
         }
-        a:hover {
-            text-decoration: underline;
-        }
-        .book {
-            background-color: white;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-            padding: 10px;
-            border-radius: 5px;
+
+        .book-container {
             display: grid;
-            grid-template-columns: auto repeat(4, 1fr);
-            align-items: center;
-            gap: 10px;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
         }
+
+        .book {
+            background-color: #ebebce;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            padding: 10px; /* Add padding for visual spacing */
+        }
+
+        .book:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
         .book img {
-            margin-right: 20px;
-            border-radius: 5px;
             width: 100px;
             height: auto;
+            display: block; /* Ensure it's block level for correct margin handling */
+            margin: 10px auto; /* Center image */
         }
-        .book div, .book a {
-            font-size: 16px;
-        }
-        .book a {
+
+        .book-title {
+            font-size: 18px; /* Adjustable based on preference */
             font-weight: bold;
+            text-align: center; /* Center the book title */
+            margin-bottom: 15px; /* Space between title and image */
+        }
+
+        .book-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center align the links */
+        }
+
+        .book-links a {
+            font-size: 13px;
+            margin-bottom: 8px;
+            color: #007bff;
+        }
+        .book a:visited {
+            color: #007bff;
         }
     </style>
 </head>
 <body>
     <h1>Book Summaries</h1>
-    If you purchase a book through one of the Amazon links below, we will earn a small commission (at no extra cost to you).
-    $placeholder$
+    <p class="intro">
+        Learn from chapter-level summaries that are detailed enough to be useful!
+    </p>
+    <p class="intro">
+        If you purchase through our links, we may earn a commission.    
+    </p>
+
+    <div class="book-container">
+        $placeholder$
+    </div>
 </body>
 </html>

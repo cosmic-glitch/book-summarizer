@@ -7,104 +7,158 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #f5f5dc;
             color: #333;
             padding: 20px;
-            max-width: 1200px;
+            max-width: 2000px;
             margin: auto;
         }
+
         h1 {
             color: #01070ee1;
+            text-align: center;
         }
-        a {
-            text-decoration: none;
-            color: #0066cc;
+
+        .intro {
+            text-align: center;
+            margin-bottom: 10px;
+            font-style: italic;
+            color: #555;
         }
-        a:hover {
-            text-decoration: underline;
-        }
-        .book {
-            background-color: white;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-            padding: 10px;
-            border-radius: 5px;
+
+        .book-container {
             display: grid;
-            grid-template-columns: auto repeat(4, 1fr);
-            align-items: center;
-            gap: 10px;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
         }
+
+        .book {
+            background-color: #ebebce;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            padding: 10px; /* Add padding for visual spacing */
+        }
+
+        .book:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
         .book img {
-            margin-right: 20px;
-            border-radius: 5px;
             width: 100px;
             height: auto;
+            display: block; /* Ensure it's block level for correct margin handling */
+            margin: 10px auto; /* Center image */
         }
-        .book div, .book a {
-            font-size: 16px;
-        }
-        .book a {
+
+        .book-title {
+            font-size: 18px; /* Adjustable based on preference */
             font-weight: bold;
+            text-align: center; /* Center the book title */
+            margin-bottom: 15px; /* Space between title and image */
+        }
+
+        .book-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center align the links */
+        }
+
+        .book-links a {
+            font-size: 13px;
+            margin-bottom: 8px;
+            color: #007bff;
+        }
+        .book a:visited {
+            color: #007bff;
         }
     </style>
 </head>
 <body>
     <h1>Book Summaries</h1>
-    If you purchase a book through one of the Amazon links below, we will earn a small commission (at no extra cost to you).
-    <div class="book">
+    <p class="intro">
+        Learn from chapter-level summaries that are detailed enough to be useful!
+    </p>
+    <p class="intro">
+        If you purchase through our links, we may earn a commission.    
+    </p>
+
+    <div class="book-container">
+        <div class="book">
+            <div class="book-title">Atomic Habits</div>
             <img src='https://m.media-amazon.com/images/I/81YkqyaFVEL._SL1500_.jpg' style='width:100px;height:auto;'>
-            <div>James Clear</div>
-            <a href='Atomic_Habits_short_summary.html'>5 minute Summary</a>
-            <a href='Atomic_Habits_summary.html'>30 min Summary</a>
-            <a href='https://amzn.to/4acJHI6'>Buy On Amazon</a>
+            <div class="book-links">
+                <a href='Atomic_Habits_short_summary.html'>Short Summary</a>
+                <a href='Atomic_Habits_summary.html'>Chapter-level Summary</a>
+                <a href='https://amzn.to/4acJHI6'>Buy On Amazon</a>
+            </div>
         </div><div class="book">
+            <div class="book-title">The Psychology of Money</div>
             <img src='https://m.media-amazon.com/images/I/71TRUbzcvaL._SL1500_.jpg' style='width:100px;height:auto;'>
-            <div>Morgan Housel</div>
-            <a href='The_Psychology_of_Money_short_summary.html'>5 minute Summary</a>
-            <a href='The_Psychology_of_Money_summary.html'>30 min Summary</a>
-            <a href='https://amzn.to/4adMtNl'>Buy On Amazon</a>
+            <div class="book-links">
+                <a href='The_Psychology_of_Money_short_summary.html'>Short Summary</a>
+                <a href='The_Psychology_of_Money_summary.html'>Chapter-level Summary</a>
+                <a href='https://amzn.to/4adMtNl'>Buy On Amazon</a>
+            </div>
         </div><div class="book">
+            <div class="book-title">Elon Musk</div>
             <img src='https://m.media-amazon.com/images/I/81Kaj5++6pL._SL1500_.jpg' style='width:100px;height:auto;'>
-            <div>Walter Isaacson</div>
-            <a href='Elon_Musk_short_summary.html'>5 minute Summary</a>
-            <a href='Elon_Musk_summary.html'>30 min Summary</a>
-            <a href='https://amzn.to/43ES9NL'>Buy On Amazon</a>
+            <div class="book-links">
+                <a href='Elon_Musk_short_summary.html'>Short Summary</a>
+                <a href='Elon_Musk_summary.html'>Chapter-level Summary</a>
+                <a href='https://amzn.to/43ES9NL'>Buy On Amazon</a>
+            </div>
         </div><div class="book">
+            <div class="book-title">The 48 Laws of Power</div>
             <img src='https://m.media-amazon.com/images/I/61TGMFe69UL._SL1500_.jpg' style='width:100px;height:auto;'>
-            <div>Robert Greene</div>
-            <a href='The_48_Laws_of_Power_short_summary.html'>5 minute Summary</a>
-            <a href='The_48_Laws_of_Power_summary.html'>30 min Summary</a>
-            <a href='https://amzn.to/3J1YFo8'>Buy On Amazon</a>
+            <div class="book-links">
+                <a href='The_48_Laws_of_Power_short_summary.html'>Short Summary</a>
+                <a href='The_48_Laws_of_Power_summary.html'>Chapter-level Summary</a>
+                <a href='https://amzn.to/3J1YFo8'>Buy On Amazon</a>
+            </div>
         </div><div class="book">
+            <div class="book-title">Sapiens</div>
             <img src='https://m.media-amazon.com/images/I/716E6dQ4BXL._SL1500_.jpg' style='width:100px;height:auto;'>
-            <div>Yuval Harari</div>
-            <a href='Sapiens_short_summary.html'>5 minute Summary</a>
-            <a href='Sapiens_summary.html'>30 min Summary</a>
-            <a href='https://amzn.to/3IWyn73'>Buy On Amazon</a>
+            <div class="book-links">
+                <a href='Sapiens_short_summary.html'>Short Summary</a>
+                <a href='Sapiens_summary.html'>Chapter-level Summary</a>
+                <a href='https://amzn.to/3IWyn73'>Buy On Amazon</a>
+            </div>
         </div><div class="book">
+            <div class="book-title">12 Rules for Life</div>
             <img src='https://m.media-amazon.com/images/I/61BRxtp9qtL._SL1500_.jpg' style='width:100px;height:auto;'>
-            <div>Jordan Peterson</div>
-            <a href='12_Rules_for_Life_short_summary.html'>5 minute Summary</a>
-            <a href='12_Rules_for_Life_summary.html'>30 min Summary</a>
-            <a href='https://amzn.to/3vA7hPX'>Buy On Amazon</a>
+            <div class="book-links">
+                <a href='12_Rules_for_Life_short_summary.html'>Short Summary</a>
+                <a href='12_Rules_for_Life_summary.html'>Chapter-level Summary</a>
+                <a href='https://amzn.to/3vA7hPX'>Buy On Amazon</a>
+            </div>
         </div><div class="book">
+            <div class="book-title">The Little Book of Common Sense Investing</div>
             <img src='https://m.media-amazon.com/images/I/5110mvxatoL.jpg' style='width:100px;height:auto;'>
-            <div>John Bogle</div>
-            <a href='The_Little_Book_of_Common_Sense_Investing_short_summary.html'>5 minute Summary</a>
-            <a href='The_Little_Book_of_Common_Sense_Investing_summary.html'>30 min Summary</a>
-            <a href='https://amzn.to/3xsS0kn'>Buy On Amazon</a>
+            <div class="book-links">
+                <a href='The_Little_Book_of_Common_Sense_Investing_short_summary.html'>Short Summary</a>
+                <a href='The_Little_Book_of_Common_Sense_Investing_summary.html'>Chapter-level Summary</a>
+                <a href='https://amzn.to/3xsS0kn'>Buy On Amazon</a>
+            </div>
         </div><div class="book">
+            <div class="book-title">The Intelligent Investor</div>
             <img src='https://m.media-amazon.com/images/I/91L0La1pwDL._SL1500_.jpg' style='width:100px;height:auto;'>
-            <div>Benjamin Graham</div>
-            <a href='The_Intelligent_Investor_short_summary.html'>5 minute Summary</a>
-            <a href='The_Intelligent_Investor_summary.html'>30 min Summary</a>
-            <a href='https://amzn.to/4aj7Qwy'>Buy On Amazon</a>
+            <div class="book-links">
+                <a href='The_Intelligent_Investor_short_summary.html'>Short Summary</a>
+                <a href='The_Intelligent_Investor_summary.html'>Chapter-level Summary</a>
+                <a href='https://amzn.to/4aj7Qwy'>Buy On Amazon</a>
+            </div>
         </div><div class="book">
+            <div class="book-title">Outlive</div>
             <img src='https://m.media-amazon.com/images/I/71X9FMy66NL._SL1500_.jpg' style='width:100px;height:auto;'>
-            <div>Bill Gifford and Peter Attia</div>
-            <a href='Outlive_short_summary.html'>5 minute Summary</a>
-            <a href='Outlive_summary.html'>30 min Summary</a>
-            <a href='https://amzn.to/3xygWHc'>Buy On Amazon</a>
+            <div class="book-links">
+                <a href='Outlive_short_summary.html'>Short Summary</a>
+                <a href='Outlive_summary.html'>Chapter-level Summary</a>
+                <a href='https://amzn.to/3xygWHc'>Buy On Amazon</a>
+            </div>
         </div>
+    </div>
 </body>
 </html>

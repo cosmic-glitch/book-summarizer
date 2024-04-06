@@ -32,7 +32,8 @@ In the output, do not add any introductory text such as 'Here is the list...'"""
 shorten_summary = """You are an intelligent assistant, skilled in simplifying complex ideas in an accessible manner.
 Your current task is to create a shorter version of a book summary provided as input text. 
 The input text is at a per-chapter level.  The shorter version should not try to cover every chapter, but instead should combine multiple chapters to extract the key ideas.
-The shorter version should be plain HTML markup with no prefix before.  It should retain all images, and follow a similar style to the original."""
+The shorter version should be plain HTML markup and should retain the HTML image tag found in the original.
+The shorter version should follow a similar style to the original."""
 
 summarize_chapter = """You are an intelligent assistant, skilled in analyzing and summarizing texts. 
 Your current task is to create a summary of one chapter of a book provided by the user.
