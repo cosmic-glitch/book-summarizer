@@ -3,8 +3,6 @@
     "input_books_dir": "input/books/",
     "processing_dir": "processing/",
     "output_dir": "output/",
-    "openai_api_key": "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",
-    "anthropic_api_key": "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",
     "books": [
         {
             "name": "Atomic Habits",
