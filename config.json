@@ -133,6 +133,14 @@
             "affiliate_link": "https://amzn.to/3VLWRHx",
             "content_start_item": 10,
             "content_end_item": 17
+        },
+        {
+            "name": "Supercommunicators",
+            "cover": "<img src='https://m.media-amazon.com/images/I/81G2riKjx4L._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "Charles Duhigg",
+            "affiliate_link": "https://amzn.to/3xz4DKM",
+            "content_start_item": 7,
+            "content_end_item": 20
         }
     ]
 }
