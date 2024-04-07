@@ -38,15 +38,6 @@ def extract_items_from_epub(epub_path):
     
     return items
 
-def extract_epub_toc(epub_path):
-    book = epub.read_epub(epub_path)
-    
-    toc = book.get_item_with_id('toc').get_content()
-    soup = BeautifulSoup(toc, 'html.parser')
-    toc = soup.get_text(separator='\n', strip=True)
-
-    return toc
-
 def validate_chapter_names(chapter_names):
     assert len(chapter_names) > 0
     assert len(chapter_names.split('\n')) > 1
