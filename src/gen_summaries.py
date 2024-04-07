@@ -60,7 +60,7 @@ def validate_chapter_names(chapter_names):
         prev = int(flds[1])
 
 def summarize_chapter(text):
-    return llm_api.invoke("sonnet", llm_prompts.summarize_chapter, text)
+    return llm_api.invoke("gpt3", llm_prompts.summarize_chapter, text)
     
 def shorten_summary(text):
     return llm_api.invoke("gpt4", llm_prompts.shorten_summary, text)
@@ -126,11 +126,17 @@ def gen_summary_epub(bk):
     print(bk['name'])
 
     path = cfg['input_books_dir'] + bk['name']  + '.epub'
-    items = extract_items_from_epub(path)[int(bk['content_start_item'])-1:int(bk['content_end_item'])]
+    items = extract_items_from_epub(path)
+    items = items[int(bk['content_start_item']):int(bk['content_end_item'])+1]
 
     overall_summary = ''
     for i, item in enumerate(items, start=1):
         print(f'\tItem {i}')
+
+        if len(item) < 200:
+            print(f'\t\tItem {i} too short, skipping')
+            continue
+        
         path = cfg['processing_dir'] + bk['name'] + f'_item {i}.txt'
         if not os.path.exists(path):
             open(path, 'w').write(item)

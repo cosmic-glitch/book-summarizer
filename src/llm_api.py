@@ -22,12 +22,16 @@ def invoke(modelname, sysprompt, userprompt, assistantprompt=''):
     }
 
     if modelname.startswith("gpt"):
-        completion = openai_client.chat.completions.create(
-            model=model_mapping[modelname],
-            messages=[
-                {"role": "system", "content": sysprompt},
-                {"role": "user", "content": userprompt}])
-        return completion.choices[0].message.content
+        try:
+            completion = openai_client.chat.completions.create(
+                model=model_mapping[modelname],
+                messages=[
+                    {"role": "system", "content": sysprompt},
+                    {"role": "user", "content": userprompt}])
+            return completion.choices[0].message.content
+        except openai.BadRequestError as e:
+            print(f"Bad request. {e}")
+            return invoke("gpt4", sysprompt, userprompt)
     else:
         try:
             message = anthropic_client.messages.create(
