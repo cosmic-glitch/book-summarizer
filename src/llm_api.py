@@ -3,13 +3,10 @@ import json
 import openai
 import anthropic
 import time
+import dotenv
 
-cfg = json.load(open('config.json', 'r'))
-
-os.environ['OPENAI_API_KEY'] = cfg['openai_api_key']
+dotenv.load_dotenv()
 openai_client = openai.OpenAI()
-
-os.environ['ANTHROPIC_API_KEY'] = cfg['anthropic_api_key']
 anthropic_client = anthropic.Anthropic()
 
 def invoke(modelname, sysprompt, userprompt, assistantprompt=''):
