@@ -3,7 +3,7 @@
 
 ## Description
 
-This Python project automates the generation of summaries for books available in PDF and EPUB formats. It extracts text from these files, divides the content into manageable sections or chapters, and uses LLMs via an API to generate both detailed and concise summaries. The final summaries are saved as HTML files which can be viewed in a web browser.
+This Python project automates the generation of summaries for books available in PDF and EPUB formats. It extracts text from these files, divides the content into manageable sections or chapters, and uses LLMs via an API to generate both detailed and concise summaries. The final summaries are saved as HTML files which can be viewed in a web browser.  Sample generated output can be seen [here](http://book-summary-pro.vercel.app/).
 
 ## Features
 
