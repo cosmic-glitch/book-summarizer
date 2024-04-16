@@ -77,4 +77,6 @@ The summary should be written in this style:
       <li>Mimicking successful behaviors can make habits more attractive.</li>
     </ul>
   </li>
-</ul>"""
+</ul>
+
+Note: The sample above is just an example.  Do not copy any content from the sample in the summary."""

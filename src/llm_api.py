@@ -12,7 +12,7 @@ anthropic_client = anthropic.Anthropic()
 def invoke(modelname, sysprompt, userprompt, assistantprompt=''):
     model_mapping = {
         "gpt3": "gpt-3.5-turbo-0125",
-        "gpt4": "gpt-4-0125-preview",
+        "gpt4": "gpt-4-turbo-2024-04-09",
         "haiku": "claude-3-haiku-20240307",
         "sonnet": "claude-3-sonnet-20240229",
         "opus": "claude-3-opus-20240229"

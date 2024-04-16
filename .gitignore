@@ -6,3 +6,5 @@
 .env
 test.py
 /output/
+/src/get_book.py
+~/code/chromedriver_user_profile/
