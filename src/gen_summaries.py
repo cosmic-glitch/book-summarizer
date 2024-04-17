@@ -21,7 +21,7 @@ def validate_chapter_names(chapter_names):
         prev = int(flds[1])
 
 def summarize_chapter(text):
-    return llm_api.invoke("gpt3", llm_prompts.summarize_chapter, text)
+    return llm_api.invoke("haiku", llm_prompts.summarize_chapter, text)
     
 def shorten_summary(text):
     return llm_api.invoke("gpt4", llm_prompts.shorten_summary, text)

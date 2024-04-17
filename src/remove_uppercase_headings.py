@@ -10,7 +10,7 @@ def capitalize_uppercase_words(text):
         words = match.group(1).split()
         return ' '.join(word.capitalize() for word in words)
     
-    return re.sub(r'<h2>([A-Z\':\-\? ]+)</h2>', lambda m: f'<h2>{capitalize_match(m)}</h2>', text)
+    return re.sub(r'<h2>([A-Z\':\-\,? ]+)</h2>', lambda m: f'<h2>{capitalize_match(m)}</h2>', text)
 
 # Define the directory where the files are located
 output_directory = 'processing'
