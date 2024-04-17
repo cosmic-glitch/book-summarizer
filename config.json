@@ -265,6 +265,122 @@
             "affiliate_link": "https://amzn.to/4453PtA",
             "content_start_item": 5,
             "content_end_item": 33
+        },
+        {           
+            "name": "The Power Of Habit",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71wm29Etl4L._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Charles Duhigg",
+            "affiliate_link": "https://amzn.to/4444Ku5",
+            "content_start_item": 8,
+            "content_end_item": 18
+        },
+        {           
+            "name": "The Body Keeps The Score",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71bVExi4yXL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Bessel van der Kolk M.D.",
+            "affiliate_link": "https://amzn.to/49DQ9Xw",
+            "content_start_item": 7,
+            "content_end_item": 31
+        },
+        {           
+            "name": "A Brief History Of Time",
+            "cover": "<img src='https://m.media-amazon.com/images/I/91ebghaV-eL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Stephen Hawking",
+            "affiliate_link": "https://amzn.to/3TXC5lX",
+            "content_start_item": 6,
+            "content_end_item": 17
+        },
+        {           
+            "name": "Outliers",
+            "cover": "<img src='https://m.media-amazon.com/images/I/91lYcUJ8JsL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Malcolm Gladwell",
+            "affiliate_link": "https://amzn.to/4aXL6lW",
+            "content_start_item": 10,
+            "content_end_item": 19
+        },
+        {           
+            "name": "Factfulness",
+            "cover": "<img src='https://m.media-amazon.com/images/I/818qWkHcICL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Hans Rosling",
+            "affiliate_link": "https://amzn.to/4aBPbMO",
+            "content_start_item": 6,
+            "content_end_item": 17
+        },
+        {           
+            "name": "The Big Short",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61qz6EqoNjL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Michael Lewis",
+            "affiliate_link": "https://amzn.to/3UjcOUB",
+            "content_start_item": 10,
+            "content_end_item": 30
+        },            {           
+            "name": "The 4-Hour Workweek",
+            "cover": "<img src='https://m.media-amazon.com/images/I/81qW97ndkvL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Timothy Ferriss",
+            "affiliate_link": "https://amzn.to/3xLWyT6",
+            "content_start_item": 8,
+            "content_end_item": 35
+        },            {           
+            "name": "The Black Swan",
+            "cover": "<img src='https://m.media-amazon.com/images/I/51jkBbZzJVL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Nassim Nicholas Taleb",
+            "affiliate_link": "https://amzn.to/4405D6O",
+            "content_start_item": 7,
+            "content_end_item": 36
+        },            {           
+            "name": "How to Win Friends and Influence People",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71vK0WVQ4rL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Dale Carnegie",
+            "affiliate_link": "https://amzn.to/3Q6ddY9",
+            "content_start_item": 2,
+            "content_end_item": 8
+        },            
+        {           
+            "name": "Deep Work",
+            "cover": "<img src='https://m.media-amazon.com/images/I/91nujEwIpYL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Cal Newport",
+            "affiliate_link": "https://amzn.to/3W37Hcy",
+            "content_start_item": 7,
+            "content_end_item": 17
+        },
+        {           
+            "name": "The Structure of Scientific Revolutions",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61N7mK2Te7L._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Thomas S. Kuhn",
+            "affiliate_link": "https://amzn.to/4d1MHbU",
+            "content_start_item": 6,
+            "content_end_item": 18
+        },
+        {           
+            "name": "Don't Make Me Think",
+            "cover": "<img src='https://m.media-amazon.com/images/I/81OIBnrGKHL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Steve Krug",
+            "affiliate_link": "https://amzn.to/3TZJ4ur",
+            "content_start_item": 5,
+            "content_end_item": 22
+        },            {           
+            "name": "The Happiness Project",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61o3KimH2tL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Gretchen Rubin",
+            "affiliate_link": "https://amzn.to/4aBXDf0",
+            "content_start_item": 8,
+            "content_end_item": 19
+        },
+        {           
+            "name": "Man’s Search For Meaning",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71tdb1udZnL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Viktor E. Frankl",
+            "affiliate_link": "https://amzn.to/4aY9ow4",
+            "content_start_item": 9,
+            "content_end_item": 12
+        },
+        {           
+            "name": "Guns, Germs, and Steel",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61V8g4GgqdL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Jared M. Diamond",
+            "affiliate_link": "https://amzn.to/3VYoZav",
+            "content_start_item": 8,
+            "content_end_item": 30
         }
     ]
 }

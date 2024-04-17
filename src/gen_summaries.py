@@ -4,6 +4,7 @@ import llm_api
 import json
 from extractors import extract_pages_from_pdf, extract_items_from_epub
 from gen_chapter_metadata import gen_chapter_metadata
+import re
 
 cfg = json.load(open('config.json', 'r'))
 
@@ -20,7 +21,7 @@ def validate_chapter_names(chapter_names):
         prev = int(flds[1])
 
 def summarize_chapter(text):
-    return llm_api.invoke("haiku", llm_prompts.summarize_chapter, text)
+    return llm_api.invoke("gpt3", llm_prompts.summarize_chapter, text)
     
 def shorten_summary(text):
     return llm_api.invoke("gpt4", llm_prompts.shorten_summary, text)
@@ -139,8 +140,8 @@ def main():
             <div class="book-title">{bk['name']}</div>
             {bk['cover']}
             <div class="book-links">
-                <a href='{bk_prefix}_short_summary.html'>Short Summary</a>
-                <a href='{bk_prefix}_summary.html'>Chapter-level Summary</a>
+                <a href="{bk_prefix}_short_summary.html">Short Summary</a>
+                <a href="{bk_prefix}_summary.html">Chapter-level Summary</a>
                 <a href='{bk['affiliate_link']}'>Buy On Amazon</a>
             </div>
         </div>"""

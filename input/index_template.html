@@ -32,7 +32,7 @@
             text-align: center;
             margin-top: 10px;
             margin-bottom: 10px;
-            font-size: 13px;
+            font-size: 14px;
             color: #555;
         }
         
@@ -72,7 +72,7 @@
         }
 
         .book img:hover {
-            transform: scale(2);
+            transform: scale(1);  /* at higher scale, the image cuts off other portions; need a better way */
         }
 
         .book-title {
@@ -106,10 +106,6 @@
     <div class="book-container">
         $placeholder$
     </div>
-
-    <p class="msg">
-        
-    </p>
 
     <p class="footer">
         If you purchase through our links, we may earn a commission (at no cost to you).    

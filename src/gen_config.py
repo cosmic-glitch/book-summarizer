@@ -36,7 +36,7 @@ def gen_epub_config(bk):
     time.sleep(1)
     
     textarea = driver.find_element(By.ID, "APjFqb")
-    textarea.send_keys(f'amazon {bk}  Carl Sagan\n')
+    textarea.send_keys(f'amazon {bk} \n')
     time.sleep(1)
 
     links = driver.find_elements(By.TAG_NAME, "a")
@@ -50,7 +50,7 @@ def gen_epub_config(bk):
             
             link = driver.find_element(By.XPATH, '//a[@title="Text"]')
             link.click()
-            time.sleep(1)
+            time.sleep(3)
 
             textarea = driver.find_element(By.ID, "amzn-ss-text-shortlink-textarea")
             affiliate_link = (textarea.text)
@@ -66,5 +66,6 @@ def gen_epub_config(bk):
 
     assert False, "Config extraction failed"
 
-book = input("Enter the book name: ")
-print(gen_epub_config(book))
+while True:
+    book = input("Enter the book name: ")
+    print(gen_epub_config(book))
