@@ -3,6 +3,7 @@
     "input_books_dir": "input/books/",
     "processing_dir": "processing/",
     "output_dir": "output/",
+    "chrome_user_profile": "../chromedriver_user_profile",
     "books": [
         {
             "name": "Atomic Habits",
@@ -250,7 +251,7 @@
             "content_start_item": 10,
             "content_end_item": 69
         },
-        {           
+        {
             "name": "Crucial Accountability",
             "cover": "<img src='https://m.media-amazon.com/images/I/61vWrZIHQ1L._SY522_.jpg' style='width:100px;height:auto;'>",
             "author": "Kerry Patterson",
@@ -258,7 +259,7 @@
             "content_start_item": 10,
             "content_end_item": 22
         },
-        {           
+        {
             "name": "Contact",
             "cover": "<img src='https://m.media-amazon.com/images/I/61kxolEIJuL._SY522_.jpg' style='width:100px;height:auto;'>",
             "author": "Carl Sagan",
@@ -266,7 +267,7 @@
             "content_start_item": 5,
             "content_end_item": 33
         },
-        {           
+        {
             "name": "The Power Of Habit",
             "cover": "<img src='https://m.media-amazon.com/images/I/71wm29Etl4L._SY522_.jpg' style='width:100px;height:auto;'>",
             "author": "Charles Duhigg",
@@ -274,7 +275,7 @@
             "content_start_item": 8,
             "content_end_item": 18
         },
-        {           
+        {
             "name": "The Body Keeps The Score",
             "cover": "<img src='https://m.media-amazon.com/images/I/71bVExi4yXL._SY522_.jpg' style='width:100px;height:auto;'>",
             "author": "Bessel van der Kolk M.D.",
@@ -282,7 +283,7 @@
             "content_start_item": 7,
             "content_end_item": 31
         },
-        {           
+        {
             "name": "A Brief History Of Time",
             "cover": "<img src='https://m.media-amazon.com/images/I/91ebghaV-eL._SY522_.jpg' style='width:100px;height:auto;'>",
             "author": "Stephen Hawking",
@@ -290,7 +291,7 @@
             "content_start_item": 6,
             "content_end_item": 17
         },
-        {           
+        {
             "name": "Outliers",
             "cover": "<img src='https://m.media-amazon.com/images/I/91lYcUJ8JsL._SY522_.jpg' style='width:100px;height:auto;'>",
             "author": "Malcolm Gladwell",
@@ -298,7 +299,7 @@
             "content_start_item": 10,
             "content_end_item": 19
         },
-        {           
+        {
             "name": "Factfulness",
             "cover": "<img src='https://m.media-amazon.com/images/I/818qWkHcICL._SY522_.jpg' style='width:100px;height:auto;'>",
             "author": "Hans Rosling",
@@ -306,36 +307,39 @@
             "content_start_item": 6,
             "content_end_item": 17
         },
-        {           
+        {
             "name": "The Big Short",
             "cover": "<img src='https://m.media-amazon.com/images/I/61qz6EqoNjL._SY522_.jpg' style='width:100px;height:auto;'>",
             "author": "Michael Lewis",
             "affiliate_link": "https://amzn.to/3UjcOUB",
             "content_start_item": 10,
             "content_end_item": 30
-        },            {           
+        },
+        {
             "name": "The 4-Hour Workweek",
             "cover": "<img src='https://m.media-amazon.com/images/I/81qW97ndkvL._SY522_.jpg' style='width:100px;height:auto;'>",
             "author": "Timothy Ferriss",
             "affiliate_link": "https://amzn.to/3xLWyT6",
             "content_start_item": 8,
             "content_end_item": 35
-        },            {           
+        },
+        {
             "name": "The Black Swan",
             "cover": "<img src='https://m.media-amazon.com/images/I/51jkBbZzJVL._SY522_.jpg' style='width:100px;height:auto;'>",
             "author": "Nassim Nicholas Taleb",
             "affiliate_link": "https://amzn.to/4405D6O",
             "content_start_item": 12,
             "content_end_item": 36
-        },            {           
+        },
+        {
             "name": "How to Win Friends and Influence People",
             "cover": "<img src='https://m.media-amazon.com/images/I/71vK0WVQ4rL._SY522_.jpg' style='width:100px;height:auto;'>",
             "author": "Dale Carnegie",
             "affiliate_link": "https://amzn.to/3Q6ddY9",
             "content_start_item": 2,
             "content_end_item": 8
-        },            
-        {           
+        },
+        {
             "name": "Deep Work",
             "cover": "<img src='https://m.media-amazon.com/images/I/91nujEwIpYL._SY522_.jpg' style='width:100px;height:auto;'>",
             "author": "Cal Newport",
@@ -343,7 +347,7 @@
             "content_start_item": 7,
             "content_end_item": 17
         },
-        {           
+        {
             "name": "The Structure of Scientific Revolutions",
             "cover": "<img src='https://m.media-amazon.com/images/I/61N7mK2Te7L._SY522_.jpg' style='width:100px;height:auto;'>",
             "author": "Thomas S. Kuhn",
@@ -351,14 +355,15 @@
             "content_start_item": 6,
             "content_end_item": 18
         },
-        {           
+        {
             "name": "Don't Make Me Think",
             "cover": "<img src='https://m.media-amazon.com/images/I/81OIBnrGKHL._SY522_.jpg' style='width:100px;height:auto;'>",
             "author": "Steve Krug",
             "affiliate_link": "https://amzn.to/3TZJ4ur",
             "content_start_item": 5,
             "content_end_item": 22
-        },            {           
+        },
+        {
             "name": "The Happiness Project",
             "cover": "<img src='https://m.media-amazon.com/images/I/61o3KimH2tL._SY522_.jpg' style='width:100px;height:auto;'>",
             "author": "Gretchen Rubin",
@@ -366,21 +371,109 @@
             "content_start_item": 8,
             "content_end_item": 19
         },
-        {           
-            "name": "Man’s Search For Meaning",
+        {
+            "name": "Man\u2019s Search For Meaning",
             "cover": "<img src='https://m.media-amazon.com/images/I/71tdb1udZnL._SY522_.jpg' style='width:100px;height:auto;'>",
             "author": "Viktor E. Frankl",
             "affiliate_link": "https://amzn.to/4aY9ow4",
             "content_start_item": 9,
             "content_end_item": 12
         },
-        {           
+        {
             "name": "Guns, Germs, and Steel",
             "cover": "<img src='https://m.media-amazon.com/images/I/61V8g4GgqdL._SY522_.jpg' style='width:100px;height:auto;'>",
             "author": "Jared M. Diamond",
             "affiliate_link": "https://amzn.to/3VYoZav",
             "content_start_item": 6,
             "content_end_item": 30
+        },
+        {
+            "name": "Harry Potter and the Prisoner of Azkaban",
+            "cover": "<img src='https://m.media-amazon.com/images/I/A1D9WdGRYzL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "J. K. Rowling",
+            "affiliate_link": "https://amzn.to/4aZihFG",
+            "content_start_item": 3,
+            "content_end_item": 24
+        },
+        {
+            "name": "Absolute Power",
+            "cover": "<img src='https://m.media-amazon.com/images/I/81bpa3d5scS._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Sucheta Dalal",
+            "affiliate_link": "https://amzn.to/3W3qxQH",
+            "content_start_item": 11,
+            "content_end_item": 38
+        },
+        {
+            "name": "Getting To Yes",
+            "cover": "<img src='https://m.media-amazon.com/images/I/51CwtgpX5eL.jpg' style='width:100px;height:auto;'>",
+            "author": "Roger Fisher",
+            "affiliate_link": "https://amzn.to/3xGvTao",
+            "content_start_item": "11",
+            "content_end_item": "23"
+        },
+        {
+            "name": "Rocket Surgery Made Easy",
+            "cover": "<img src='https://m.media-amazon.com/images/I/613kphzs7+L._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Steve Krug",
+            "affiliate_link": "https://amzn.to/3JsBaVu",
+            "content_start_item": "5",
+            "content_end_item": "24"
+        },
+        {
+            "name": "The Worlds I See",
+            "cover": "<img src='https://m.media-amazon.com/images/I/81blPlUVdyL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Fei-Fei Li",
+            "affiliate_link": "https://amzn.to/440JPbt",
+            "content_start_item": "5",
+            "content_end_item": "16"
+        },
+        {
+            "name": "Hidden Potential",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71BE9mg4xRL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Adam Grant",
+            "affiliate_link": "https://amzn.to/3W5oVpK",
+            "content_start_item": "7",
+            "content_end_item": "18"
+        },
+        {
+            "name": "Thinking in Systems",
+            "cover": "<img src='https://m.media-amazon.com/images/I/51V4oNS0BSL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Donella H. Meadows",
+            "affiliate_link": "https://amzn.to/4d2CZWN",
+            "content_start_item": "9",
+            "content_end_item": "19"
+        },
+        {
+            "name": "Sell More Faster",
+            "cover": "<img src='https://m.media-amazon.com/images/I/612sCvpB0BL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Amos Schwartzfarb",
+            "affiliate_link": "https://amzn.to/441IFfA",
+            "content_start_item": "8",
+            "content_end_item": "15"
+        },
+        {
+            "name": "Read Write Own",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71BIdLFcvpL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Chris Dixon",
+            "affiliate_link": "https://amzn.to/49Mu1Kp",
+            "content_start_item": "6",
+            "content_end_item": "26"
+        },
+        {
+            "name": "Build",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71hP6RPS8eL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Tony Fadell",
+            "affiliate_link": "https://amzn.to/4aEPvKL",
+            "content_start_item": "4",
+            "content_end_item": "43"
+        },
+        {
+            "name": "Superintelligence",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71UvMcdcE9L._SL1159_.jpg' style='width:100px;height:auto;'>",
+            "author": "Nick Bostrom",
+            "affiliate_link": "https://amzn.to/4aZ9KSX",
+            "content_start_item": "8",
+            "content_end_item": "22"
         }
     ]
 }

@@ -28,7 +28,7 @@ def gen_chapter_metadata(bk):
     body = book_short[start_offset:end_offset]
 
     text = f'\nTOC ->> {toc}\nBODY ->> {body}\n'
-    chap_metadata = llm_api.invoke("gpt4", llm_prompts.extract_chapter_names, text, 'The chapters along with the page numbers are:')
+    chap_metadata = llm_api.invoke("haiku", llm_prompts.extract_pdf_chapter_names, text, 'The chapters along with the page numbers are:')
 
     open(cfg['processing_dir'] + bk['name'] + '_chapters.txt', 'w').write(chap_metadata)
 

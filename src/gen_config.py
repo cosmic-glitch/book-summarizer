@@ -4,32 +4,37 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 import time
 import re
+import json
+import os
+import llm_prompts
+import llm_api
+
+cfg = json.load(open('config.json', 'r'))
 
 def build_json_config_block(name, cover, author, affiliate_link, content_start_item, content_end_item):
-    cfg_template = f''' 
-            {{           
-                "name": "{name}",
-                "cover": "<img src='{cover}' style='width:100px;height:auto;'>",
-                "author": "{author}",
-                "affiliate_link": "{affiliate_link}",
-                "content_start_item": {content_start_item},
-                "content_end_item": {content_end_item}
-            }}
-    '''
+    cfg_template = {          
+                "name": name,
+                "cover": f"<img src='{cover}' style='width:100px;height:auto;'>",
+                "author": author,
+                "affiliate_link": affiliate_link,
+                "content_start_item": content_start_item,
+                "content_end_item": content_end_item
+        }
     return cfg_template
 
+def infer_start_and_end(bkname):
+    path = cfg['input_books_dir'] + bkname + ".epub"
+    if os.path.exists(path):
+        items = extract_items_from_epub(path)
+        snippets = '\n\n'.join([f'Item {i}: {item[:200]}' for i, item in enumerate(items)])
+        llm_output = llm_api.invoke("haiku", llm_prompts.extract_epub_chapter_names, snippets)
+        return re.findall(r'\d+', llm_output)
+    
 def gen_epub_config(bk):
-    path = "input/books/" + bk + ".epub"
-    items = extract_items_from_epub(path)
-    for i, item in enumerate(items):
-        print(f'Item {i}: {item[:100]}')
-    content_start_item = input("Enter the start item number: ")
-    content_end_item = input("Enter the end item number: ")    
-
-    profile_path = "~/code/chromedriver_user_profile"
+    content_start_item, content_end_item = infer_start_and_end(bk)
 
     options = Options()
-    options.add_argument(f"user-data-dir={profile_path}")
+    options.add_argument(f"user-data-dir={cfg['chrome_user_profile']}")
     driver = webdriver.Chrome(options=options)
 
     driver.get("https://www.google.com")
@@ -66,6 +71,12 @@ def gen_epub_config(bk):
 
     assert False, "Config extraction failed"
 
-while True:
-    book = input("Enter the book name: ")
-    print(gen_epub_config(book))
+def update_config(bkcfg):
+    cfg['books'].append(bkcfg)
+    json.dump(cfg, open('config.json', 'w'), indent=4)
+
+def main():
+    while True:
+        book = input("Enter the book name: ")
+        update_config(gen_epub_config(book))
+        print("Config updated")

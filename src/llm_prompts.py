@@ -1,4 +1,4 @@
-extract_chapter_names = """You are a helpful assistant, skilled in analyzing text documents. 
+extract_pdf_chapter_names = """You are a helpful assistant, skilled in analyzing text documents. 
 
 Your current task is to extract a list of chapter names and the corresponding start and end page numbers for each chapter. 
 
@@ -79,4 +79,19 @@ The summary should be written in this style:
   </li>
 </ul>
 
-Note: The sample above is just an example.  Do not copy any content from the sample in the summary."""
+Note: The sample above is just an example.  Do not copy any content from the sample in the summary.
+
+Also, the output should not have multiple <h2> tags.  There should be only one <h2> tag for the chapter title."""
+
+extract_epub_chapter_names = """You are an intelligent assistant, skilled in analyzing text documents.
+You are given a list of items from an ePub book. Each item is a chapter or a section in the book.
+You have to identify the item number for the start chapter and the end chapter.  
+The start item should be the first core content of the book that typically follows the sections such as Table of Contents, About The Author, and Preface.
+The end item should be the last core content of the book that is typically followed by irrelevant section such as Index, Appendix, and Acknowledgments. 
+
+The output should be in this format:
+ContentStartItem: <start_item_number>
+ContentEndItem: <end_item_number>
+
+There should be no lines before or after the output.  Only the start and end item numbers should be listed as shown above."""
+

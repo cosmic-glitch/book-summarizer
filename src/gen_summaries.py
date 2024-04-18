@@ -4,7 +4,6 @@ import llm_api
 import json
 from extractors import extract_pages_from_pdf, extract_items_from_epub
 from gen_chapter_metadata import gen_chapter_metadata
-import re
 
 cfg = json.load(open('config.json', 'r'))
 
