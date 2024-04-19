@@ -3,7 +3,7 @@
     "input_books_dir": "input/books/",
     "processing_dir": "processing/",
     "output_dir": "output/",
-    "chrome_user_profile": "../chromedriver_user_profile",
+    "web_user_profile": "firefox_user_profile",
     "books": [
         {
             "name": "Atomic Habits",
@@ -473,6 +473,14 @@
             "author": "Nick Bostrom",
             "affiliate_link": "https://amzn.to/4aZ9KSX",
             "content_start_item": "8",
+            "content_end_item": "22"
+        },
+        {
+            "name": "The Lean Startup",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61BFOf9Ap-L._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Eric Ries",
+            "affiliate_link": "https://amzn.to/3vRatHc",
+            "content_start_item": "6",
             "content_end_item": "22"
         }
     ]

@@ -23,7 +23,7 @@ def summarize_chapter(text):
     return llm_api.invoke("haiku", llm_prompts.summarize_chapter, text)
     
 def shorten_summary(text):
-    return llm_api.invoke("gpt4", llm_prompts.shorten_summary, text)
+    return llm_api.invoke("haiku", llm_prompts.shorten_summary, text)
 
 # takes a book config block as input and generates the summary
 def gen_summary_pdf(bk): 
@@ -121,7 +121,7 @@ def gen_summary_epub(bk):
         short_summary = shorten_summary(overall_summary)
         open(path, 'w').write(short_summary)
 
-def main():
+def gen_summaries():
     toc = ''
 
     for bk in cfg['books']:
@@ -148,4 +148,5 @@ def main():
     toc = open(cfg['input_dir'] + "index_template.html", 'r').read().replace("$placeholder$", toc)
     open(cfg['output_dir'] + "index.html", 'w').write(toc)
 
-main()
+if __name__ == '__main__':
+    gen_summaries()

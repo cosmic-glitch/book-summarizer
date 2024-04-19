@@ -1,7 +1,9 @@
 from extractors import extract_items_from_epub
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.firefox.firefox_profile import FirefoxProfile
 import time
 import re
 import json
@@ -27,21 +29,21 @@ def infer_start_and_end(bkname):
     if os.path.exists(path):
         items = extract_items_from_epub(path)
         snippets = '\n\n'.join([f'Item {i}: {item[:200]}' for i, item in enumerate(items)])
-        llm_output = llm_api.invoke("haiku", llm_prompts.extract_epub_chapter_names, snippets)
+        open('snippets_debug.txt', 'w').write(snippets)
+        llm_output = llm_api.invoke("haiku", llm_prompts.extract_epub_content_boundaries, snippets)
         return re.findall(r'\d+', llm_output)
-    
-def gen_epub_config(bk):
-    content_start_item, content_end_item = infer_start_and_end(bk)
 
+def get_amazon_links(name, author):
     options = Options()
-    options.add_argument(f"user-data-dir={cfg['chrome_user_profile']}")
-    driver = webdriver.Chrome(options=options)
+    options.profile = FirefoxProfile(cfg['web_user_profile'])
+
+    driver = webdriver.Firefox(options=options)
 
     driver.get("https://www.google.com")
     time.sleep(1)
     
-    textarea = driver.find_element(By.ID, "APjFqb")
-    textarea.send_keys(f'amazon {bk} \n')
+    textarea = driver.find_element(By.NAME, "q")
+    textarea.send_keys(f'amazon {name} {author}', Keys.ENTER)
     time.sleep(1)
 
     links = driver.find_elements(By.TAG_NAME, "a")
@@ -51,6 +53,7 @@ def gen_epub_config(bk):
             href = href.split('?')[0]
             
             driver.get(href)
+            time.sleep(1)
             cover = driver.find_element(By.ID, "landingImage").get_attribute('src')
             
             link = driver.find_element(By.XPATH, '//a[@title="Text"]')
@@ -67,16 +70,10 @@ def gen_epub_config(bk):
             
             driver.quit()
 
-            return build_json_config_block(bk, cover, author, affiliate_link, content_start_item, content_end_item)
+            return cover, affiliate_link
 
-    assert False, "Config extraction failed"
+    assert False, "Amazon link extraction failed"
 
 def update_config(bkcfg):
     cfg['books'].append(bkcfg)
     json.dump(cfg, open('config.json', 'w'), indent=4)
-
-def main():
-    while True:
-        book = input("Enter the book name: ")
-        update_config(gen_epub_config(book))
-        print("Config updated")

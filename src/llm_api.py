@@ -28,7 +28,7 @@ def invoke(modelname, sysprompt, userprompt, assistantprompt=''):
             return completion.choices[0].message.content
         except openai.BadRequestError as e:
             print(f"Bad request. {e}")
-            return invoke("gpt4", sysprompt, userprompt)
+            return invoke("haiku", sysprompt, userprompt)
     else:
         try:
             message = anthropic_client.messages.create(
