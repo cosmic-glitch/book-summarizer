@@ -32,7 +32,7 @@ In the output, do not add any introductory text such as 'Here is the list...'"""
 shorten_summary = """You are an intelligent assistant, skilled in simplifying complex ideas in an accessible manner.
 Your current task is to create a shorter version of a book summary provided as input text. 
 The input text is at a per-chapter level.  The shorter version should not try to cover every chapter, but instead should combine multiple chapters to extract the key ideas.
-The shorter version should be plain HTML markup and should retain the HTML image tag found in the original.
+The shorter version should be plain HTML markup and should retain the HTML <head> and <image> tags found in the original.
 The shorter version should follow a similar style to the original."""
 
 summarize_chapter = """You are an intelligent assistant, skilled in analyzing and summarizing texts. 
@@ -81,19 +81,23 @@ The summary should be written in this style:
 
 Note: The sample above is just an example.  Do not copy any content from the sample in the summary.
 
-Also, the output should not have multiple <h2> tags.  There should be only one <h2> tag for the chapter title."""
+Also, the output should not have multiple <h2> tags.  There should be only one <h2> tag for the chapter title.
+
+Finally, the chapter headings should not be in all caps.  They should be in title case."""
 
 extract_epub_content_boundaries = """You are an intelligent assistant, skilled in analyzing text documents.
-You are given a list of items from an ePub book. Each item is a chapter or a section in the book.
-You have to identify the item number for the start chapter and the end chapter.  
+You are given a list of items from an ePub book. Each item is a chapter or a section in the book.  Only the first 200 bytes of each item are provided.
+You have to identify the number for the start item and the end item.  
 The start item should be the first core content of the book that typically follows the sections such as Table of Contents, About The Author, and Preface.
-The end item should be the last core content of the book.  It should not include section such as Index, Appendix, and Acknowledgments. 
+The end item should be the last core content of the book.  It should be the item before irrelevant sections such as Index, Appendix, and Acknowledgments. 
 
 The output should be in this format:
 ContentStartItem: <start_item_number>
 ContentEndItem: <end_item_number>
 
-There should be no lines before or after the output.  Only the start and end item numbers should be listed as shown above."""
+There should be no lines before or after the output.  Only the start and end item numbers should be listed as shown above.
+
+Note that this information will be later used to generate chapter-level summareis of the book.  This is why it is important to identify the start and end items correctly."""
 
 extract_book_link = """You are an intelligent assistant, skilled in analyzing text documents.
 You are given an HTML page which has a table of books listed in it.  Each row of the table has a link to a different PDF/EPUB/AZW3 file.

@@ -30,7 +30,7 @@ def infer_start_and_end(bkname):
         items = extract_items_from_epub(path)
         snippets = '\n\n'.join([f'Item {i}: {item[:200]}' for i, item in enumerate(items)])
         open('snippets_debug.txt', 'w').write(snippets)
-        llm_output = llm_api.invoke("gpt3", llm_prompts.extract_epub_content_boundaries, snippets)
+        llm_output = llm_api.invoke("haiku", llm_prompts.extract_epub_content_boundaries, snippets)
         return re.findall(r'\d+', llm_output)
 
 def get_amazon_links(name, author):

@@ -4,6 +4,7 @@ import openai
 import anthropic
 import time
 import dotenv
+import ollama
 
 dotenv.load_dotenv()
 openai_client = openai.OpenAI()
@@ -29,6 +30,11 @@ def invoke(modelname, sysprompt, userprompt, assistantprompt=''):
         except openai.BadRequestError as e:
             print(f"Bad request. {e}")
             return invoke("haiku", sysprompt, userprompt)
+        
+    elif modelname.startswith("llama3"):
+        prompt = f"{sysprompt}\nHere's the text:\n{userprompt}"
+        response = ollama.generate('llama3:8b', prompt)
+        return response['response']
     else:
         try:
             message = anthropic_client.messages.create(

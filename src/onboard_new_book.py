@@ -41,4 +41,4 @@ print('Config updated')
 
 input('Press Enter to generate summaries...')
 cfg = json.load(open('config.json', 'r'))
-gen_summaries()
+gen_summaries(cfg)

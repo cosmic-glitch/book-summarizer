@@ -5,5 +5,8 @@ If you want to guide the form of the output, give a long concrete example to the
 The example itself could be one of the prior generations of the model that you liked.
 So this way, an older output you liked becomes the new few shot prompt.
 
-Anthropic models have lots of rate-limits.  Often need to add "sleep" statements between calls to avoid hitting those.  
+Anthropic models have strong hourly/daily rate-limits.  Often need to add "sleep" statements between calls to avoid hitting those.  
 GPT models don't have such strong rate limits.
+
+Llama3 8B is surprisingly capable (>GPT3.5), but still not suitable for this project because of small context window size (8k).  
+The cool thing is that the model can run locally on my macbook.  But the small context window limits what it can be usef for.

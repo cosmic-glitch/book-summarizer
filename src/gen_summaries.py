@@ -5,8 +5,6 @@ import json
 from extractors import extract_pages_from_pdf, extract_items_from_epub
 from gen_chapter_metadata import gen_chapter_metadata
 
-cfg = json.load(open('config.json', 'r'))
-
 def validate_chapter_names(chapter_names):
     assert len(chapter_names) > 0
     assert len(chapter_names.split('\n')) > 1
@@ -25,7 +23,7 @@ def summarize_chapter(text):
 def shorten_summary(text):
     return llm_api.invoke("gpt3", llm_prompts.shorten_summary, text)
 
-def write_summary_to_html(bk, overall_summary):
+def write_summary_to_html(cfg, bk, overall_summary):
     overall_summary = open(cfg['input_dir'] + 'summary_template.html', 'r').read().replace("$book_name$", bk['name']).replace("$book_summary$", bk['cover'] + overall_summary)
     path = cfg['output_dir'] + bk['name'].replace(' ', '_') + '_summary.html'
     open(path, 'w').write(overall_summary)
@@ -36,7 +34,7 @@ def write_summary_to_html(bk, overall_summary):
         open(path, 'w').write(short_summary)
 
 # takes a book config block as input and generates the summary
-def gen_summary_pdf(bk): 
+def gen_summary_pdf(cfg, bk): 
     print(bk['name'])
 
     path = cfg['processing_dir'] + bk['name']  + '_paginated.txt'
@@ -82,10 +80,10 @@ def gen_summary_pdf(bk):
 
         overall_summary += chapN_summary
 
-    write_summary_to_html(bk, overall_summary)
+    write_summary_to_html(cfg, bk, overall_summary)
 
 # takes a book config block as input and generates the summary
-def gen_summary_epub(bk):
+def gen_summary_epub(cfg, bk):
     print(bk['name'])
 
     path = cfg['input_books_dir'] + bk['name']  + '.epub'
@@ -115,16 +113,16 @@ def gen_summary_epub(bk):
 
         overall_summary += item_summary
 
-    write_summary_to_html(bk, overall_summary)
+    write_summary_to_html(cfg, bk, overall_summary)
 
-def gen_summaries():
+def gen_summaries(cfg):
     toc = ''
 
     for bk in cfg['books']:
         if os.path.exists(cfg['input_books_dir'] + bk['name'] + '.pdf'):
-            gen_summary_pdf(bk)
+            gen_summary_pdf(cfg, bk)
         elif os.path.exists(cfg['input_books_dir'] + bk['name'] + '.epub'):
-            gen_summary_epub(bk)
+            gen_summary_epub(cfg, bk)
         else:
             assert False, f"Book {bk['name']} not found"
 
@@ -145,4 +143,5 @@ def gen_summaries():
     open(cfg['output_dir'] + 'index.html', 'w').write(toc)
 
 if __name__ == '__main__':
-    gen_summaries()
+    cfg = json.load(open('config.json', 'r'))
+    gen_summaries(cfg)

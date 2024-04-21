@@ -482,6 +482,30 @@
             "affiliate_link": "https://amzn.to/3vRatHc",
             "content_start_item": "6",
             "content_end_item": "22"
+        },
+        {
+            "name": "How Emotions Are Made",
+            "cover": "<img src='https://m.media-amazon.com/images/I/81-7IN1BkvL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Lisa Feldman Barrett",
+            "affiliate_link": "https://amzn.to/3w3WuO9",
+            "content_start_item": "5",
+            "content_end_item": "19"
+        },
+        {
+            "name": "The Parasitic Mind",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71oSh-sum2L._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Gad Saad",
+            "affiliate_link": "https://amzn.to/3xMOKkh",
+            "content_start_item": "7",
+            "content_end_item": "14"
+        },
+        {
+            "name": "The Selfish Gene",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61CXvkfdXlL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Richard Dawkins",
+            "affiliate_link": "https://amzn.to/3U6PlVi",
+            "content_start_item": "6",
+            "content_end_item": "18"
         }
     ]
 }

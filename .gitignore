@@ -10,6 +10,5 @@ test.py
 /firefox_user_profile/
 ~/code/chromedriver_user_profile/
 snippets_debug.txt
-index_pilot.html
-index_test.html
+index_pilot*
 TODO.txt
