@@ -17,11 +17,23 @@ if os.path.exists(cfg['input_books_dir'] + name + '.epub'):
     print('Book already downloaded. Skipping download...')
 else:
     print('Searching for book...')
-    url = get_epub_url(name, author)
-    print('Found book at:', url)
-    if input('Download? [y/n]: ').lower() == 'y':
-        download_book(name, url)
-        print('Book downloaded')
+    while True:
+        url = get_epub_url(name, author)
+        print('Found book at:', url)
+        choice = input('Download from this URL? yes/retry/override?: ').lower()
+        if choice == 'y':
+            download_book(name, url)
+            print('Book downloaded')
+            break
+        elif choice == 'o':
+            url = input('Enter ePUB URL: ')
+            download_book(name, url)
+            print('Book downloaded')
+            break
+        elif choice == 'r':
+            print('Retrying...')
+        else:
+            assert False, 'Invalid choice'
 
 content_start_item, content_end_item = infer_start_and_end(name)
 print('Inferred content boundaries:', content_start_item, content_end_item)

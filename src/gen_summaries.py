@@ -18,25 +18,21 @@ def validate_chapter_names(chapter_names):
         prev = int(flds[1])
 
 def summarize_chapter(text):
-    return llm_api.invoke("gpt3", llm_prompts.summarize_chapter, text)
+    return llm_api.invoke("haiku@gcp", llm_prompts.summarize_chapter, text)
     
 def shorten_summary(text):
-    return llm_api.invoke("gpt3", llm_prompts.shorten_summary, text)
+    return llm_api.invoke("haiku@gcp", llm_prompts.shorten_summary, text)
 
-def write_summary_to_html(cfg, bk, overall_summary):
+def write_summary_to_html(cfg, bk, f_sum, f_shrt_sum, overall_summary):
     overall_summary = open(cfg['input_dir'] + 'summary_template.html', 'r').read().replace("$book_name$", bk['name']).replace("$book_summary$", bk['cover'] + overall_summary)
-    path = cfg['output_dir'] + bk['name'].replace(' ', '_') + '_summary.html'
-    open(path, 'w').write(overall_summary)
+    open(f_sum, 'w').write(overall_summary)
 
-    path = cfg['output_dir'] + bk['name'].replace(' ', '_') + '_short_summary.html'
-    if not os.path.exists(path):
+    if not os.path.exists(f_shrt_sum):
         short_summary = shorten_summary(overall_summary)
-        open(path, 'w').write(short_summary)
+        open(f_shrt_sum, 'w').write(short_summary)
 
 # takes a book config block as input and generates the summary
 def gen_summary_pdf(cfg, bk): 
-    print(bk['name'])
-
     path = cfg['processing_dir'] + bk['name']  + '_paginated.txt'
     path_short = cfg['processing_dir'] + bk['name']  + '_paginated_short.txt'
     if not os.path.exists(path) or not os.path.exists(path_short):
@@ -80,12 +76,10 @@ def gen_summary_pdf(cfg, bk):
 
         overall_summary += chapN_summary
 
-    write_summary_to_html(cfg, bk, overall_summary)
+    return overall_summary
 
 # takes a book config block as input and generates the summary
 def gen_summary_epub(cfg, bk):
-    print(bk['name'])
-
     path = cfg['input_books_dir'] + bk['name']  + '.epub'
     items = extract_items_from_epub(path)
     items = items[int(bk['content_start_item']):int(bk['content_end_item'])+1]
@@ -113,32 +107,33 @@ def gen_summary_epub(cfg, bk):
 
         overall_summary += item_summary
 
-    write_summary_to_html(cfg, bk, overall_summary)
+    return overall_summary
 
 def gen_summaries(cfg):
     toc = ''
 
     for bk in cfg['books']:
-        if os.path.exists(cfg['input_books_dir'] + bk['name'] + '.pdf'):
-            gen_summary_pdf(cfg, bk)
-        elif os.path.exists(cfg['input_books_dir'] + bk['name'] + '.epub'):
-            gen_summary_epub(cfg, bk)
+        print(bk['name'])
+
+        prefix = bk['name'].replace(' ', '_')./
+        f_sum = cfg['output_dir'] + prefix + '_summary.html'
+        f_shrt_sum = cfg['output_dir'] + prefix + '_short_summary.html'
+        f_book = cfg['input_books_dir'] + bk['name']
+       
+        if os.path.exists(f_book + '.pdf'):
+            overall_summary = gen_summary_pdf(cfg, bk)
+        elif os.path.exists(f_book + '.epub'):
+            overall_summary = gen_summary_epub(cfg, bk)
         else:
             assert False, f"Book {bk['name']} not found"
 
-        bk_prefix = bk['name'].replace(' ', '_')
+        write_summary_to_html(cfg, bk, f_sum, f_shrt_sum, overall_summary)
 
         # add book to index.html
-        toc += f"""<div class="book">
-            <div class="book-title">{bk['name']}</div>
-            {bk['cover']}
-            <div class="book-links">
-                <a href="{bk_prefix}_short_summary.html">Short Summary</a>
-                <a href="{bk_prefix}_summary.html">Chapter-level Summary</a>
-                <a href='{bk['affiliate_link']}'>Buy On Amazon</a>
-            </div>
-        </div>"""
-    
+        # hack - fix later by changing cover field to hold just plain URL
+        cover_url = bk['cover'].split("src='")[1].split("'")[0]
+        toc += f'\t\t{{ title: "{bk["name"]}", imageUrl: "{cover_url}", summary: "{prefix}_summary.html", short_summary: "{prefix}_short_summary.html", buy: "{bk["affiliate_link"]}", theme: "{bk["theme"]}" }},\n'
+
     toc = open(cfg['input_dir'] + 'index_template.html', 'r').read().replace('$placeholder$', toc)
     open(cfg['output_dir'] + 'index.html', 'w').write(toc)
 
