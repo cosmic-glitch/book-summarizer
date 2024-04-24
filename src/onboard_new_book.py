@@ -47,7 +47,9 @@ if input('Want to override? [y/n]: ').lower() == 'y':
     cover = input('Enter cover image link: ')
     affiliate_link = input('Enter affiliate link: ')
 
-cfg_blk = build_json_config_block(name, cover, author, affiliate_link, content_start_item, content_end_item)
+theme = input('Enter the theme (will be automated soon): ')
+
+cfg_blk = build_json_config_block(name, theme, cover, author, affiliate_link, content_start_item, content_end_item)
 update_config(cfg_blk)
 print('Config updated')
 

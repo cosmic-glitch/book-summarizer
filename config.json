@@ -5,621 +5,630 @@
     "output_dir": "output/",
     "web_user_profile": "firefox_user_profile",
     "books": [
-            {
-                "name": "Atomic Habits",
-                "theme": "Self-Improvement",
-                "cover": "<img src='https://m.media-amazon.com/images/I/81YkqyaFVEL._SL1500_.jpg' style='width:100px;height:auto;'>",
-                "author": "James Clear",
-                "affiliate_link": "https://amzn.to/4acJHI6",
-                "toc_start": 6,
-                "toc_end": 7,
-                "content_start": 17,
-                "content_end": 201
-            },
-            {
-                "name": "The Psychology of Money",
-                "theme": "Investing",
-                "cover": "<img src='https://m.media-amazon.com/images/I/71TRUbzcvaL._SL1500_.jpg' style='width:100px;height:auto;'>",
-                "author": "Morgan Housel",
-                "affiliate_link": "https://amzn.to/4adMtNl",
-                "toc_start": 5,
-                "toc_end": 6,
-                "content_start": 16,
-                "content_end": 204
-            },
-            {
-                "name": "Elon Musk",
-                "theme": "Business",
-                "cover": "<img src='https://m.media-amazon.com/images/I/81Kaj5++6pL._SL1500_.jpg' style='width:100px;height:auto;'>",
-                "author": "Walter Isaacson",
-                "affiliate_link": "https://amzn.to/43ES9NL",
-                "toc_start": 627,
-                "toc_end": 637,
-                "content_start": 12,
-                "content_end": 626
-            },
-            {
-                "name": "The 48 Laws of Power",
-                "theme": "Humanities",
-                "cover": "<img src='https://m.media-amazon.com/images/I/61TGMFe69UL._SL1500_.jpg' style='width:100px;height:auto;'>",
-                "author": "Robert Greene",
-                "affiliate_link": "https://amzn.to/3J1YFo8",
-                "toc_start": 9,
-                "toc_end": 16,
-                "content_start": 25,
-                "content_end": 453
-            },
-            {
-                "name": "Sapiens",
-                "theme": "Humanities",
-                "cover": "<img src='https://m.media-amazon.com/images/I/716E6dQ4BXL._SL1500_.jpg' style='width:100px;height:auto;'>",
-                "author": "Yuval Harari",
-                "affiliate_link": "https://amzn.to/3IWyn73",
-                "toc_start": 7,
-                "toc_end": 8,
-                "content_start": 13,
-                "content_end": 464
-            },
-            {
-                "name": "12 Rules for Life",
-                "theme": "Self-Improvement",
-                "cover": "<img src='https://m.media-amazon.com/images/I/61BRxtp9qtL._SL1500_.jpg' style='width:100px;height:auto;'>",
-                "author": "Jordan Peterson",
-                "affiliate_link": "https://amzn.to/3vA7hPX",
-                "toc_start": 4,
-                "toc_end": 4,
-                "content_start": 24,
-                "content_end": 275
-            },
-            {
-                "name": "The Little Book of Common Sense Investing",
-                "theme": "Investing",
-                "cover": "<img src='https://m.media-amazon.com/images/I/5110mvxatoL.jpg' style='width:100px;height:auto;'>",
-                "author": "John Bogle",
-                "affiliate_link": "https://amzn.to/3xsS0kn",
-                "toc_start": 13,
-                "toc_end": 16,
-                "content_start": 35,
-                "content_end": 301
-            },
-            {
-                "name": "The Intelligent Investor",
-                "theme": "Investing",
-                "cover": "<img src='https://m.media-amazon.com/images/I/91L0La1pwDL._SL1500_.jpg' style='width:100px;height:auto;'>",
-                "author": "Benjamin Graham",
-                "affiliate_link": "https://amzn.to/4aj7Qwy",
-                "toc_start": 5,
-                "toc_end": 6,
-                "content_start": 9,
-                "content_end": 550
-            },
-            {
-                "name": "Outlive",
-                "theme": "Science",
-                "cover": "<img src='https://m.media-amazon.com/images/I/71X9FMy66NL._SL1500_.jpg' style='width:100px;height:auto;'>",
-                "author": "Bill Gifford and Peter Attia",
-                "affiliate_link": "https://amzn.to/3xygWHc",
-                "content_start_item": 8,
-                "content_end_item": 26
-            },
-            {
-                "name": "Slow Productivity",
-                "theme": "Self-Improvement",
-                "cover": "<img src='https://m.media-amazon.com/images/I/91rxxzTG9bL._SL1500_.jpg' style='width:100px;height:auto;'>",
-                "author": "Cal Newport",
-                "affiliate_link": "https://amzn.to/49oJW1r",
-                "content_start_item": 6,
-                "content_end_item": 14
-            },
-            {
-                "name": "Never Split the Difference",
-                "theme": "Business",
-                "cover": "<img src='https://m.media-amazon.com/images/I/81oUPEIf6OL._SL1500_.jpg' style='width:100px;height:auto;'>",
-                "author": "Chris Voss",
-                "affiliate_link": "https://amzn.to/4aKK2Sg",
-                "content_start_item": 4,
-                "content_end_item": 13
-            },
-            {
-                "name": "Thinking Fast and Slow",
-                "theme": "Humanities",
-                "cover": "<img src='https://m.media-amazon.com/images/I/61fdrEuPJwL._SL1500_.jpg' style='width:100px;height:auto;'>",
-                "author": "Daniel Kahneman",
-                "affiliate_link": "https://amzn.to/4aKmpJC",
-                "toc_start": 4,
-                "toc_end": 7,
-                "content_start": 20,
-                "content_end": 352
-            },
-            {
-                "name": "The Anxious Generation",
-                "theme": "Humanities",
-                "cover": "<img src='https://m.media-amazon.com/images/I/81XP4hEXDXL._SL1500_.jpg' style='width:100px;height:auto;'>",
-                "author": "Jonathon Haidt",
-                "affiliate_link": "https://amzn.to/4aqXRoY",
-                "content_start_item": 6,
-                "content_end_item": 23
-            },
-            {
-                "name": "Nuclear War: A Scenario",
-                "theme": "Science",
-                "cover": "<img src='https://m.media-amazon.com/images/I/816uPd85seL._SL1500_.jpg' style='width:100px;height:auto;'>",
-                "author": "Annie Jacobsen",
-                "affiliate_link": "https://amzn.to/3VLWRHx",
-                "content_start_item": 10,
-                "content_end_item": 17
-            },
-            {
-                "name": "Supercommunicators",
-                "theme": "Self-Improvement",
-                "cover": "<img src='https://m.media-amazon.com/images/I/81G2riKjx4L._SL1500_.jpg' style='width:100px;height:auto;'>",
-                "author": "Charles Duhigg",
-                "affiliate_link": "https://amzn.to/3xz4DKM",
-                "content_start_item": 7,
-                "content_end_item": 20
-            },
-            {
-                "name": "Why Everyone (Else) Is a Hypocrite",
-                "theme": "Humanities",
-                "cover": "<img src='https://m.media-amazon.com/images/I/61MULAaaBkL._SL1500_.jpg' style='width:100px;height:auto;'>",
-                "author": "Robert Kurzban",
-                "affiliate_link": "https://amzn.to/4aJJZWG",
-                "toc_start": 8,
-                "toc_end": 8,
-                "content_start": 17,
-                "content_end": 230
-            },
-            {
-                "name": "Influence",
-                "theme": "Humanities",
-                "cover": "<img src='https://m.media-amazon.com/images/I/61wwAomEffL._SL1500_.jpg' style='width:100px;height:auto;'>",
-                "author": "Robert Cialdini",
-                "affiliate_link": "https://amzn.to/3xwBe44",
-                "content_start_item": 6,
-                "content_end_item": 15
-            },
-            {
-                "name": "The Design Of Everyday Things",
-                "theme": "Design",
-                "cover": "<img src='https://m.media-amazon.com/images/I/619ncDeLijL._SL1500_.jpg' style='width:100px;height:auto;'>",
-                "author": "Don Norman",
-                "affiliate_link": "https://amzn.to/4cSsghA",
-                "content_start_item": 7,
-                "content_end_item": 13
-            },
-            {
-                "name": "On Writing Well",
-                "theme": "Self-Improvement",
-                "cover": "<img src='https://m.media-amazon.com/images/I/71bIiz4wX0L._SL1500_.jpg' style='width:100px;height:auto;'>",
-                "author": "Don Norman",
-                "affiliate_link": "https://amzn.to/4avnPI8",
-                "content_start_item": 3,
-                "content_end_item": 32
-            },
-            {
-                "name": "Inspired",
-                "theme": "Technology",
-                "cover": "<img src='https://m.media-amazon.com/images/I/61Ga-ZFeDXL._SL1500_.jpg' style='width:100px;height:auto;'>",
-                "author": "Don Norman",
-                "affiliate_link": "https://amzn.to/4cTiATZ",
-                "toc_start": 15,
-                "toc_end": 18,
-                "content_start": 25,
-                "content_end": 346
-            },
-            {
-                "name": "Zero to One",
-                "theme": "Business",
-                "cover": "<img src='https://m.media-amazon.com/images/I/51zGCdRQXOL._SL1200_.jpg' style='width:100px;height:auto;'>",
-                "author": "Peter Thiel",
-                "affiliate_link": "https://amzn.to/4aQlGGz",
-                "content_start_item": 5,
-                "content_end_item": 19
-            },
-            {
-                "name": "How AI Works",
-                "theme": "AI",
-                "cover": "<img src='https://m.media-amazon.com/images/I/71e0oxBIG3L._SL1500_.jpg' style='width:100px;height:auto;'>",
-                "author": "Ronald Kneusel",
-                "affiliate_link": "https://amzn.to/4aZonpD",
-                "content_start_item": 11,
-                "content_end_item": 18
-            },
-            {
-                "name": "The Coming Wave",
-                "theme": "AI",
-                "cover": "<img src='https://m.media-amazon.com/images/I/81zQiMu4A5L._SL1500_.jpg' style='width:100px;height:auto;'>",
-                "author": "Mustafa Suleyman",
-                "affiliate_link": "https://amzn.to/4aZdpjT",
-                "content_start_item": 8,
-                "content_end_item": 25
-            },
-            {
-                "name": "Age Of Revolutions",
-                "theme": "History",
-                "cover": "<img src='https://m.media-amazon.com/images/I/91n8xz3HCUL._SL1500_.jpg' style='width:100px;height:auto;'>",
-                "author": "Fareed Zakaria",
-                "affiliate_link": "https://amzn.to/49CZvmf",
-                "content_start_item": 5,
-                "content_end_item": 18
-            },
-            {
-                "name": "Chip War",
-                "theme": "Technology",
-                "cover": "<img src='https://m.media-amazon.com/images/I/71hMs9v7P6L._SL1500_.jpg' style='width:100px;height:auto;'>",
-                "author": "Chris Miller",
-                "affiliate_link": "https://amzn.to/3Q4wUQ5",
-                "content_start_item": 7,
-                "content_end_item": 70
-            },
-            {
-                "name": "AI For Good",
-                "theme": "AI",
-                "cover": "<img src='https://m.media-amazon.com/images/I/71iwljfWOXL._SL1500_.jpg' style='width:100px;height:auto;'>",
-                "author": "Juan Lavista Ferres",
-                "affiliate_link": "https://amzn.to/4aC3Ib6",
-                "content_start_item": 5,
-                "content_end_item": 39
-            },
-            {
-                "name": "Co-Intelligence",
-                "theme": "AI",
-                "cover": "<img src='https://m.media-amazon.com/images/I/913YN4MmhfL._SL1500_.jpg' style='width:100px;height:auto;'>",
-                "author": "Ethan Mollick",
-                "affiliate_link": "https://amzn.to/440r4EY",
-                "content_start_item": 5,
-                "content_end_item": 17
-            },
-            {
-                "name": "Autobiography of a Yogi",
-                "theme": "Self-Improvement",
-                "cover": "<img src='https://m.media-amazon.com/images/I/81WGcdUnP6L._SL1500_.jpg' style='width:100px;height:auto;'>",
-                "author": "Paramahansa Yogananda",
-                "affiliate_link": "https://amzn.to/3Q3b4Mx",
-                "content_start_item": 10,
-                "content_end_item": 69
-            },
-            {
-                "name": "Crucial Accountability",
-                "theme": "Business",
-                "cover": "<img src='https://m.media-amazon.com/images/I/61vWrZIHQ1L._SY522_.jpg' style='width:100px;height:auto;'>",
-                "author": "Kerry Patterson",
-                "affiliate_link": "https://amzn.to/4aTXJye",
-                "content_start_item": 10,
-                "content_end_item": 22
-            },
-            {
-                "name": "Contact",
-                "theme": "Fiction",
-                "cover": "<img src='https://m.media-amazon.com/images/I/61kxolEIJuL._SY522_.jpg' style='width:100px;height:auto;'>",
-                "author": "Carl Sagan",
-                "affiliate_link": "https://amzn.to/4453PtA",
-                "content_start_item": 5,
-                "content_end_item": 33
-            },
-            {
-                "name": "The Power Of Habit",
-                "theme": "Self-Improvement",
-                "cover": "<img src='https://m.media-amazon.com/images/I/71wm29Etl4L._SY522_.jpg' style='width:100px;height:auto;'>",
-                "author": "Charles Duhigg",
-                "affiliate_link": "https://amzn.to/4444Ku5",
-                "content_start_item": 8,
-                "content_end_item": 18
-            },
-            {
-                "name": "The Body Keeps The Score",
-                "theme": "Science",
-                "cover": "<img src='https://m.media-amazon.com/images/I/71bVExi4yXL._SY522_.jpg' style='width:100px;height:auto;'>",
-                "author": "Bessel van der Kolk M.D.",
-                "affiliate_link": "https://amzn.to/49DQ9Xw",
-                "content_start_item": 7,
-                "content_end_item": 31
-            },
-            {
-                "name": "A Brief History Of Time",
-                "theme": "Science",
-                "cover": "<img src='https://m.media-amazon.com/images/I/91ebghaV-eL._SY522_.jpg' style='width:100px;height:auto;'>",
-                "author": "Stephen Hawking",
-                "affiliate_link": "https://amzn.to/3TXC5lX",
-                "content_start_item": 6,
-                "content_end_item": 17
-            },
-            {
-                "name": "Outliers",
-                "theme": "Humanities",
-                "cover": "<img src='https://m.media-amazon.com/images/I/91lYcUJ8JsL._SY522_.jpg' style='width:100px;height:auto;'>",
-                "author": "Malcolm Gladwell",
-                "affiliate_link": "https://amzn.to/4aXL6lW",
-                "content_start_item": 10,
-                "content_end_item": 19
-            },
-            {
-                "name": "Factfulness",
-                "theme": "Humanities",
-                "cover": "<img src='https://m.media-amazon.com/images/I/818qWkHcICL._SY522_.jpg' style='width:100px;height:auto;'>",
-                "author": "Hans Rosling",
-                "affiliate_link": "https://amzn.to/4aBPbMO",
-                "content_start_item": 6,
-                "content_end_item": 17
-            },
-            {
-                "name": "The Big Short",
-                "theme": "Business",
-                "cover": "<img src='https://m.media-amazon.com/images/I/61qz6EqoNjL._SY522_.jpg' style='width:100px;height:auto;'>",
-                "author": "Michael Lewis",
-                "affiliate_link": "https://amzn.to/3UjcOUB",
-                "content_start_item": 10,
-                "content_end_item": 30
-            },
-            {
-                "name": "The 4-Hour Workweek",
-                "theme": "Business",
-                "cover": "<img src='https://m.media-amazon.com/images/I/81qW97ndkvL._SY522_.jpg' style='width:100px;height:auto;'>",
-                "author": "Timothy Ferriss",
-                "affiliate_link": "https://amzn.to/3xLWyT6",
-                "content_start_item": 8,
-                "content_end_item": 35
-            },
-            {
-                "name": "The Black Swan",
-                "theme": "Business",
-                "cover": "<img src='https://m.media-amazon.com/images/I/51jkBbZzJVL._SY522_.jpg' style='width:100px;height:auto;'>",
-                "author": "Nassim Nicholas Taleb",
-                "affiliate_link": "https://amzn.to/4405D6O",
-                "content_start_item": 12,
-                "content_end_item": 36
-            },
-            {
-                "name": "How to Win Friends and Influence People",
-                "theme": "Self-Improvement",
-                "cover": "<img src='https://m.media-amazon.com/images/I/71vK0WVQ4rL._SY522_.jpg' style='width:100px;height:auto;'>",
-                "author": "Dale Carnegie",
-                "affiliate_link": "https://amzn.to/3Q6ddY9",
-                "content_start_item": 2,
-                "content_end_item": 8
-            },
-            {
-                "name": "Deep Work",
-                "theme": "Self-Improvement",
-                "cover": "<img src='https://m.media-amazon.com/images/I/91nujEwIpYL._SY522_.jpg' style='width:100px;height:auto;'>",
-                "author": "Cal Newport",
-                "affiliate_link": "https://amzn.to/3W37Hcy",
-                "content_start_item": 7,
-                "content_end_item": 17
-            },
-            {
-                "name": "The Structure of Scientific Revolutions",
-                "theme": "Science",
-                "cover": "<img src='https://m.media-amazon.com/images/I/61N7mK2Te7L._SY522_.jpg' style='width:100px;height:auto;'>",
-                "author": "Thomas S. Kuhn",
-                "affiliate_link": "https://amzn.to/4d1MHbU",
-                "content_start_item": 6,
-                "content_end_item": 18
-            },
-            {
-                "name": "Don't Make Me Think",
-                "theme": "Design",
-                "cover": "<img src='https://m.media-amazon.com/images/I/81OIBnrGKHL._SY522_.jpg' style='width:100px;height:auto;'>",
-                "author": "Steve Krug",
-                "affiliate_link": "https://amzn.to/3TZJ4ur",
-                "content_start_item": 5,
-                "content_end_item": 22
-            },
-            {
-                "name": "The Happiness Project",
-                "theme": "Self-Improvement",
-                "cover": "<img src='https://m.media-amazon.com/images/I/61o3KimH2tL._SY522_.jpg' style='width:100px;height:auto;'>",
-                "author": "Gretchen Rubin",
-                "affiliate_link": "https://amzn.to/4aBXDf0",
-                "content_start_item": 8,
-                "content_end_item": 19
-            },
-            {
-                "name": "Man’s Search For Meaning",
-                "theme": "Self-Improvement",
-                "cover": "<img src='https://m.media-amazon.com/images/I/71tdb1udZnL._SY522_.jpg' style='width:100px;height:auto;'>",
-                "author": "Viktor E. Frankl",
-                "affiliate_link": "https://amzn.to/4aY9ow4",
-                "content_start_item": 9,
-                "content_end_item": 12
-            },
-            {
-                "name": "Guns, Germs, and Steel",
-                "theme": "History",
-                "cover": "<img src='https://m.media-amazon.com/images/I/61V8g4GgqdL._SY522_.jpg' style='width:100px;height:auto;'>",
-                "author": "Jared M. Diamond",
-                "affiliate_link": "https://amzn.to/3VYoZav",
-                "content_start_item": 6,
-                "content_end_item": 30
-            },
-            {
-                "name": "Harry Potter and the Prisoner of Azkaban",
-                "theme": "Fiction",
-                "cover": "<img src='https://m.media-amazon.com/images/I/A1D9WdGRYzL._SY522_.jpg' style='width:100px;height:auto;'>",
-                "author": "J. K. Rowling",
-                "affiliate_link": "https://amzn.to/4aZihFG",
-                "content_start_item": 3,
-                "content_end_item": 24
-            },
-            {
-                "name": "Absolute Power",
-                "theme": "Business",
-                "cover": "<img src='https://m.media-amazon.com/images/I/81bpa3d5scS._SY522_.jpg' style='width:100px;height:auto;'>",
-                "author": "Sucheta Dalal",
-                "affiliate_link": "https://amzn.to/3W3qxQH",
-                "content_start_item": 11,
-                "content_end_item": 38
-            },
-            {
-                "name": "Getting To Yes",
-                "theme": "Business",
-                "cover": "<img src='https://m.media-amazon.com/images/I/51CwtgpX5eL.jpg' style='width:100px;height:auto;'>",
-                "author": "Roger Fisher",
-                "affiliate_link": "https://amzn.to/3xGvTao",
-                "content_start_item": "11",
-                "content_end_item": "23"
-            },
-            {
-                "name": "Rocket Surgery Made Easy",
-                "theme": "Design",
-                "cover": "<img src='https://m.media-amazon.com/images/I/613kphzs7+L._SY522_.jpg' style='width:100px;height:auto;'>",
-                "author": "Steve Krug",
-                "affiliate_link": "https://amzn.to/3JsBaVu",
-                "content_start_item": "5",
-                "content_end_item": "24"
-            },
-            {
-                "name": "The Worlds I See",
-                "theme": "Science",
-                "cover": "<img src='https://m.media-amazon.com/images/I/81blPlUVdyL._SY522_.jpg' style='width:100px;height:auto;'>",
-                "author": "Fei-Fei Li",
-                "affiliate_link": "https://amzn.to/440JPbt",
-                "content_start_item": "5",
-                "content_end_item": "16"
-            },
-            {
-                "name": "Hidden Potential",
-                "theme": "Self-Improvement",
-                "cover": "<img src='https://m.media-amazon.com/images/I/71BE9mg4xRL._SY522_.jpg' style='width:100px;height:auto;'>",
-                "author": "Adam Grant",
-                "affiliate_link": "https://amzn.to/3W5oVpK",
-                "content_start_item": "7",
-                "content_end_item": "18"
-            },
-            {
-                "name": "Thinking in Systems",
-                "theme": "Science",
-                "cover": "<img src='https://m.media-amazon.com/images/I/51V4oNS0BSL._SY522_.jpg' style='width:100px;height:auto;'>",
-                "author": "Donella H. Meadows",
-                "affiliate_link": "https://amzn.to/4d2CZWN",
-                "content_start_item": "9",
-                "content_end_item": "19"
-            },
-            {
-                "name": "Sell More Faster",
-                "theme": "Business",
-                "cover": "<img src='https://m.media-amazon.com/images/I/612sCvpB0BL._SY522_.jpg' style='width:100px;height:auto;'>",
-                "author": "Amos Schwartzfarb",
-                "affiliate_link": "https://amzn.to/441IFfA",
-                "content_start_item": "8",
-                "content_end_item": "15"
-            },
-            {
-                "name": "Read Write Own",
-                "theme": "Technology",
-                "cover": "<img src='https://m.media-amazon.com/images/I/71BIdLFcvpL._SY522_.jpg' style='width:100px;height:auto;'>",
-                "author": "Chris Dixon",
-                "affiliate_link": "https://amzn.to/49Mu1Kp",
-                "content_start_item": "6",
-                "content_end_item": "26"
-            },
-            {
-                "name": "Build",
-                "theme": "Business",
-                "cover": "<img src='https://m.media-amazon.com/images/I/71hP6RPS8eL._SY522_.jpg' style='width:100px;height:auto;'>",
-                "author": "Tony Fadell",
-                "affiliate_link": "https://amzn.to/4aEPvKL",
-                "content_start_item": "4",
-                "content_end_item": "43"
-            },
-            {
-                "name": "Superintelligence",
-                "theme": "AI",
-                "cover": "<img src='https://m.media-amazon.com/images/I/71UvMcdcE9L._SL1159_.jpg' style='width:100px;height:auto;'>",
-                "author": "Nick Bostrom",
-                "affiliate_link": "https://amzn.to/4aZ9KSX",
-                "content_start_item": "8",
-                "content_end_item": "22"
-            },
-            {
-                "name": "The Lean Startup",
-                "theme": "Business",
-                "cover": "<img src='https://m.media-amazon.com/images/I/61BFOf9Ap-L._SY522_.jpg' style='width:100px;height:auto;'>",
-                "author": "Eric Ries",
-                "affiliate_link": "https://amzn.to/3vRatHc",
-                "content_start_item": "6",
-                "content_end_item": "22"
-            },
-            {
-                "name": "How Emotions Are Made",
-                "theme": "Science",
-                "cover": "<img src='https://m.media-amazon.com/images/I/81-7IN1BkvL._SY522_.jpg' style='width:100px;height:auto;'>",
-                "author": "Lisa Feldman Barrett",
-                "affiliate_link": "https://amzn.to/3w3WuO9",
-                "content_start_item": "5",
-                "content_end_item": "19"
-            },
-            {
-                "name": "The Parasitic Mind",
-                "theme": "Humanities",
-                "cover": "<img src='https://m.media-amazon.com/images/I/71oSh-sum2L._SY522_.jpg' style='width:100px;height:auto;'>",
-                "author": "Gad Saad",
-                "affiliate_link": "https://amzn.to/3xMOKkh",
-                "content_start_item": "7",
-                "content_end_item": "14"
-            },
-            {
-                "name": "The Selfish Gene",
-                "theme": "Science",
-                "cover": "<img src='https://m.media-amazon.com/images/I/61CXvkfdXlL._SY522_.jpg' style='width:100px;height:auto;'>",
-                "author": "Richard Dawkins",
-                "affiliate_link": "https://amzn.to/3U6PlVi",
-                "content_start_item": "6",
-                "content_end_item": "18"
-            },
-            {
-                "name": "Godel, Escher, Bach",
-                "theme": "Science",
-                "cover": "<img src='https://m.media-amazon.com/images/I/51zU0Zk9zLL._SY522_.jpg' style='width:100px;height:auto;'>",
-                "author": "Douglas Hofstadter",
-                "affiliate_link": "https://amzn.to/44cZgxo",
-                "content_start_item": "16",
-                "content_end_item": "34"
-            },
-            {
-                "name": "Designing Data-Intensive Applications",
-                "theme": "Technology",
-                "cover": "<img src='https://m.media-amazon.com/images/I/91JAIKQUkYL._SY522_.jpg' style='width:100px;height:auto;'>",
-                "author": "Martin Kleppmann",
-                "affiliate_link": "https://amzn.to/4d8y9Y5",
-                "content_start_item": "7",
-                "content_end_item": "21"
-            },
-            {
-                "name": "The First 90 Days",
-                "theme": "Business",
-                "cover": "<img src='https://m.media-amazon.com/images/I/718y1aEVpSL._SY522_.jpg' style='width:100px;height:auto;'>",
-                "author": "Michael Watkins",
-                "affiliate_link": "https://amzn.to/3Utwy89",
-                "content_start_item": "5",
-                "content_end_item": "15"
-            },
-            {
-                "name": "The 12 Week Year",
-                "theme": "Business",
-                "cover": "<img src='https://m.media-amazon.com/images/I/71ZMsYuwELL._SY522_.jpg' style='width:100px;height:auto;'>",
-                "author": "Brian Moran",
-                "affiliate_link": "https://amzn.to/3UdusYu",
-                "content_start_item": "5",
-                "content_end_item": "27"
-            },
-            {
-                "name": "Code",
-                "theme": "Technology",
-                "cover": "<img src='https://m.media-amazon.com/images/I/515myo2UtFL._SL1500_.jpg' style='width:100px;height:auto;'>",
-                "author": "Charles Petzold",
-                "affiliate_link": "https://amzn.to/3UuIVRe",
-                "content_start_item": "8",
-                "content_end_item": "35"
-            },
-            {
-                "name": "Economics In One Lesson",
-                "theme": "Economics",
-                "cover": "<img src='https://m.media-amazon.com/images/I/713ZUI690-L._SY522_.jpg' style='width:100px;height:auto;'>",
-                "author": "Henry Hazlitt",
-                "affiliate_link": "https://amzn.to/3QgOK2l",
-                "content_start_item": "2",
-                "content_end_item": "24"
-            }
-        ]
+        {
+            "name": "Atomic Habits",
+            "theme": "Self-Improvement",
+            "cover": "<img src='https://m.media-amazon.com/images/I/81YkqyaFVEL._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "James Clear",
+            "affiliate_link": "https://amzn.to/4acJHI6",
+            "toc_start": 6,
+            "toc_end": 7,
+            "content_start": 17,
+            "content_end": 201
+        },
+        {
+            "name": "The Psychology of Money",
+            "theme": "Investing",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71TRUbzcvaL._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "Morgan Housel",
+            "affiliate_link": "https://amzn.to/4adMtNl",
+            "toc_start": 5,
+            "toc_end": 6,
+            "content_start": 16,
+            "content_end": 204
+        },
+        {
+            "name": "Elon Musk",
+            "theme": "Business",
+            "cover": "<img src='https://m.media-amazon.com/images/I/81Kaj5++6pL._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "Walter Isaacson",
+            "affiliate_link": "https://amzn.to/43ES9NL",
+            "toc_start": 627,
+            "toc_end": 637,
+            "content_start": 12,
+            "content_end": 626
+        },
+        {
+            "name": "The 48 Laws of Power",
+            "theme": "Humanities",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61TGMFe69UL._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "Robert Greene",
+            "affiliate_link": "https://amzn.to/3J1YFo8",
+            "toc_start": 9,
+            "toc_end": 16,
+            "content_start": 25,
+            "content_end": 453
+        },
+        {
+            "name": "Sapiens",
+            "theme": "Humanities",
+            "cover": "<img src='https://m.media-amazon.com/images/I/716E6dQ4BXL._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "Yuval Harari",
+            "affiliate_link": "https://amzn.to/3IWyn73",
+            "toc_start": 7,
+            "toc_end": 8,
+            "content_start": 13,
+            "content_end": 464
+        },
+        {
+            "name": "12 Rules for Life",
+            "theme": "Self-Improvement",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61BRxtp9qtL._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "Jordan Peterson",
+            "affiliate_link": "https://amzn.to/3vA7hPX",
+            "toc_start": 4,
+            "toc_end": 4,
+            "content_start": 24,
+            "content_end": 275
+        },
+        {
+            "name": "The Little Book of Common Sense Investing",
+            "theme": "Investing",
+            "cover": "<img src='https://m.media-amazon.com/images/I/5110mvxatoL.jpg' style='width:100px;height:auto;'>",
+            "author": "John Bogle",
+            "affiliate_link": "https://amzn.to/3xsS0kn",
+            "toc_start": 13,
+            "toc_end": 16,
+            "content_start": 35,
+            "content_end": 301
+        },
+        {
+            "name": "The Intelligent Investor",
+            "theme": "Investing",
+            "cover": "<img src='https://m.media-amazon.com/images/I/91L0La1pwDL._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "Benjamin Graham",
+            "affiliate_link": "https://amzn.to/4aj7Qwy",
+            "toc_start": 5,
+            "toc_end": 6,
+            "content_start": 9,
+            "content_end": 550
+        },
+        {
+            "name": "Outlive",
+            "theme": "Science",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71X9FMy66NL._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "Bill Gifford and Peter Attia",
+            "affiliate_link": "https://amzn.to/3xygWHc",
+            "content_start_item": 8,
+            "content_end_item": 26
+        },
+        {
+            "name": "Slow Productivity",
+            "theme": "Self-Improvement",
+            "cover": "<img src='https://m.media-amazon.com/images/I/91rxxzTG9bL._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "Cal Newport",
+            "affiliate_link": "https://amzn.to/49oJW1r",
+            "content_start_item": 6,
+            "content_end_item": 14
+        },
+        {
+            "name": "Never Split the Difference",
+            "theme": "Business",
+            "cover": "<img src='https://m.media-amazon.com/images/I/81oUPEIf6OL._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "Chris Voss",
+            "affiliate_link": "https://amzn.to/4aKK2Sg",
+            "content_start_item": 4,
+            "content_end_item": 13
+        },
+        {
+            "name": "Thinking Fast and Slow",
+            "theme": "Humanities",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61fdrEuPJwL._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "Daniel Kahneman",
+            "affiliate_link": "https://amzn.to/4aKmpJC",
+            "toc_start": 4,
+            "toc_end": 7,
+            "content_start": 20,
+            "content_end": 352
+        },
+        {
+            "name": "The Anxious Generation",
+            "theme": "Humanities",
+            "cover": "<img src='https://m.media-amazon.com/images/I/81XP4hEXDXL._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "Jonathon Haidt",
+            "affiliate_link": "https://amzn.to/4aqXRoY",
+            "content_start_item": 6,
+            "content_end_item": 23
+        },
+        {
+            "name": "Nuclear War: A Scenario",
+            "theme": "Science",
+            "cover": "<img src='https://m.media-amazon.com/images/I/816uPd85seL._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "Annie Jacobsen",
+            "affiliate_link": "https://amzn.to/3VLWRHx",
+            "content_start_item": 10,
+            "content_end_item": 17
+        },
+        {
+            "name": "Supercommunicators",
+            "theme": "Self-Improvement",
+            "cover": "<img src='https://m.media-amazon.com/images/I/81G2riKjx4L._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "Charles Duhigg",
+            "affiliate_link": "https://amzn.to/3xz4DKM",
+            "content_start_item": 7,
+            "content_end_item": 20
+        },
+        {
+            "name": "Why Everyone (Else) Is a Hypocrite",
+            "theme": "Humanities",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61MULAaaBkL._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "Robert Kurzban",
+            "affiliate_link": "https://amzn.to/4aJJZWG",
+            "toc_start": 8,
+            "toc_end": 8,
+            "content_start": 17,
+            "content_end": 230
+        },
+        {
+            "name": "Influence",
+            "theme": "Humanities",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61wwAomEffL._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "Robert Cialdini",
+            "affiliate_link": "https://amzn.to/3xwBe44",
+            "content_start_item": 6,
+            "content_end_item": 15
+        },
+        {
+            "name": "The Design Of Everyday Things",
+            "theme": "Design",
+            "cover": "<img src='https://m.media-amazon.com/images/I/619ncDeLijL._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "Don Norman",
+            "affiliate_link": "https://amzn.to/4cSsghA",
+            "content_start_item": 7,
+            "content_end_item": 13
+        },
+        {
+            "name": "On Writing Well",
+            "theme": "Self-Improvement",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71bIiz4wX0L._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "Don Norman",
+            "affiliate_link": "https://amzn.to/4avnPI8",
+            "content_start_item": 3,
+            "content_end_item": 32
+        },
+        {
+            "name": "Inspired",
+            "theme": "Technology",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61Ga-ZFeDXL._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "Don Norman",
+            "affiliate_link": "https://amzn.to/4cTiATZ",
+            "toc_start": 15,
+            "toc_end": 18,
+            "content_start": 25,
+            "content_end": 346
+        },
+        {
+            "name": "Zero to One",
+            "theme": "Business",
+            "cover": "<img src='https://m.media-amazon.com/images/I/51zGCdRQXOL._SL1200_.jpg' style='width:100px;height:auto;'>",
+            "author": "Peter Thiel",
+            "affiliate_link": "https://amzn.to/4aQlGGz",
+            "content_start_item": 5,
+            "content_end_item": 19
+        },
+        {
+            "name": "How AI Works",
+            "theme": "AI",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71e0oxBIG3L._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "Ronald Kneusel",
+            "affiliate_link": "https://amzn.to/4aZonpD",
+            "content_start_item": 11,
+            "content_end_item": 18
+        },
+        {
+            "name": "The Coming Wave",
+            "theme": "AI",
+            "cover": "<img src='https://m.media-amazon.com/images/I/81zQiMu4A5L._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "Mustafa Suleyman",
+            "affiliate_link": "https://amzn.to/4aZdpjT",
+            "content_start_item": 8,
+            "content_end_item": 25
+        },
+        {
+            "name": "Age Of Revolutions",
+            "theme": "History",
+            "cover": "<img src='https://m.media-amazon.com/images/I/91n8xz3HCUL._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "Fareed Zakaria",
+            "affiliate_link": "https://amzn.to/49CZvmf",
+            "content_start_item": 5,
+            "content_end_item": 18
+        },
+        {
+            "name": "Chip War",
+            "theme": "Technology",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71hMs9v7P6L._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "Chris Miller",
+            "affiliate_link": "https://amzn.to/3Q4wUQ5",
+            "content_start_item": 7,
+            "content_end_item": 70
+        },
+        {
+            "name": "AI For Good",
+            "theme": "AI",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71iwljfWOXL._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "Juan Lavista Ferres",
+            "affiliate_link": "https://amzn.to/4aC3Ib6",
+            "content_start_item": 5,
+            "content_end_item": 39
+        },
+        {
+            "name": "Co-Intelligence",
+            "theme": "AI",
+            "cover": "<img src='https://m.media-amazon.com/images/I/913YN4MmhfL._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "Ethan Mollick",
+            "affiliate_link": "https://amzn.to/440r4EY",
+            "content_start_item": 5,
+            "content_end_item": 17
+        },
+        {
+            "name": "Autobiography of a Yogi",
+            "theme": "Self-Improvement",
+            "cover": "<img src='https://m.media-amazon.com/images/I/81WGcdUnP6L._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "Paramahansa Yogananda",
+            "affiliate_link": "https://amzn.to/3Q3b4Mx",
+            "content_start_item": 10,
+            "content_end_item": 69
+        },
+        {
+            "name": "Crucial Accountability",
+            "theme": "Business",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61vWrZIHQ1L._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Kerry Patterson",
+            "affiliate_link": "https://amzn.to/4aTXJye",
+            "content_start_item": 10,
+            "content_end_item": 22
+        },
+        {
+            "name": "Contact",
+            "theme": "Fiction",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61kxolEIJuL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Carl Sagan",
+            "affiliate_link": "https://amzn.to/4453PtA",
+            "content_start_item": 5,
+            "content_end_item": 33
+        },
+        {
+            "name": "The Power Of Habit",
+            "theme": "Self-Improvement",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71wm29Etl4L._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Charles Duhigg",
+            "affiliate_link": "https://amzn.to/4444Ku5",
+            "content_start_item": 8,
+            "content_end_item": 18
+        },
+        {
+            "name": "The Body Keeps The Score",
+            "theme": "Science",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71bVExi4yXL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Bessel van der Kolk M.D.",
+            "affiliate_link": "https://amzn.to/49DQ9Xw",
+            "content_start_item": 7,
+            "content_end_item": 31
+        },
+        {
+            "name": "A Brief History Of Time",
+            "theme": "Science",
+            "cover": "<img src='https://m.media-amazon.com/images/I/91ebghaV-eL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Stephen Hawking",
+            "affiliate_link": "https://amzn.to/3TXC5lX",
+            "content_start_item": 6,
+            "content_end_item": 17
+        },
+        {
+            "name": "Outliers",
+            "theme": "Humanities",
+            "cover": "<img src='https://m.media-amazon.com/images/I/91lYcUJ8JsL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Malcolm Gladwell",
+            "affiliate_link": "https://amzn.to/4aXL6lW",
+            "content_start_item": 10,
+            "content_end_item": 19
+        },
+        {
+            "name": "Factfulness",
+            "theme": "Humanities",
+            "cover": "<img src='https://m.media-amazon.com/images/I/818qWkHcICL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Hans Rosling",
+            "affiliate_link": "https://amzn.to/4aBPbMO",
+            "content_start_item": 6,
+            "content_end_item": 17
+        },
+        {
+            "name": "The Big Short",
+            "theme": "Business",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61qz6EqoNjL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Michael Lewis",
+            "affiliate_link": "https://amzn.to/3UjcOUB",
+            "content_start_item": 10,
+            "content_end_item": 30
+        },
+        {
+            "name": "The 4-Hour Workweek",
+            "theme": "Business",
+            "cover": "<img src='https://m.media-amazon.com/images/I/81qW97ndkvL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Timothy Ferriss",
+            "affiliate_link": "https://amzn.to/3xLWyT6",
+            "content_start_item": 8,
+            "content_end_item": 35
+        },
+        {
+            "name": "The Black Swan",
+            "theme": "Business",
+            "cover": "<img src='https://m.media-amazon.com/images/I/51jkBbZzJVL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Nassim Nicholas Taleb",
+            "affiliate_link": "https://amzn.to/4405D6O",
+            "content_start_item": 12,
+            "content_end_item": 36
+        },
+        {
+            "name": "How to Win Friends and Influence People",
+            "theme": "Self-Improvement",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71vK0WVQ4rL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Dale Carnegie",
+            "affiliate_link": "https://amzn.to/3Q6ddY9",
+            "content_start_item": 2,
+            "content_end_item": 8
+        },
+        {
+            "name": "Deep Work",
+            "theme": "Self-Improvement",
+            "cover": "<img src='https://m.media-amazon.com/images/I/91nujEwIpYL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Cal Newport",
+            "affiliate_link": "https://amzn.to/3W37Hcy",
+            "content_start_item": 7,
+            "content_end_item": 17
+        },
+        {
+            "name": "The Structure of Scientific Revolutions",
+            "theme": "Science",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61N7mK2Te7L._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Thomas S. Kuhn",
+            "affiliate_link": "https://amzn.to/4d1MHbU",
+            "content_start_item": 6,
+            "content_end_item": 18
+        },
+        {
+            "name": "Don't Make Me Think",
+            "theme": "Design",
+            "cover": "<img src='https://m.media-amazon.com/images/I/81OIBnrGKHL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Steve Krug",
+            "affiliate_link": "https://amzn.to/3TZJ4ur",
+            "content_start_item": 5,
+            "content_end_item": 22
+        },
+        {
+            "name": "The Happiness Project",
+            "theme": "Self-Improvement",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61o3KimH2tL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Gretchen Rubin",
+            "affiliate_link": "https://amzn.to/4aBXDf0",
+            "content_start_item": 8,
+            "content_end_item": 19
+        },
+        {
+            "name": "Man\u2019s Search For Meaning",
+            "theme": "Self-Improvement",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71tdb1udZnL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Viktor E. Frankl",
+            "affiliate_link": "https://amzn.to/4aY9ow4",
+            "content_start_item": 9,
+            "content_end_item": 12
+        },
+        {
+            "name": "Guns, Germs, and Steel",
+            "theme": "History",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61V8g4GgqdL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Jared M. Diamond",
+            "affiliate_link": "https://amzn.to/3VYoZav",
+            "content_start_item": 6,
+            "content_end_item": 30
+        },
+        {
+            "name": "Harry Potter and the Prisoner of Azkaban",
+            "theme": "Fiction",
+            "cover": "<img src='https://m.media-amazon.com/images/I/A1D9WdGRYzL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "J. K. Rowling",
+            "affiliate_link": "https://amzn.to/4aZihFG",
+            "content_start_item": 3,
+            "content_end_item": 24
+        },
+        {
+            "name": "Absolute Power",
+            "theme": "Business",
+            "cover": "<img src='https://m.media-amazon.com/images/I/81bpa3d5scS._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Sucheta Dalal",
+            "affiliate_link": "https://amzn.to/3W3qxQH",
+            "content_start_item": 11,
+            "content_end_item": 38
+        },
+        {
+            "name": "Getting To Yes",
+            "theme": "Business",
+            "cover": "<img src='https://m.media-amazon.com/images/I/51CwtgpX5eL.jpg' style='width:100px;height:auto;'>",
+            "author": "Roger Fisher",
+            "affiliate_link": "https://amzn.to/3xGvTao",
+            "content_start_item": "11",
+            "content_end_item": "23"
+        },
+        {
+            "name": "Rocket Surgery Made Easy",
+            "theme": "Design",
+            "cover": "<img src='https://m.media-amazon.com/images/I/613kphzs7+L._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Steve Krug",
+            "affiliate_link": "https://amzn.to/3JsBaVu",
+            "content_start_item": "5",
+            "content_end_item": "24"
+        },
+        {
+            "name": "The Worlds I See",
+            "theme": "Science",
+            "cover": "<img src='https://m.media-amazon.com/images/I/81blPlUVdyL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Fei-Fei Li",
+            "affiliate_link": "https://amzn.to/440JPbt",
+            "content_start_item": "5",
+            "content_end_item": "16"
+        },
+        {
+            "name": "Hidden Potential",
+            "theme": "Self-Improvement",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71BE9mg4xRL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Adam Grant",
+            "affiliate_link": "https://amzn.to/3W5oVpK",
+            "content_start_item": "7",
+            "content_end_item": "18"
+        },
+        {
+            "name": "Thinking in Systems",
+            "theme": "Science",
+            "cover": "<img src='https://m.media-amazon.com/images/I/51V4oNS0BSL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Donella H. Meadows",
+            "affiliate_link": "https://amzn.to/4d2CZWN",
+            "content_start_item": "9",
+            "content_end_item": "19"
+        },
+        {
+            "name": "Sell More Faster",
+            "theme": "Business",
+            "cover": "<img src='https://m.media-amazon.com/images/I/612sCvpB0BL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Amos Schwartzfarb",
+            "affiliate_link": "https://amzn.to/441IFfA",
+            "content_start_item": "8",
+            "content_end_item": "15"
+        },
+        {
+            "name": "Read Write Own",
+            "theme": "Technology",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71BIdLFcvpL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Chris Dixon",
+            "affiliate_link": "https://amzn.to/49Mu1Kp",
+            "content_start_item": "6",
+            "content_end_item": "26"
+        },
+        {
+            "name": "Build",
+            "theme": "Business",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71hP6RPS8eL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Tony Fadell",
+            "affiliate_link": "https://amzn.to/4aEPvKL",
+            "content_start_item": "4",
+            "content_end_item": "43"
+        },
+        {
+            "name": "Superintelligence",
+            "theme": "AI",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71UvMcdcE9L._SL1159_.jpg' style='width:100px;height:auto;'>",
+            "author": "Nick Bostrom",
+            "affiliate_link": "https://amzn.to/4aZ9KSX",
+            "content_start_item": "8",
+            "content_end_item": "22"
+        },
+        {
+            "name": "The Lean Startup",
+            "theme": "Business",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61BFOf9Ap-L._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Eric Ries",
+            "affiliate_link": "https://amzn.to/3vRatHc",
+            "content_start_item": "6",
+            "content_end_item": "22"
+        },
+        {
+            "name": "How Emotions Are Made",
+            "theme": "Science",
+            "cover": "<img src='https://m.media-amazon.com/images/I/81-7IN1BkvL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Lisa Feldman Barrett",
+            "affiliate_link": "https://amzn.to/3w3WuO9",
+            "content_start_item": "5",
+            "content_end_item": "19"
+        },
+        {
+            "name": "The Parasitic Mind",
+            "theme": "Humanities",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71oSh-sum2L._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Gad Saad",
+            "affiliate_link": "https://amzn.to/3xMOKkh",
+            "content_start_item": "7",
+            "content_end_item": "14"
+        },
+        {
+            "name": "The Selfish Gene",
+            "theme": "Science",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61CXvkfdXlL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Richard Dawkins",
+            "affiliate_link": "https://amzn.to/3U6PlVi",
+            "content_start_item": "6",
+            "content_end_item": "18"
+        },
+        {
+            "name": "Godel, Escher, Bach",
+            "theme": "Science",
+            "cover": "<img src='https://m.media-amazon.com/images/I/51zU0Zk9zLL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Douglas Hofstadter",
+            "affiliate_link": "https://amzn.to/44cZgxo",
+            "content_start_item": "16",
+            "content_end_item": "34"
+        },
+        {
+            "name": "Designing Data-Intensive Applications",
+            "theme": "Technology",
+            "cover": "<img src='https://m.media-amazon.com/images/I/91JAIKQUkYL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Martin Kleppmann",
+            "affiliate_link": "https://amzn.to/4d8y9Y5",
+            "content_start_item": "7",
+            "content_end_item": "21"
+        },
+        {
+            "name": "The First 90 Days",
+            "theme": "Business",
+            "cover": "<img src='https://m.media-amazon.com/images/I/718y1aEVpSL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Michael Watkins",
+            "affiliate_link": "https://amzn.to/3Utwy89",
+            "content_start_item": "5",
+            "content_end_item": "15"
+        },
+        {
+            "name": "The 12 Week Year",
+            "theme": "Business",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71ZMsYuwELL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Brian Moran",
+            "affiliate_link": "https://amzn.to/3UdusYu",
+            "content_start_item": "5",
+            "content_end_item": "27"
+        },
+        {
+            "name": "Code",
+            "theme": "Technology",
+            "cover": "<img src='https://m.media-amazon.com/images/I/515myo2UtFL._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "Charles Petzold",
+            "affiliate_link": "https://amzn.to/3UuIVRe",
+            "content_start_item": "8",
+            "content_end_item": "35"
+        },
+        {
+            "name": "Economics In One Lesson",
+            "theme": "Humanities",
+            "cover": "<img src='https://m.media-amazon.com/images/I/713ZUI690-L._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Henry Hazlitt",
+            "affiliate_link": "https://amzn.to/3QgOK2l",
+            "content_start_item": "2",
+            "content_end_item": "24"
+        },
+        {
+            "name": "Law 101",
+            "theme": "Humanities",
+            "cover": "<img src='https://m.media-amazon.com/images/I/41ka3h4q2FL.jpg' style='width:100px;height:auto;'>",
+            "author": "Jay Feinman",
+            "affiliate_link": "https://amzn.to/3UlW5yW",
+            "content_start_item": "6",
+            "content_end_item": "27"
+        }
+    ]
 }

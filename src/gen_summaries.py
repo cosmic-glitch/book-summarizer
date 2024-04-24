@@ -115,7 +115,7 @@ def gen_summaries(cfg):
     for bk in cfg['books']:
         print(bk['name'])
 
-        prefix = bk['name'].replace(' ', '_')./
+        prefix = bk['name'].replace(' ', '_')
         f_sum = cfg['output_dir'] + prefix + '_summary.html'
         f_shrt_sum = cfg['output_dir'] + prefix + '_short_summary.html'
         f_book = cfg['input_books_dir'] + bk['name']
