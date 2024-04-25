@@ -31,3 +31,13 @@ def extract_items_from_epub(epub_path):
             items.append(text)
     
     return items
+
+def extract_entire_html_from_epub(epub_path):
+    book = epub.read_epub(epub_path)
+    html_content = []
+
+    for item in book.get_items():
+        if item.get_type() == ITEM_DOCUMENT:
+            html_content.append(item.content.decode())
+    
+    return ''.join(html_content)

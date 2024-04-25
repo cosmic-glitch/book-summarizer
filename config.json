@@ -637,7 +637,28 @@
             "author": "William Strunk",
             "affiliate_link": "https://amzn.to/4bd06MT",
             "content_start_item": "3",
-            "content_end_item": "52"
+            "content_end_item": "52",
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "The Autobiography of Benjamin Franklin",
+            "theme": "Humanities",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61TWWDR1M7L._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Benjamin Franklin",
+            "affiliate_link": "https://amzn.to/3UxPfY7",
+            "content_start_item": "3",
+            "content_end_item": "6",
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Enlightenment Now",
+            "theme": "Humanities",
+            "cover": "<img src='https://m.media-amazon.com/images/I/81TgCVpAgIL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Steven Pinker",
+            "affiliate_link": "https://amzn.to/4dfQwdE",
+            "content_start_item": "10",
+            "content_end_item": "30",
+            "summarize_whole_book": "True"
         }
     ]
 }

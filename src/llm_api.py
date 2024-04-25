@@ -3,11 +3,14 @@ import anthropic
 import time
 import dotenv
 import ollama
+import vertexai
+from vertexai.generative_models import GenerativeModel, ChatSession
 
 dotenv.load_dotenv()
 openai_client = openai.OpenAI()
 anthropic_client = anthropic.Anthropic()
 anthropic_gcp_client = anthropic.AnthropicVertex(region="us-central1", project_id="fresh-runway-421006")
+vertexai.init(project="fresh-runway-421006", location="us-central1")
 
 def invoke(modelname, sysprompt, userprompt, assistantprompt=''):
     model_mapping = {
@@ -16,7 +19,8 @@ def invoke(modelname, sysprompt, userprompt, assistantprompt=''):
         "haiku": "claude-3-haiku-20240307",
         "haiku@gcp": "claude-3-haiku@20240307",
         "sonnet": "claude-3-sonnet-20240229",
-        "opus": "claude-3-opus-20240229"
+        "opus": "claude-3-opus-20240229",
+        "gemini": "gemini-1.5-pro-preview-0409"
     }
 
     if modelname.startswith("gpt"):
@@ -36,6 +40,12 @@ def invoke(modelname, sysprompt, userprompt, assistantprompt=''):
         response = ollama.generate('llama3:8b', prompt)
         return response['response']
 
+    elif modelname.startswith("gemini"):
+        model = GenerativeModel(model_name=model_mapping[modelname])
+        prompt = f"{sysprompt}\nHere's the text:\n{userprompt}"
+        response = model.generate_content(prompt)
+        return response.text
+    
     else:
         client = anthropic_gcp_client if modelname.endswith("@gcp") else anthropic_client
         try:

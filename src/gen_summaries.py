@@ -2,7 +2,8 @@ import os
 import llm_prompts
 import llm_api
 import json
-from extractors import extract_pages_from_pdf, extract_items_from_epub
+import markdown
+from extractors import extract_pages_from_pdf, extract_items_from_epub, extract_entire_html_from_epub
 from gen_chapter_metadata import gen_chapter_metadata
 
 def validate_chapter_names(chapter_names):
@@ -16,6 +17,9 @@ def validate_chapter_names(chapter_names):
         assert int(flds[2]) - int(flds[1]) >= 1 and int(flds[2]) - int(flds[1]) < 50
         assert int(flds[1]) > prev
         prev = int(flds[1])
+
+def summarize_epub_book(html):
+    return llm_api.invoke("gemini", llm_prompts.summarize_book, html)
 
 def summarize_chapter(text):
     return llm_api.invoke("haiku@gcp", llm_prompts.summarize_chapter, text)
@@ -109,6 +113,15 @@ def gen_summary_epub(cfg, bk):
 
     return overall_summary
 
+# takes a book config block as input and generates the summary
+def gen_summary_epub_one_shot(cfg, bk, f_sum):
+    epub_path = cfg['input_books_dir'] + bk['name']  + '.epub'
+
+    html = extract_entire_html_from_epub(epub_path)
+    overall_summary = markdown.markdown(summarize_epub_book(html))
+
+    return overall_summary
+
 def gen_summaries(cfg):
     toc = ''
 
@@ -120,14 +133,20 @@ def gen_summaries(cfg):
         f_shrt_sum = cfg['output_dir'] + prefix + '_short_summary.html'
         f_book = cfg['input_books_dir'] + bk['name']
        
-        if os.path.exists(f_book + '.pdf'):
-            overall_summary = gen_summary_pdf(cfg, bk)
-        elif os.path.exists(f_book + '.epub'):
-            overall_summary = gen_summary_epub(cfg, bk)
+        if os.path.exists(f_sum) and os.path.exists(f_shrt_sum):
+            print(f'\tSummary exists, skipping')
         else:
-            assert False, f"Book {bk['name']} not found"
+            if os.path.exists(f_book + '.pdf'):
+                overall_summary = gen_summary_pdf(cfg, bk)
+            elif os.path.exists(f_book + '.epub'):
+                if 'summarize_whole_book' in bk and bk['summarize_whole_book'] == "True":
+                    overall_summary = gen_summary_epub_one_shot(cfg, bk, f_sum)
+                else:
+                    overall_summary = gen_summary_epub(cfg, bk)
+            else:
+                assert False, f"Book {bk['name']} not found"
 
-        write_summary_to_html(cfg, bk, f_sum, f_shrt_sum, overall_summary)
+            write_summary_to_html(cfg, bk, f_sum, f_shrt_sum, overall_summary)
 
         # add book to index.html
         # hack - fix later by changing cover field to hold just plain URL

@@ -21,7 +21,8 @@ def build_json_config_block(name, theme, cover, author, affiliate_link, content_
                 "author": author,
                 "affiliate_link": affiliate_link,
                 "content_start_item": content_start_item,
-                "content_end_item": content_end_item
+                "content_end_item": content_end_item,
+                "summarize_whole_book": "True"
         }
     return cfg_template
 

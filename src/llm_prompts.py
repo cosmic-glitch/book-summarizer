@@ -106,3 +106,12 @@ From this table, you will select a row based on the following criteria:
 2) if there are multiple rows with Extension 'epub', pick one of the top five rows that has the biggest file size
 
 Once a row has been identified, extract the link to the EPUB file and output it as a single URL."""
+
+summarize_book = """You are an intelligent assistant, skilled in summarizing books.
+You are given a book in HTML format.  
+Create a detailed summary of the book.  The summary should be in markdown format.
+There should be no table of contents, appendices, index, etc.  Only the core content of the book should be included.
+Use Heading 2 for chapter titles and two levels of bullet points for the content of each chapter.
+Each chapter should be summarized under a separate heading.  
+The summary should be very detailed and several pages long.  It should be complete and cover all chapters/parts of the book.
+Do not include the book name in the summary."""
