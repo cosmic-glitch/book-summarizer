@@ -13,9 +13,10 @@ import llm_api
 
 cfg = json.load(open('config.json', 'r'))
 
-def build_json_config_block(name, cover, author, affiliate_link, content_start_item, content_end_item):
+def build_json_config_block(name, theme, cover, author, affiliate_link, content_start_item, content_end_item):
     cfg_template = {          
                 "name": name,
+                "theme": theme,
                 "cover": f"<img src='{cover}' style='width:100px;height:auto;'>",
                 "author": author,
                 "affiliate_link": affiliate_link,

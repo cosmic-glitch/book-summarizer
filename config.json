@@ -629,6 +629,15 @@
             "affiliate_link": "https://amzn.to/3UlW5yW",
             "content_start_item": "6",
             "content_end_item": "27"
+        },
+        {
+            "name": "The Elements of Style",
+            "theme": "Humanities",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61w2v-4JhJL._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "William Strunk",
+            "affiliate_link": "https://amzn.to/4bd06MT",
+            "content_start_item": "3",
+            "content_end_item": "52"
         }
     ]
 }
