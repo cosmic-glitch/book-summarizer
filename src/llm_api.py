@@ -41,10 +41,16 @@ def invoke(modelname, sysprompt, userprompt, assistantprompt=''):
         return response['response']
 
     elif modelname.startswith("gemini"):
-        model = GenerativeModel(model_name=model_mapping[modelname])
-        prompt = f"{sysprompt}\nHere's the text:\n{userprompt}"
-        response = model.generate_content(prompt)
-        return response.text
+        # try to generate, and if an exception happens, wait 60 seconds and try again
+        try:
+            model = GenerativeModel(model_name=model_mapping[modelname])
+            prompt = f"{sysprompt}\nHere's the text:\n{userprompt}"
+            response = model.generate_content(prompt)
+            return response.text
+        except Exception as e:
+            print(f"Exception: {e}.  Retrying in 60 seconds...")
+            time.sleep(60)
+            return invoke(modelname, sysprompt, userprompt)
     
     else:
         client = anthropic_gcp_client if modelname.endswith("@gcp") else anthropic_client

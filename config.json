@@ -325,15 +325,6 @@
             "content_end_item": 17
         },
         {
-            "name": "Outliers",
-            "theme": "Humanities",
-            "cover": "<img src='https://m.media-amazon.com/images/I/91lYcUJ8JsL._SY522_.jpg' style='width:auto;height:200px;'>",
-            "author": "Malcolm Gladwell",
-            "affiliate_link": "https://amzn.to/4aXL6lW",
-            "content_start_item": 10,
-            "content_end_item": 19
-        },
-        {
             "name": "Factfulness",
             "theme": "Humanities",
             "cover": "<img src='https://m.media-amazon.com/images/I/818qWkHcICL._SY522_.jpg' style='width:auto;height:200px;'>",
@@ -658,6 +649,396 @@
             "affiliate_link": "https://amzn.to/4dfQwdE",
             "content_start_item": "10",
             "content_end_item": "30",
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Antifragile",
+            "theme": "Humanities",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61cmwTmON3L._SY522_.jpg' style='width:100px;height:auto;'>",
+            "author": "Nassim Taleb",
+            "affiliate_link": "https://amzn.to/4b7nEmN",
+            "content_start_item": "5",
+            "content_end_item": "40",
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "One up on Wall Street",
+            "theme": "Investing",
+            "cover": "<img src='https://m.media-amazon.com/images/I/81O-dMP4VcL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Peter Lynch",
+            "affiliate_link": "https://amzn.to/3wir7zp",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Outliers",
+            "theme": "Humanities",
+            "cover": "<img src='https://m.media-amazon.com/images/I/91lYcUJ8JsL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Malcolm Gladwell",
+            "affiliate_link": "https://amzn.to/4aTCNrs",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Freakonomics",
+            "theme": "Humanities",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71uGp5GrqkL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Steven Levitt",
+            "affiliate_link": "https://amzn.to/4dhn6fc",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "The Undercover Economist",
+            "theme": "Humanities",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61HgLQSaNML._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Tim Harford",
+            "affiliate_link": "https://amzn.to/3xX9A0j",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Common Stocks and Uncommon Profits",
+            "theme": "Investing",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61tzuAYGKqL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Philip Fisher",
+            "affiliate_link": "https://amzn.to/3w0PmCl",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "The Essays of Warren Buffett",
+            "theme": "Investing",
+            "cover": "<img src='https://m.media-amazon.com/images/I/81WIV+RymeL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Lawrence Cunningham",
+            "affiliate_link": "https://amzn.to/4a36bdS",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "The Little Book That Beats the Market",
+            "theme": "Investing",
+            "cover": "<img src='https://m.media-amazon.com/images/I/81nnMgmqbKS._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "Joel Greenblatt",
+            "affiliate_link": "https://amzn.to/4d9lRip",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "The Innovator's Dilemma",
+            "theme": "Business",
+            "cover": "<img src='https://m.media-amazon.com/images/I/618BdBwK5ML._SY342_.jpg' style='width:100px;height:auto;'>",
+            "author": "Clayton M. Christensen",
+            "affiliate_link": "https://amzn.to/4aRZdJM",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Nudge",
+            "theme": "Humanities",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71y7r6LdWtL._SY342_.jpg' style='width:100px;height:auto;'>",
+            "author": "Richard H. Thaler and Cass R. Sunstein",
+            "affiliate_link": "https://amzn.to/3UzyiN5",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Drive",
+            "theme": "Humanities",
+            "cover": "<img src='https://m.media-amazon.com/images/I/51km6RPOvYL._SY342_.jpg' style='width:100px;height:auto;'>",
+            "author": "Daniel Pink",
+            "affiliate_link": "https://amzn.to/3WiiyQ2",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "The Signal and the Noise",
+            "theme": "Science",
+            "cover": "<img src='https://m.media-amazon.com/images/I/81oepVWeLiL._SY342_.jpg' style='width:100px;height:auto;'>",
+            "author": "Nate Silver",
+            "affiliate_link": "https://amzn.to/3UCOHk1",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "The Hard Thing About Hard Things",
+            "theme": "Business",
+            "cover": "<img src='https://m.media-amazon.com/images/I/810u9MkT3SL._SY342_.jpg' style='width:100px;height:auto;'>",
+            "author": "Ben Horowitz",
+            "affiliate_link": "https://amzn.to/44ksREQ",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Skin in the Game",
+            "theme": "Investing",
+            "cover": "<img src='https://m.media-amazon.com/images/I/614VKfxGzPL._SY342_.jpg' style='width:100px;height:auto;'>",
+            "author": "Nassim Nicholas Taleb",
+            "affiliate_link": "https://amzn.to/3xYzot6",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Predictably Irrational",
+            "theme": "Humanities",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61cjZXBNl2L._SY342_.jpg' style='width:100px;height:auto;'>",
+            "author": "Dan Ariely",
+            "affiliate_link": "https://amzn.to/3waJztO",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Why Nations Fail",
+            "theme": "Humanities",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71m3yC4C0vL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Daron Acemoglu & James A. Robinson",
+            "affiliate_link": "https://amzn.to/3Ug1EPa",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "The Art of War",
+            "theme": "Business",
+            "cover": "<img src='https://m.media-amazon.com/images/I/51HwNMz3EuL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Sun Tzu",
+            "affiliate_link": "https://amzn.to/3JANzqv",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Creativity, Inc.",
+            "theme": "Business",
+            "cover": "<img src='https://m.media-amazon.com/images/I/51ahp1eZekL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Ed Catmull",
+            "affiliate_link": "https://amzn.to/3Wf0xBW",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Bad Blood",
+            "theme": "Technology",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61SGSxikRUL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "John Carreyrou",
+            "affiliate_link": "https://amzn.to/3w7H0J9",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "The Power of Now",
+            "theme": "Self-Improvement",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61Ij8nLooNL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Eckhart Tolle",
+            "affiliate_link": "https://amzn.to/3WnbDoJ",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Shoe Dog",
+            "theme": "Business",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71VmZKh1TpL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Phil Knight",
+            "affiliate_link": "https://amzn.to/4diJV28",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "The Fifth Discipline",
+            "theme": "Business",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61ZKbQvmGLL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Peter Senge",
+            "affiliate_link": "https://amzn.to/3Wlxlcv",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Range",
+            "theme": "Humanities",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71P+sZn5ctL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "David Epstein",
+            "affiliate_link": "https://amzn.to/4ddFqGe",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "The Everything Store",
+            "theme": "Business",
+            "cover": "<img src='https://m.media-amazon.com/images/I/810H-8iotsL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Brad Stone",
+            "affiliate_link": "https://amzn.to/4bcG30T",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Homo Deus",
+            "theme": "History",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71KBDP3mDfL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Yuval Noah Harari",
+            "affiliate_link": "https://amzn.to/3JzhyiG",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Principles",
+            "theme": "Business",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61LKD6scbfL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Ray Dalio",
+            "affiliate_link": "https://amzn.to/3QnAlkR",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "The Checklist Manifesto",
+            "theme": "Business",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61JiWnh3scL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Atul Gawande",
+            "affiliate_link": "https://amzn.to/3Qn4L6G",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Lean In",
+            "theme": "Business",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71Kuj8o81jL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Sheryl Sandberg",
+            "affiliate_link": "https://amzn.to/3waPM96",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "The 22 Immutable Laws of Marketing",
+            "theme": "Business",
+            "cover": "<img src='https://m.media-amazon.com/images/I/610Crz49UTL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Al Ries & Jack Trout",
+            "affiliate_link": "https://amzn.to/3JzhEqy",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Atomic Adventures",
+            "theme": "Science",
+            "cover": "<img src='https://m.media-amazon.com/images/I/81rU9q4ik8L._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "James Mahaffey",
+            "affiliate_link": "https://amzn.to/4aNkBzM",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "The Color of Law",
+            "theme": "Humanities",
+            "cover": "<img src='https://m.media-amazon.com/images/I/817HosZOeaL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Richard Rothstein",
+            "affiliate_link": "https://amzn.to/4bdMxwx",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Grit",
+            "theme": "Humanities",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71gPBwjsEfL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Angela Duckworth",
+            "affiliate_link": "https://amzn.to/49UGH20",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "The Emperor of All Maladies",
+            "theme": "Science",
+            "cover": "<img src='https://m.media-amazon.com/images/I/81NffDOeFUL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Siddhartha Mukherjee",
+            "affiliate_link": "https://amzn.to/4aOYpoU",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "The Vital Question",
+            "theme": "Science",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61nE4IlEdYL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Nick Lane",
+            "affiliate_link": "https://amzn.to/3w9ptAi",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Why We Sleep",
+            "theme": "Science",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71PtyHIMD0L._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Matthew Walker",
+            "affiliate_link": "https://amzn.to/4djkvS3",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Life 3.0",
+            "theme": "AI",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71nZodv-FSL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Max Tegmark",
+            "affiliate_link": "https://amzn.to/49TRlWT",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Clean Code",
+            "theme": "Technology",
+            "cover": "<img src='https://m.media-amazon.com/images/I/51E2055ZGUL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Robert C. Martin",
+            "affiliate_link": "https://amzn.to/3JD5AEQ",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "The Blind Watchmaker",
+            "theme": "Science",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61R1ck9CKLL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Richard Dawkins",
+            "affiliate_link": "https://amzn.to/3y5hm8c",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Cosmos",
+            "theme": "Science",
+            "cover": "<img src='https://m.media-amazon.com/images/I/91Cnrbd3JwL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Carl Sagan",
+            "affiliate_link": "https://amzn.to/4b5isiU",
+            "content_start_item": 0,
+            "content_end_item": 0,
             "summarize_whole_book": "True"
         }
     ]

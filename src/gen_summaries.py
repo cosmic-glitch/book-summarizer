@@ -126,16 +126,14 @@ def gen_summaries(cfg):
     toc = ''
 
     for bk in cfg['books']:
-        print(bk['name'])
-
         prefix = bk['name'].replace(' ', '_')
         f_sum = cfg['output_dir'] + prefix + '_summary.html'
         f_shrt_sum = cfg['output_dir'] + prefix + '_short_summary.html'
         f_book = cfg['input_books_dir'] + bk['name']
        
-        if os.path.exists(f_sum) and os.path.exists(f_shrt_sum):
-            print(f'\tSummary exists, skipping')
-        else:
+        if not os.path.exists(f_sum) or not os.path.exists(f_shrt_sum):
+            print("Summarizing book:", bk['name'])
+
             if os.path.exists(f_book + '.pdf'):
                 overall_summary = gen_summary_pdf(cfg, bk)
             elif os.path.exists(f_book + '.epub'):

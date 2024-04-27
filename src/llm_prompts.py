@@ -110,8 +110,30 @@ Once a row has been identified, extract the link to the EPUB file and output it 
 summarize_book = """You are an intelligent assistant, skilled in summarizing books.
 You are given a book in HTML format.  
 Create a detailed summary of the book.  The summary should be in markdown format.
-There should be no table of contents, appendices, index, etc.  Only the core content of the book should be included.
-Use Heading 2 for chapter titles and two levels of bullet points for the content of each chapter.
-Each chapter should be summarized under a separate heading.  
-The summary should be very detailed and several pages long.  It should be complete and cover all chapters/parts of the book.
-Do not include the book name in the summary."""
+Sections such as Table Of Contents, Appendix, Index, and About The Author should be excluded from the summary.
+All core content chapters must be included.  Do not skip any content chapters.  If there are multiple parts in the book, cover all chapters in all parts.
+Do not include the book name in the markdown output.
+Each chapter should be summarized under a separate heading.  Here's an example of how each chapter should be summarized:
+
+## The Drive for Exports
+*   **The Relationship between Imports and Exports:**
+    *   Imports and exports must eventually equal each other, as exports pay for imports and vice versa.
+    *   Cutting down imports also means cutting down exports, as foreigners will have less funds to buy our goods.
+    *   Increasing exports also means increasing imports, as the transaction cannot be completed without an equal amount of imports.
+*   **The Mechanics of Foreign Exchange:**
+    *   Foreign exchange is a clearing transaction where the dollar debts of foreigners are cancelled against their dollar credits.
+    *   This process is not inherently mysterious and is similar to domestic trade, where individuals must sell something to get purchasing power to buy.
+    *   Discrepancies in balances of imports and exports can be settled by shipments of gold or other commodities.
+*   **The Fallacy of Promoting Exports through Bad Loans:**
+    *   The argument that making bad loans to foreign countries will boost exports is flawed.
+    *   If the loans are not repaid, the goods are effectively being given away, which cannot make the nation richer.
+    *   The losses from bad loans would ultimately be paid by increased taxes, hurting domestic trade and employment in the long run.
+*   **The Fallacy of Promoting Exports through Subsidies:**
+    *   Export subsidies, like bad loans, are a case of trying to get rich by giving things away.
+    *   The long-term effects of export subsidies, like bad loans, would hurt the economy by diverting resources from domestic trade.
+*   **The Importance of Considering Long-Term Effects:**
+    *   Policies that appear to benefit certain groups in the short term may have negative long-term effects on the overall economy.
+    *   It is important to thoroughly analyze the long-term implications of economic policies, rather than focusing solely on immediate, visible effects.
+
+Note: The above is just an example.  The content of each book will be different, and the summary should be based on the actual content of the book.
+"""

@@ -13,7 +13,7 @@ import llm_api
 
 cfg = json.load(open('config.json', 'r'))
 
-def build_json_config_block(name, theme, cover, author, affiliate_link, content_start_item, content_end_item):
+def build_json_config_block(name, theme, cover, author, affiliate_link, content_start_item=0, content_end_item=0):
     cfg_template = {          
                 "name": name,
                 "theme": theme,
@@ -37,6 +37,7 @@ def infer_start_and_end(bkname):
 
 def get_amazon_links(name, author):
     options = Options()
+    options.add_argument("--headless")
     options.profile = FirefoxProfile(cfg['web_user_profile'])
 
     driver = webdriver.Firefox(options=options)
