@@ -111,12 +111,23 @@
         window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y2J610MTGM"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Y2J610MTGM');
+    </script>
+
 </head>
 
 <body>
     <h1>Book Summary Pro</h1>
     <!-- <p class="msg">Join our (free) <a href="https://www.patreon.com/BookSummaryPro">Patreon community</a> to request new books and get regular updates on new book additions.</p> -->
-    <p class="msg">Learn from book summaries that are detailed enough to be useful.  You can request a new book summary <a href="https://airtable.com/app6WDAa4A09cHXRJ/pag8W3YsvnnXCu4Q5/form">here</a>.</p> 
+    <p class="msg">No ads, no subscription, and no affiliate links.  </p>
+    <p class="msg"><a href="https://www.reddit.com/r/BookSummaryPro/">Join</a> our non-profit community on reddit, and <a href="https://www.reddit.com/r/BookSummaryPro/comments/1cgyq39/request_a_new_book_summary_here/">request</a> a new book summary.</p> 
     <div class="theme-nav">
         <a href="#" class="theme-link active" onclick="filterTheme('All')">All Topics</a>
         <a href="#" class="theme-link" onclick="filterTheme('Self-Improvement')">Self-Improvement</a>
@@ -148,7 +159,7 @@ $placeholder$
                         <div class="book-title">${book.title}</div>
                         <img src='${book.imageUrl}'>
                         <div class="book-links">
-                            <a href="${book.short_summary}"">Short Summary</a>
+                            <a href="${book.short_summary}">Short Summary</a>
                             <a href="${book.summary}">Chapter-level Summary</a>
                         </div>
                     </div>

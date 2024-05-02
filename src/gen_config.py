@@ -59,12 +59,13 @@ def get_amazon_links(name, author):
             time.sleep(1)
             cover = driver.find_element(By.ID, "landingImage").get_attribute('src')
             
-            link = driver.find_element(By.XPATH, '//a[@title="Text"]')
-            link.click()
-            time.sleep(3)
+            # link = driver.find_element(By.XPATH, '//a[@title="Text"]')
+            # link.click()
+            # time.sleep(3)
 
-            textarea = driver.find_element(By.ID, "amzn-ss-text-shortlink-textarea")
-            affiliate_link = (textarea.text)
+            # textarea = driver.find_element(By.ID, "amzn-ss-text-shortlink-textarea")
+            # affiliate_link = (textarea.text)
+            affiliate_link = ''
 
             body = driver.find_element(By.TAG_NAME, "body").text
             match = re.search(r"by ([^)]+) \(Author\)", body)

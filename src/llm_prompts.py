@@ -104,16 +104,18 @@ You are given an HTML page which has a table of books listed in it.  Each row of
 From this table, you will select a row based on the following criteria:
 1) the Extension column of that row has the string 'epub'
 2) if there are multiple rows with Extension 'epub', pick one of the top five rows that has the biggest file size
+3) Pick only the English language edition if there are multiple editions of the same book
 
 Once a row has been identified, extract the link to the EPUB file and output it as a single URL."""
 
 summarize_book = """You are an intelligent assistant, skilled in summarizing books.
-You are given a book in HTML format.  
-Create a detailed summary of the book.  The summary should be in markdown format.
+You are given the complete text of a book.
+Create a very detailed summary of the book.  The summary should be in markdown format.
 Sections such as Table Of Contents, Appendix, Index, and About The Author should be excluded from the summary.
-All core content chapters must be included.  Do not skip any content chapters.  If there are multiple parts in the book, cover all chapters in all parts.
+All content chapters must be included.  Do not skip any content chapters.  If there are multiple parts in the book, cover all chapters in all parts.
 Do not include the book name in the markdown output.
-Each chapter should be summarized under a separate heading.  Here's an example of how each chapter should be summarized:
+Each chapter should be summarized under a separate heading.  The summary for each chapter should be as two levels of nested bullets.
+Here's an example of how each chapter should be summarized:
 
 ## The Drive for Exports
 *   **The Relationship between Imports and Exports:**
@@ -128,12 +130,5 @@ Each chapter should be summarized under a separate heading.  Here's an example o
     *   The argument that making bad loans to foreign countries will boost exports is flawed.
     *   If the loans are not repaid, the goods are effectively being given away, which cannot make the nation richer.
     *   The losses from bad loans would ultimately be paid by increased taxes, hurting domestic trade and employment in the long run.
-*   **The Fallacy of Promoting Exports through Subsidies:**
-    *   Export subsidies, like bad loans, are a case of trying to get rich by giving things away.
-    *   The long-term effects of export subsidies, like bad loans, would hurt the economy by diverting resources from domestic trade.
-*   **The Importance of Considering Long-Term Effects:**
-    *   Policies that appear to benefit certain groups in the short term may have negative long-term effects on the overall economy.
-    *   It is important to thoroughly analyze the long-term implications of economic policies, rather than focusing solely on immediate, visible effects.
 
-Note: The above is just an example.  The content of each book will be different, and the summary should be based on the actual content of the book.
 """

@@ -41,3 +41,15 @@ def extract_entire_html_from_epub(epub_path):
             html_content.append(item.content.decode())
     
     return ''.join(html_content)
+
+def extract_text_from_epub(epub_path):
+    book = epub.read_epub(epub_path)
+    text_content = []
+
+    for item in book.get_items():
+        if item.get_type() == ITEM_DOCUMENT:
+            html_content = item.content.decode()
+            soup = BeautifulSoup(html_content, 'html.parser')
+            text_content.append(soup.get_text(separator=' ', strip=True))
+    
+    return ' '.join(text_content)

@@ -9,7 +9,8 @@ from gen_config import *
 from gen_summaries import *
 
 books = [
-   {"name": "Structure and Interpretation of Computer Programs", "author": "Harold Abelson and Gerald Jay Sussman", "theme": "Technology"}
+    {"name": "The E-Myth Revisited", "author": "Michael E. Gerber", "theme": "Business"},
+    {"name": "Start with Why", "author": "Simon Sinek", "theme": "Business"},
 ]
 
 for book in books:

@@ -44,9 +44,17 @@ def invoke(modelname, sysprompt, userprompt, assistantprompt=''):
         # try to generate, and if an exception happens, wait 60 seconds and try again
         try:
             model = GenerativeModel(model_name=model_mapping[modelname])
+            chat = model.start_chat()
             prompt = f"{sysprompt}\nHere's the text:\n{userprompt}"
-            response = model.generate_content(prompt)
-            return response.text
+            response = chat.send_message(prompt)
+            final_resp = response.text
+            for i in range(10):
+                response = chat.send_message("Did you complete the summary till the last chapter?  Answer with just a Yes or a No.")
+                if response.text.strip().lower() == "yes":
+                    break
+                response = chat.send_message("Continue.").text
+                final_resp += response
+            return final_resp
         except Exception as e:
             print(f"Exception: {e}.  Retrying in 60 seconds...")
             time.sleep(60)

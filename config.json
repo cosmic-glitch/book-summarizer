@@ -236,7 +236,7 @@
         },
         {
             "name": "Age Of Revolutions",
-            "theme": "History",
+            "theme": "Humanities",
             "cover": "<img src='https://m.media-amazon.com/images/I/91n8xz3HCUL._SL1500_.jpg' style='width:auto;height:200px;'>",
             "author": "Fareed Zakaria",
             "affiliate_link": "https://amzn.to/49CZvmf",
@@ -416,7 +416,7 @@
         },
         {
             "name": "Guns, Germs, and Steel",
-            "theme": "History",
+            "theme": "Humanities",
             "cover": "<img src='https://m.media-amazon.com/images/I/61V8g4GgqdL._SY522_.jpg' style='width:auto;height:200px;'>",
             "author": "Jared M. Diamond",
             "affiliate_link": "https://amzn.to/3VYoZav",
@@ -893,7 +893,7 @@
         },
         {
             "name": "Homo Deus",
-            "theme": "History",
+            "theme": "Humanities",
             "cover": "<img src='https://m.media-amazon.com/images/I/71KBDP3mDfL._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "Yuval Noah Harari",
             "affiliate_link": "https://amzn.to/3JzhyiG",
@@ -1039,6 +1039,166 @@
             "affiliate_link": "https://amzn.to/4b5isiU",
             "content_start_item": 0,
             "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Nonviolent Communication",
+            "theme": "Self-Imporvement",
+            "cover": "<img src='https://m.media-amazon.com/images/I/6188ojOs2tS._SY342_.jpg' style='width:100px;height:auto;'>",
+            "author": "Marshall Rosenberg",
+            "affiliate_link": "https://amzn.to/44gRmCS",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "The Courage to Be Disliked",
+            "theme": "Self-Improvement",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61-8j1rtdOL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Ichiro Kishimi",
+            "affiliate_link": "https://amzn.to/3WkjUtf",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "The Origins of Political Order",
+            "theme": "Humanities",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71gNZXHVoeL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Francis Fukuyama",
+            "affiliate_link": "",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Political Order and Political Decay",
+            "theme": "Humanities",
+            "cover": "<img src='https://m.media-amazon.com/images/I/81dHab0nMuL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Francis Fukuyama",
+            "affiliate_link": "",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Be Useful",
+            "theme": "Self-Improvement",
+            "cover": "<img src='https://m.media-amazon.com/images/I/91zJxacOUcL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Arnold Schwarzenegger",
+            "affiliate_link": "",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "The Almanack of Naval Ravikant",
+            "theme": "Business",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61VbL0FspqL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Eric Jorgenson",
+            "affiliate_link": "",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Rich Dad Poor Dad",
+            "theme": "Investing",
+            "cover": "<img src='https://m.media-amazon.com/images/I/81bsw6fnUiL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Robert Kiyosaki",
+            "affiliate_link": "",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "7 Habits of Highly Effective People",
+            "theme": "Self-Improvement",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71rmHeQeuRL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Stephen Covey",
+            "affiliate_link": "",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Rework",
+            "theme": "Business",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71CVp5P3x3L._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Jason Fried",
+            "affiliate_link": "",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Surely You're Joking, Mr. Feynman!",
+            "theme": "Science",
+            "cover": "<img src='https://m.media-amazon.com/images/I/611QdJTWMmL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Richard Feynman",
+            "affiliate_link": "",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "A Short History of Nearly Everything",
+            "theme": "Science",
+            "cover": "<img src='https://m.media-amazon.com/images/I/51ymen1ByKL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Bill Bryson",
+            "affiliate_link": "",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Astrophysics for People in a Hurry",
+            "theme": "Science",
+            "cover": "<img src='https://m.media-amazon.com/images/I/81G4WoQ9t8L._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Neil deGrasse Tyson",
+            "affiliate_link": "",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Seven Brief Lessons on Physics",
+            "theme": "Science",
+            "cover": "<img src='https://m.media-amazon.com/images/I/81KgHnSaHbL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Carlo Rovelli",
+            "affiliate_link": "",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "The Elegant Universe",
+            "theme": "Science",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61gfUK3CZVL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Brian Greene",
+            "affiliate_link": "",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Siddhartha",
+            "theme": "Humanities",
+            "cover": "<img src='https://m.media-amazon.com/images/I/61urry+xagL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Hermann Hesse",
+            "affiliate_link": "",
+            "content_start_item": "7",
+            "content_end_item": "19",
+            "summarize_whole_book": "False"
+        },
+        {
+            "name": "Financial Statements",
+            "theme": "Investing",
+            "cover": "<img src='https://m.media-amazon.com/images/I/814-HEn7LuL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Thomas Ittelson",
+            "affiliate_link": "",
+            "content_start_item": "12",
+            "content_end_item": "157",
             "summarize_whole_book": "True"
         }
     ]
