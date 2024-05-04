@@ -9,8 +9,8 @@ from gen_config import *
 from gen_summaries import *
 
 books = [
-    {"name": "The E-Myth Revisited", "author": "Michael E. Gerber", "theme": "Business"},
-    {"name": "Start with Why", "author": "Simon Sinek", "theme": "Business"},
+    {"name": "Can't Hurt Me", "author": "David Goggins", "theme": "Self-Improvement"},
+    {"name": "Poor Economics", "author": "Abhijit Banerjee and Esther Duflo", "theme": "Humanities"},
 ]
 
 for book in books:
@@ -27,6 +27,8 @@ for book in books:
             print('Searching for book...')
             url = get_epub_url(name, author)
             print('Found book at:', url)
+            if not url.endswith('.epub'):
+                raise Exception('Did not find an EPUB link') 
             download_book(name, url)
             
         if any(book['name'] == name for book in cfg['books']):
@@ -40,7 +42,6 @@ for book in books:
             print('Config updated')
 
     except Exception as e:
-        print(f"Error processing book {name}: {e}. Skipping...")
         continue
 
 cfg = json.load(open('config.json', 'r'))

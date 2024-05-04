@@ -1200,6 +1200,176 @@
             "content_start_item": "12",
             "content_end_item": "157",
             "summarize_whole_book": "True"
+        },
+        {
+            "name": "The E-Myth Revisited",
+            "theme": "Business",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71V-PeMYiJL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Michael Gerber",
+            "affiliate_link": "",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Start with Why",
+            "theme": "Business",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71NBZIExBCL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Simon Sinek",
+            "affiliate_link": "",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Flash Boys",
+            "theme": "Business",
+            "cover": "<img src='https://m.media-amazon.com/images/I/514Em4FdJ9L._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Michael Lewis",
+            "affiliate_link": "",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "How I Built This",
+            "theme": "Business",
+            "cover": "<img src='https://m.media-amazon.com/images/I/91WtbJrXCnL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Guy Raz",
+            "affiliate_link": "",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "The Idea Factory",
+            "theme": "Technology",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71WvYgQeSUL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Jon Gertner",
+            "affiliate_link": "",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Getting Things Done",
+            "theme": "Productivity",
+            "cover": "<img src='https://m.media-amazon.com/images/I/815JZ+hNcLL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "David Allen",
+            "affiliate_link": "",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "The Master Algorithm",
+            "theme": "AI",
+            "cover": "<img src='https://m.media-amazon.com/images/I/91g7p3yB-SL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Pedro Domingos",
+            "affiliate_link": "",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Good Economics for Hard Times",
+            "theme": "Humanities",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71RJTTcMuVL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Abhijit Banerjee and Esther Duflo",
+            "affiliate_link": "",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "The Upanishads",
+            "theme": "Humanities",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71dHymiLgdL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Eknath Easwaran",
+            "affiliate_link": "",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "A Random Walk Down Wall Street",
+            "theme": "Investing",
+            "cover": "<img src='https://m.media-amazon.com/images/I/51r8SHx7vSL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Burton Malkiel",
+            "affiliate_link": "",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "The Wealth of Nations",
+            "theme": "Investing",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71yqXZeTuxL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Adam Smith",
+            "affiliate_link": "",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Deep Learning",
+            "theme": "AI",
+            "cover": "<img src='https://m.media-amazon.com/images/I/A10G+oKN3LL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Ian Goodfellow",
+            "affiliate_link": "",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Moonwalking with Einstein",
+            "theme": "Self-Improvement",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71wxNktCqKL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Joshua Foer",
+            "affiliate_link": "",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Blue Ocean Strategy",
+            "theme": "Business",
+            "cover": "<img src='https://m.media-amazon.com/images/I/81FdVbQcaKL._SL1500_.jpg' style='width:100px;height:auto;'>",
+            "author": "W. Chan Kim & Ren\u00e9e Mauborgne",
+            "affiliate_link": "",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Capital in the Twenty-First Century",
+            "theme": "Humanities",
+            "cover": "<img src='https://m.media-amazon.com/images/I/51JpJKAHFbL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Thomas Piketty",
+            "affiliate_link": "",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "The Laws of Human Nature",
+            "theme": "Humanities",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71OMelbI6sL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Robert Greene",
+            "affiliate_link": "",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Can't Hurt Me",
+            "theme": "Self-Improvement",
+            "cover": "<img src='https://m.media-amazon.com/images/I/81gTRv2HXrL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "David Goggins",
+            "affiliate_link": "",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
         }
     ]
 }

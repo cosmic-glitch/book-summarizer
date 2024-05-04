@@ -100,13 +100,14 @@ There should be no lines before or after the output.  Only the start and end ite
 Note that this information will be later used to generate chapter-level summareis of the book.  This is why it is important to identify the start and end items correctly."""
 
 extract_book_link = """You are an intelligent assistant, skilled in analyzing text documents.
-You are given an HTML page which has a table of books listed in it.  Each row of the table has a link to a different PDF/EPUB/AZW3 file.
+You are given an HTML page which has a table of books listed in it.  Each row of the table has a link to a different file.
 From this table, you will select a row based on the following criteria:
 1) the Extension column of that row has the string 'epub'
-2) if there are multiple rows with Extension 'epub', pick one of the top five rows that has the biggest file size
-3) Pick only the English language edition if there are multiple editions of the same book
+2) if there are multiple rows with Extension 'epub', prefer a file of bigger size
+3) Pick only the English language edition if there are multiple language editions of the same book
+NEVER select a file that is not an epub file.
 
-Once a row has been identified, extract the link to the EPUB file and output it as a single URL."""
+Once a row has been identified, extract the link to the epub file and output it as a single URL."""
 
 summarize_book = """You are an intelligent assistant, skilled in summarizing books.
 You are given the complete text of a book.
@@ -131,4 +132,23 @@ Here's an example of how each chapter should be summarized:
     *   If the loans are not repaid, the goods are effectively being given away, which cannot make the nation richer.
     *   The losses from bad loans would ultimately be paid by increased taxes, hurting domestic trade and employment in the long run.
 
+"""
+
+books_to_onboard = """You are an intelligent assistant, who is also an expert on books.
+You are given as input text a list of books that have been onboarded to my book-summary website.
+Your task is to produce a list of 100 additional books that should be onboarded to the website in the future.  
+Do not include any books that have already been onboarded.  No book you propose should exist in the list of books provided in the input text.
+Pick books that are popular and well-reviewed.
+
+Your output should be a Python list of dictionaries, where each dictionary contains the keys 'name', 'author', and 'theme' as shown below:
+
+[
+    {"name": "The Fountainhead", "author": "Ayn Rand", "theme": "Philosophy"}
+]
+
+The only allowed themes are: Business, Technology, Humanities, AI, Science, Investing, Design, and Self-Improvement.
+There should be at least 5 books for each theme.  The books should be diverse and not all from the same author or series.
+The book name should not contain the subtitle.
+
+Do not include any introductory text or comments in the output.  Output only the list of dictionaries as shown above.
 """
