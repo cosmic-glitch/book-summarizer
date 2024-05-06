@@ -136,9 +136,10 @@ Here's an example of how each chapter should be summarized:
 
 books_to_onboard = """You are an intelligent assistant, who is also an expert on books.
 You are given as input text a list of books that have been onboarded to my book-summary website.
-Your task is to produce a list of 100 additional books that should be onboarded to the website in the future.  
+Your task is to produce a list of 500 additional books that should be onboarded to the website in the future.  
 Do not include any books that have already been onboarded.  No book you propose should exist in the list of books provided in the input text.
-Pick books that are popular and well-reviewed.
+Pick books that are popular and well-reviewed.  
+Include only non-fiction books.  Classic books with a long standing repuation in their field are good candidates.
 
 Your output should be a Python list of dictionaries, where each dictionary contains the keys 'name', 'author', and 'theme' as shown below:
 
@@ -147,7 +148,6 @@ Your output should be a Python list of dictionaries, where each dictionary conta
 ]
 
 The only allowed themes are: Business, Technology, Humanities, AI, Science, Investing, Design, and Self-Improvement.
-There should be at least 5 books for each theme.  The books should be diverse and not all from the same author or series.
 The book name should not contain the subtitle.
 
 Do not include any introductory text or comments in the output.  Output only the list of dictionaries as shown above.

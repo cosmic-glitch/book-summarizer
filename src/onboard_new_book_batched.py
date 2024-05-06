@@ -9,8 +9,11 @@ from gen_config import *
 from gen_summaries import *
 
 books = [
-    {"name": "Can't Hurt Me", "author": "David Goggins", "theme": "Self-Improvement"},
-    {"name": "Poor Economics", "author": "Abhijit Banerjee and Esther Duflo", "theme": "Humanities"},
+    {"name": "Darwin's Dangerous Idea", "author": "Daniel Dennett", "theme": "Science"},
+    {"name": "Consciousness Explained", "author": "Daniel Dennett", "theme": "Science"},
+    {"name": "From Bacteria to Bach and Back", "author": "Daniel Dennett", "theme": "Science"},
+    {"name": "Intuition Pumps and Other Tools for Thinking", "author": "Daniel Dennett", "theme": "Science"},
+    {"name": "Breaking the Spell", "author": "Daniel Dennett", "theme": "Science"}
 ]
 
 for book in books:

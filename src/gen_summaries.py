@@ -22,10 +22,10 @@ def summarize_epub_book(html):
     return llm_api.invoke("gemini", llm_prompts.summarize_book, html)
 
 def summarize_chapter(text):
-    return llm_api.invoke("haiku@gcp", llm_prompts.summarize_chapter, text)
+    return llm_api.invoke("haiku", llm_prompts.summarize_chapter, text)
     
 def shorten_summary(text):
-    return llm_api.invoke("haiku@gcp", llm_prompts.shorten_summary, text)
+    return llm_api.invoke("haiku", llm_prompts.shorten_summary, text)
 
 def write_summary_to_html(cfg, bk, f_sum, f_shrt_sum, overall_summary):
     overall_summary = open(cfg['input_dir'] + 'summary_template.html', 'r').read().replace("$book_name$", bk['name']).replace("$book_summary$", bk['cover'] + overall_summary)

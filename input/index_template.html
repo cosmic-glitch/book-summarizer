@@ -121,18 +121,23 @@
 
 <body>
     <h1>Book Summary Pro</h1>
-    <p class="msg"><a href="https://www.reddit.com/r/BookSummaryPro/">Join</a> our non-profit community on reddit, and <a href="https://www.reddit.com/r/BookSummaryPro/comments/1cgyq39/request_a_new_book_summary_here/">request</a> a new book summary.  <a href="https://www.reddit.com/r/BookSummaryPro/comments/1cjiba3/book_summaries_added_on_3rd_may_2024/">7 books</a> added on 3rd May 2024.</p> 
+    <p class="msg"><a href="https://www.reddit.com/r/BookSummaryPro/">Join</a> our non-profit community on reddit, and <a href="https://www.reddit.com/r/BookSummaryPro/comments/1cgyq39/request_a_new_book_summary_here/">request</a> a new book summary.  <a href="https://www.reddit.com/r/BookSummaryPro/comments/1clv5nb/added_5_books_from_daniel_dennett_and_2_others/">7 books</a> added on 6th May 2024.</p> 
     <div class="theme-nav">
-        <a href="#" class="theme-link active" onclick="filterTheme('All')">All Topics</a>
-        <a href="#" class="theme-link" onclick="filterTheme('Self-Improvement')">Self-Improvement</a>
+        <a href="#" class="theme-link active" onclick="filterTheme('Self-Improvement')">Self-Improvement</a>
         <a href="#" class="theme-link" onclick="filterTheme('Investing')">Investing</a>
         <a href="#" class="theme-link" onclick="filterTheme('Business')">Business</a>
-        <a href="#" class="theme-link" onclick="filterTheme('Technology')">Technology</a>
-        <a href="#" class="theme-link" onclick="filterTheme('Science')">Science</a>
-        <a href="#" class="theme-link" onclick="filterTheme('Humanities')">Humanities</a>
+        <a href="#" class="theme-link" onclick="filterTheme('Technology+AI')">Technology+AI</a>
+        <a href="#" class="theme-link" onclick="filterTheme('Biology')">Biology</a>
+        <a href="#" class="theme-link" onclick="filterTheme('Physics')">Physics</a>
+        <a href="#" class="theme-link" onclick="filterTheme('Economics')">Economics</a>
+        <a href="#" class="theme-link" onclick="filterTheme('History')">History</a>
+        <a href="#" class="theme-link" onclick="filterTheme('Psychology')">Psychology</a>
+        <a href="#" class="theme-link" onclick="filterTheme('Political-Science')">Political-Science</a>
+        <a href="#" class="theme-link" onclick="filterTheme('Social-Science')">Social-Science</a>
+        <a href="#" class="theme-link" onclick="filterTheme('Spirituality')">Spirituality</a>
         <a href="#" class="theme-link" onclick="filterTheme('Design')">Design</a>
-        <a href="#" class="theme-link" onclick="filterTheme('AI')">AI</a>
         <a href="#" class="theme-link" onclick="filterTheme('Fiction')">Fiction</a>
+        <a href="#" class="theme-link" onclick="filterTheme('All')">All Topics</a>
     </div>
 
 
@@ -143,7 +148,7 @@
 $placeholder$
         ];
 
-        function displayBooks(theme = 'All') {
+        function displayBooks(theme = 'Self-Improvement') {
             const container = document.getElementById("books");
             container.innerHTML = "";
             const filteredBooks = books.filter(book => theme === 'All' || book.theme === theme);

@@ -29,7 +29,7 @@
         },
         {
             "name": "Elon Musk",
-            "theme": "Business",
+            "theme": "Technology+AI",
             "cover": "<img src='https://m.media-amazon.com/images/I/81Kaj5++6pL._SL1500_.jpg' style='width:auto;height:200px;'>",
             "author": "Walter Isaacson",
             "affiliate_link": "https://amzn.to/43ES9NL",
@@ -40,7 +40,7 @@
         },
         {
             "name": "The 48 Laws of Power",
-            "theme": "Humanities",
+            "theme": "Psychology",
             "cover": "<img src='https://m.media-amazon.com/images/I/61TGMFe69UL._SL1500_.jpg' style='width:auto;height:200px;'>",
             "author": "Robert Greene",
             "affiliate_link": "https://amzn.to/3J1YFo8",
@@ -51,7 +51,7 @@
         },
         {
             "name": "Sapiens",
-            "theme": "Humanities",
+            "theme": "History",
             "cover": "<img src='https://m.media-amazon.com/images/I/716E6dQ4BXL._SL1500_.jpg' style='width:auto;height:200px;'>",
             "author": "Yuval Harari",
             "affiliate_link": "https://amzn.to/3IWyn73",
@@ -95,7 +95,7 @@
         },
         {
             "name": "Outlive",
-            "theme": "Science",
+            "theme": "Biology",
             "cover": "<img src='https://m.media-amazon.com/images/I/71X9FMy66NL._SL1500_.jpg' style='width:auto;height:200px;'>",
             "author": "Bill Gifford and Peter Attia",
             "affiliate_link": "https://amzn.to/3xygWHc",
@@ -122,7 +122,7 @@
         },
         {
             "name": "Thinking Fast and Slow",
-            "theme": "Humanities",
+            "theme": "Psychology",
             "cover": "<img src='https://m.media-amazon.com/images/I/61fdrEuPJwL._SL1500_.jpg' style='width:auto;height:200px;'>",
             "author": "Daniel Kahneman",
             "affiliate_link": "https://amzn.to/4aKmpJC",
@@ -133,7 +133,7 @@
         },
         {
             "name": "The Anxious Generation",
-            "theme": "Humanities",
+            "theme": "Psychology",
             "cover": "<img src='https://m.media-amazon.com/images/I/81XP4hEXDXL._SL1500_.jpg' style='width:auto;height:200px;'>",
             "author": "Jonathon Haidt",
             "affiliate_link": "https://amzn.to/4aqXRoY",
@@ -142,7 +142,7 @@
         },
         {
             "name": "Nuclear War: A Scenario",
-            "theme": "Science",
+            "theme": "Physics",
             "cover": "<img src='https://m.media-amazon.com/images/I/816uPd85seL._SL1500_.jpg' style='width:auto;height:200px;'>",
             "author": "Annie Jacobsen",
             "affiliate_link": "https://amzn.to/3VLWRHx",
@@ -160,7 +160,7 @@
         },
         {
             "name": "Why Everyone (Else) Is a Hypocrite",
-            "theme": "Humanities",
+            "theme": "Psychology",
             "cover": "<img src='https://m.media-amazon.com/images/I/61MULAaaBkL._SL1500_.jpg' style='width:auto;height:200px;'>",
             "author": "Robert Kurzban",
             "affiliate_link": "https://amzn.to/4aJJZWG",
@@ -171,7 +171,7 @@
         },
         {
             "name": "Influence",
-            "theme": "Humanities",
+            "theme": "Psychology",
             "cover": "<img src='https://m.media-amazon.com/images/I/61wwAomEffL._SL1500_.jpg' style='width:auto;height:200px;'>",
             "author": "Robert Cialdini",
             "affiliate_link": "https://amzn.to/3xwBe44",
@@ -198,7 +198,7 @@
         },
         {
             "name": "Inspired",
-            "theme": "Technology",
+            "theme": "Technology+AI",
             "cover": "<img src='https://m.media-amazon.com/images/I/61Ga-ZFeDXL._SL1500_.jpg' style='width:auto;height:200px;'>",
             "author": "Don Norman",
             "affiliate_link": "https://amzn.to/4cTiATZ",
@@ -218,7 +218,7 @@
         },
         {
             "name": "How AI Works",
-            "theme": "AI",
+            "theme": "Technology+AI",
             "cover": "<img src='https://m.media-amazon.com/images/I/71e0oxBIG3L._SL1500_.jpg' style='width:auto;height:200px;'>",
             "author": "Ronald Kneusel",
             "affiliate_link": "https://amzn.to/4aZonpD",
@@ -227,7 +227,7 @@
         },
         {
             "name": "The Coming Wave",
-            "theme": "AI",
+            "theme": "Technology+AI",
             "cover": "<img src='https://m.media-amazon.com/images/I/81zQiMu4A5L._SL1500_.jpg' style='width:auto;height:200px;'>",
             "author": "Mustafa Suleyman",
             "affiliate_link": "https://amzn.to/4aZdpjT",
@@ -236,7 +236,7 @@
         },
         {
             "name": "Age Of Revolutions",
-            "theme": "Humanities",
+            "theme": "History",
             "cover": "<img src='https://m.media-amazon.com/images/I/91n8xz3HCUL._SL1500_.jpg' style='width:auto;height:200px;'>",
             "author": "Fareed Zakaria",
             "affiliate_link": "https://amzn.to/49CZvmf",
@@ -245,7 +245,7 @@
         },
         {
             "name": "Chip War",
-            "theme": "Technology",
+            "theme": "Technology+AI",
             "cover": "<img src='https://m.media-amazon.com/images/I/71hMs9v7P6L._SL1500_.jpg' style='width:auto;height:200px;'>",
             "author": "Chris Miller",
             "affiliate_link": "https://amzn.to/3Q4wUQ5",
@@ -254,7 +254,7 @@
         },
         {
             "name": "AI For Good",
-            "theme": "AI",
+            "theme": "Technology+AI",
             "cover": "<img src='https://m.media-amazon.com/images/I/71iwljfWOXL._SL1500_.jpg' style='width:auto;height:200px;'>",
             "author": "Juan Lavista Ferres",
             "affiliate_link": "https://amzn.to/4aC3Ib6",
@@ -263,7 +263,7 @@
         },
         {
             "name": "Co-Intelligence",
-            "theme": "AI",
+            "theme": "Technology+AI",
             "cover": "<img src='https://m.media-amazon.com/images/I/913YN4MmhfL._SL1500_.jpg' style='width:auto;height:200px;'>",
             "author": "Ethan Mollick",
             "affiliate_link": "https://amzn.to/440r4EY",
@@ -272,7 +272,7 @@
         },
         {
             "name": "Autobiography of a Yogi",
-            "theme": "Self-Improvement",
+            "theme": "Spirituality",
             "cover": "<img src='https://m.media-amazon.com/images/I/81WGcdUnP6L._SL1500_.jpg' style='width:auto;height:200px;'>",
             "author": "Paramahansa Yogananda",
             "affiliate_link": "https://amzn.to/3Q3b4Mx",
@@ -308,7 +308,7 @@
         },
         {
             "name": "The Body Keeps The Score",
-            "theme": "Science",
+            "theme": "Biology",
             "cover": "<img src='https://m.media-amazon.com/images/I/71bVExi4yXL._SY522_.jpg' style='width:auto;height:200px;'>",
             "author": "Bessel van der Kolk M.D.",
             "affiliate_link": "https://amzn.to/49DQ9Xw",
@@ -317,7 +317,7 @@
         },
         {
             "name": "A Brief History Of Time",
-            "theme": "Science",
+            "theme": "Physics",
             "cover": "<img src='https://m.media-amazon.com/images/I/91ebghaV-eL._SY522_.jpg' style='width:auto;height:200px;'>",
             "author": "Stephen Hawking",
             "affiliate_link": "https://amzn.to/3TXC5lX",
@@ -326,7 +326,7 @@
         },
         {
             "name": "Factfulness",
-            "theme": "Humanities",
+            "theme": "Social-Science",
             "cover": "<img src='https://m.media-amazon.com/images/I/818qWkHcICL._SY522_.jpg' style='width:auto;height:200px;'>",
             "author": "Hans Rosling",
             "affiliate_link": "https://amzn.to/4aBPbMO",
@@ -350,10 +350,10 @@
             "affiliate_link": "https://amzn.to/3xLWyT6",
             "content_start_item": 8,
             "content_end_item": 35
-        },
+     },
         {
             "name": "The Black Swan",
-            "theme": "Business",
+            "theme": "Economics",
             "cover": "<img src='https://m.media-amazon.com/images/I/51jkBbZzJVL._SY522_.jpg' style='width:auto;height:200px;'>",
             "author": "Nassim Nicholas Taleb",
             "affiliate_link": "https://amzn.to/4405D6O",
@@ -380,7 +380,7 @@
         },
         {
             "name": "The Structure of Scientific Revolutions",
-            "theme": "Science",
+            "theme": "History",
             "cover": "<img src='https://m.media-amazon.com/images/I/61N7mK2Te7L._SY522_.jpg' style='width:auto;height:200px;'>",
             "author": "Thomas S. Kuhn",
             "affiliate_link": "https://amzn.to/4d1MHbU",
@@ -406,7 +406,7 @@
             "content_end_item": 19
         },
         {
-            "name": "Man\u2019s Search For Meaning",
+            "name": "Man’s Search For Meaning",
             "theme": "Self-Improvement",
             "cover": "<img src='https://m.media-amazon.com/images/I/71tdb1udZnL._SY522_.jpg' style='width:auto;height:200px;'>",
             "author": "Viktor E. Frankl",
@@ -416,7 +416,7 @@
         },
         {
             "name": "Guns, Germs, and Steel",
-            "theme": "Humanities",
+            "theme": "History",
             "cover": "<img src='https://m.media-amazon.com/images/I/61V8g4GgqdL._SY522_.jpg' style='width:auto;height:200px;'>",
             "author": "Jared M. Diamond",
             "affiliate_link": "https://amzn.to/3VYoZav",
@@ -461,7 +461,7 @@
         },
         {
             "name": "The Worlds I See",
-            "theme": "Science",
+            "theme": "Technology+AI",
             "cover": "<img src='https://m.media-amazon.com/images/I/81blPlUVdyL._SY522_.jpg' style='width:auto;height:200px;'>",
             "author": "Fei-Fei Li",
             "affiliate_link": "https://amzn.to/440JPbt",
@@ -479,7 +479,7 @@
         },
         {
             "name": "Thinking in Systems",
-            "theme": "Science",
+            "theme": "Physics",
             "cover": "<img src='https://m.media-amazon.com/images/I/51V4oNS0BSL._SY522_.jpg' style='width:auto;height:200px;'>",
             "author": "Donella H. Meadows",
             "affiliate_link": "https://amzn.to/4d2CZWN",
@@ -497,7 +497,7 @@
         },
         {
             "name": "Read Write Own",
-            "theme": "Technology",
+            "theme": "Technology+AI",
             "cover": "<img src='https://m.media-amazon.com/images/I/71BIdLFcvpL._SY522_.jpg' style='width:auto;height:200px;'>",
             "author": "Chris Dixon",
             "affiliate_link": "https://amzn.to/49Mu1Kp",
@@ -515,7 +515,7 @@
         },
         {
             "name": "Superintelligence",
-            "theme": "AI",
+            "theme": "Technology+AI",
             "cover": "<img src='https://m.media-amazon.com/images/I/71UvMcdcE9L._SL1159_.jpg' style='width:auto;height:200px;'>",
             "author": "Nick Bostrom",
             "affiliate_link": "https://amzn.to/4aZ9KSX",
@@ -533,7 +533,7 @@
         },
         {
             "name": "How Emotions Are Made",
-            "theme": "Science",
+            "theme": "Biology",
             "cover": "<img src='https://m.media-amazon.com/images/I/81-7IN1BkvL._SY522_.jpg' style='width:auto;height:200px;'>",
             "author": "Lisa Feldman Barrett",
             "affiliate_link": "https://amzn.to/3w3WuO9",
@@ -542,7 +542,7 @@
         },
         {
             "name": "The Parasitic Mind",
-            "theme": "Humanities",
+            "theme": "Psychology",
             "cover": "<img src='https://m.media-amazon.com/images/I/71oSh-sum2L._SY522_.jpg' style='width:auto;height:200px;'>",
             "author": "Gad Saad",
             "affiliate_link": "https://amzn.to/3xMOKkh",
@@ -551,7 +551,7 @@
         },
         {
             "name": "The Selfish Gene",
-            "theme": "Science",
+            "theme": "Biology",
             "cover": "<img src='https://m.media-amazon.com/images/I/61CXvkfdXlL._SY522_.jpg' style='width:auto;height:200px;'>",
             "author": "Richard Dawkins",
             "affiliate_link": "https://amzn.to/3U6PlVi",
@@ -560,7 +560,7 @@
         },
         {
             "name": "Godel, Escher, Bach",
-            "theme": "Science",
+            "theme": "Physics",
             "cover": "<img src='https://m.media-amazon.com/images/I/51zU0Zk9zLL._SY522_.jpg' style='width:auto;height:200px;'>",
             "author": "Douglas Hofstadter",
             "affiliate_link": "https://amzn.to/44cZgxo",
@@ -569,7 +569,7 @@
         },
         {
             "name": "Designing Data-Intensive Applications",
-            "theme": "Technology",
+            "theme": "Technology+AI",
             "cover": "<img src='https://m.media-amazon.com/images/I/91JAIKQUkYL._SY522_.jpg' style='width:auto;height:200px;'>",
             "author": "Martin Kleppmann",
             "affiliate_link": "https://amzn.to/4d8y9Y5",
@@ -596,7 +596,7 @@
         },
         {
             "name": "Code",
-            "theme": "Technology",
+            "theme": "Technology+AI",
             "cover": "<img src='https://m.media-amazon.com/images/I/515myo2UtFL._SL1500_.jpg' style='width:auto;height:200px;'>",
             "author": "Charles Petzold",
             "affiliate_link": "https://amzn.to/3UuIVRe",
@@ -605,7 +605,7 @@
         },
         {
             "name": "Economics In One Lesson",
-            "theme": "Humanities",
+            "theme": "Economics",
             "cover": "<img src='https://m.media-amazon.com/images/I/713ZUI690-L._SY522_.jpg' style='width:auto;height:200px;'>",
             "author": "Henry Hazlitt",
             "affiliate_link": "https://amzn.to/3QgOK2l",
@@ -614,7 +614,7 @@
         },
         {
             "name": "Law 101",
-            "theme": "Humanities",
+            "theme": "Social-Science",
             "cover": "<img src='https://m.media-amazon.com/images/I/41ka3h4q2FL.jpg' style='width:auto;height:200px;'>",
             "author": "Jay Feinman",
             "affiliate_link": "https://amzn.to/3UlW5yW",
@@ -623,7 +623,7 @@
         },
         {
             "name": "The Elements of Style",
-            "theme": "Humanities",
+            "theme": "Self-Improvement",
             "cover": "<img src='https://m.media-amazon.com/images/I/61w2v-4JhJL._SY522_.jpg' style='width:auto;height:200px;'>",
             "author": "William Strunk",
             "affiliate_link": "https://amzn.to/4bd06MT",
@@ -633,7 +633,7 @@
         },
         {
             "name": "The Autobiography of Benjamin Franklin",
-            "theme": "Humanities",
+            "theme": "History",
             "cover": "<img src='https://m.media-amazon.com/images/I/61TWWDR1M7L._SY522_.jpg' style='width:auto;height:200px;'>",
             "author": "Benjamin Franklin",
             "affiliate_link": "https://amzn.to/3UxPfY7",
@@ -643,7 +643,7 @@
         },
         {
             "name": "Enlightenment Now",
-            "theme": "Humanities",
+            "theme": "Social-Science",
             "cover": "<img src='https://m.media-amazon.com/images/I/81TgCVpAgIL._SY522_.jpg' style='width:auto;height:200px;'>",
             "author": "Steven Pinker",
             "affiliate_link": "https://amzn.to/4dfQwdE",
@@ -653,7 +653,7 @@
         },
         {
             "name": "Antifragile",
-            "theme": "Humanities",
+            "theme": "Economics",
             "cover": "<img src='https://m.media-amazon.com/images/I/61cmwTmON3L._SY522_.jpg' style='width:100px;height:auto;'>",
             "author": "Nassim Taleb",
             "affiliate_link": "https://amzn.to/4b7nEmN",
@@ -673,7 +673,7 @@
         },
         {
             "name": "Outliers",
-            "theme": "Humanities",
+            "theme": "Social-Science",
             "cover": "<img src='https://m.media-amazon.com/images/I/91lYcUJ8JsL._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "Malcolm Gladwell",
             "affiliate_link": "https://amzn.to/4aTCNrs",
@@ -683,7 +683,7 @@
         },
         {
             "name": "Freakonomics",
-            "theme": "Humanities",
+            "theme": "Economics",
             "cover": "<img src='https://m.media-amazon.com/images/I/71uGp5GrqkL._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "Steven Levitt",
             "affiliate_link": "https://amzn.to/4dhn6fc",
@@ -693,7 +693,7 @@
         },
         {
             "name": "The Undercover Economist",
-            "theme": "Humanities",
+            "theme": "Economics",
             "cover": "<img src='https://m.media-amazon.com/images/I/61HgLQSaNML._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "Tim Harford",
             "affiliate_link": "https://amzn.to/3xX9A0j",
@@ -743,17 +743,17 @@
         },
         {
             "name": "Nudge",
-            "theme": "Humanities",
+            "theme": "Economics",
             "cover": "<img src='https://m.media-amazon.com/images/I/71y7r6LdWtL._SY342_.jpg' style='width:100px;height:auto;'>",
             "author": "Richard H. Thaler and Cass R. Sunstein",
             "affiliate_link": "https://amzn.to/3UzyiN5",
             "content_start_item": 0,
             "content_end_item": 0,
-            "summarize_whole_book": "True"
+            "summarize_whole book": "True"
         },
         {
             "name": "Drive",
-            "theme": "Humanities",
+            "theme": "Psychology",
             "cover": "<img src='https://m.media-amazon.com/images/I/51km6RPOvYL._SY342_.jpg' style='width:100px;height:auto;'>",
             "author": "Daniel Pink",
             "affiliate_link": "https://amzn.to/3WiiyQ2",
@@ -763,7 +763,7 @@
         },
         {
             "name": "The Signal and the Noise",
-            "theme": "Science",
+            "theme": "Political-Science",
             "cover": "<img src='https://m.media-amazon.com/images/I/81oepVWeLiL._SY342_.jpg' style='width:100px;height:auto;'>",
             "author": "Nate Silver",
             "affiliate_link": "https://amzn.to/3UCOHk1",
@@ -793,7 +793,7 @@
         },
         {
             "name": "Predictably Irrational",
-            "theme": "Humanities",
+            "theme": "Psychology",
             "cover": "<img src='https://m.media-amazon.com/images/I/61cjZXBNl2L._SY342_.jpg' style='width:100px;height:auto;'>",
             "author": "Dan Ariely",
             "affiliate_link": "https://amzn.to/3waJztO",
@@ -803,7 +803,7 @@
         },
         {
             "name": "Why Nations Fail",
-            "theme": "Humanities",
+            "theme": "History",
             "cover": "<img src='https://m.media-amazon.com/images/I/71m3yC4C0vL._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "Daron Acemoglu & James A. Robinson",
             "affiliate_link": "https://amzn.to/3Ug1EPa",
@@ -813,7 +813,7 @@
         },
         {
             "name": "The Art of War",
-            "theme": "Business",
+            "theme": "Political-Science",
             "cover": "<img src='https://m.media-amazon.com/images/I/51HwNMz3EuL._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "Sun Tzu",
             "affiliate_link": "https://amzn.to/3JANzqv",
@@ -833,7 +833,7 @@
         },
         {
             "name": "Bad Blood",
-            "theme": "Technology",
+            "theme": "Technology+AI",
             "cover": "<img src='https://m.media-amazon.com/images/I/61SGSxikRUL._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "John Carreyrou",
             "affiliate_link": "https://amzn.to/3w7H0J9",
@@ -873,7 +873,7 @@
         },
         {
             "name": "Range",
-            "theme": "Humanities",
+            "theme": "Social-Science",
             "cover": "<img src='https://m.media-amazon.com/images/I/71P+sZn5ctL._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "David Epstein",
             "affiliate_link": "https://amzn.to/4ddFqGe",
@@ -893,7 +893,7 @@
         },
         {
             "name": "Homo Deus",
-            "theme": "Humanities",
+            "theme": "History",
             "cover": "<img src='https://m.media-amazon.com/images/I/71KBDP3mDfL._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "Yuval Noah Harari",
             "affiliate_link": "https://amzn.to/3JzhyiG",
@@ -913,7 +913,7 @@
         },
         {
             "name": "The Checklist Manifesto",
-            "theme": "Business",
+            "theme": "Self-Improvement",
             "cover": "<img src='https://m.media-amazon.com/images/I/61JiWnh3scL._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "Atul Gawande",
             "affiliate_link": "https://amzn.to/3Qn4L6G",
@@ -943,7 +943,7 @@
         },
         {
             "name": "Atomic Adventures",
-            "theme": "Science",
+            "theme": "Physics",
             "cover": "<img src='https://m.media-amazon.com/images/I/81rU9q4ik8L._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "James Mahaffey",
             "affiliate_link": "https://amzn.to/4aNkBzM",
@@ -953,7 +953,7 @@
         },
         {
             "name": "The Color of Law",
-            "theme": "Humanities",
+            "theme": "Social-Science",
             "cover": "<img src='https://m.media-amazon.com/images/I/817HosZOeaL._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "Richard Rothstein",
             "affiliate_link": "https://amzn.to/4bdMxwx",
@@ -963,7 +963,7 @@
         },
         {
             "name": "Grit",
-            "theme": "Humanities",
+            "theme": "Self-Improvement",
             "cover": "<img src='https://m.media-amazon.com/images/I/71gPBwjsEfL._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "Angela Duckworth",
             "affiliate_link": "https://amzn.to/49UGH20",
@@ -973,7 +973,7 @@
         },
         {
             "name": "The Emperor of All Maladies",
-            "theme": "Science",
+            "theme": "Biology",
             "cover": "<img src='https://m.media-amazon.com/images/I/81NffDOeFUL._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "Siddhartha Mukherjee",
             "affiliate_link": "https://amzn.to/4aOYpoU",
@@ -983,7 +983,7 @@
         },
         {
             "name": "The Vital Question",
-            "theme": "Science",
+            "theme": "Biology",
             "cover": "<img src='https://m.media-amazon.com/images/I/61nE4IlEdYL._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "Nick Lane",
             "affiliate_link": "https://amzn.to/3w9ptAi",
@@ -993,7 +993,7 @@
         },
         {
             "name": "Why We Sleep",
-            "theme": "Science",
+            "theme": "Biology",
             "cover": "<img src='https://m.media-amazon.com/images/I/71PtyHIMD0L._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "Matthew Walker",
             "affiliate_link": "https://amzn.to/4djkvS3",
@@ -1003,7 +1003,7 @@
         },
         {
             "name": "Life 3.0",
-            "theme": "AI",
+            "theme": "Technology+AI",
             "cover": "<img src='https://m.media-amazon.com/images/I/71nZodv-FSL._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "Max Tegmark",
             "affiliate_link": "https://amzn.to/49TRlWT",
@@ -1013,7 +1013,7 @@
         },
         {
             "name": "Clean Code",
-            "theme": "Technology",
+            "theme": "Technology+AI",
             "cover": "<img src='https://m.media-amazon.com/images/I/51E2055ZGUL._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "Robert C. Martin",
             "affiliate_link": "https://amzn.to/3JD5AEQ",
@@ -1023,7 +1023,7 @@
         },
         {
             "name": "The Blind Watchmaker",
-            "theme": "Science",
+            "theme": "Biology",
             "cover": "<img src='https://m.media-amazon.com/images/I/61R1ck9CKLL._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "Richard Dawkins",
             "affiliate_link": "https://amzn.to/3y5hm8c",
@@ -1033,7 +1033,7 @@
         },
         {
             "name": "Cosmos",
-            "theme": "Science",
+            "theme": "Physics",
             "cover": "<img src='https://m.media-amazon.com/images/I/91Cnrbd3JwL._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "Carl Sagan",
             "affiliate_link": "https://amzn.to/4b5isiU",
@@ -1043,7 +1043,7 @@
         },
         {
             "name": "Nonviolent Communication",
-            "theme": "Self-Imporvement",
+            "theme": "Self-Improvement",
             "cover": "<img src='https://m.media-amazon.com/images/I/6188ojOs2tS._SY342_.jpg' style='width:100px;height:auto;'>",
             "author": "Marshall Rosenberg",
             "affiliate_link": "https://amzn.to/44gRmCS",
@@ -1063,7 +1063,7 @@
         },
         {
             "name": "The Origins of Political Order",
-            "theme": "Humanities",
+            "theme": "Political-Science",
             "cover": "<img src='https://m.media-amazon.com/images/I/71gNZXHVoeL._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "Francis Fukuyama",
             "affiliate_link": "",
@@ -1073,7 +1073,7 @@
         },
         {
             "name": "Political Order and Political Decay",
-            "theme": "Humanities",
+            "theme": "Political-Science",
             "cover": "<img src='https://m.media-amazon.com/images/I/81dHab0nMuL._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "Francis Fukuyama",
             "affiliate_link": "",
@@ -1133,7 +1133,7 @@
         },
         {
             "name": "Surely You're Joking, Mr. Feynman!",
-            "theme": "Science",
+            "theme": "Physics",
             "cover": "<img src='https://m.media-amazon.com/images/I/611QdJTWMmL._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "Richard Feynman",
             "affiliate_link": "",
@@ -1143,7 +1143,7 @@
         },
         {
             "name": "A Short History of Nearly Everything",
-            "theme": "Science",
+            "theme": "Physics",
             "cover": "<img src='https://m.media-amazon.com/images/I/51ymen1ByKL._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "Bill Bryson",
             "affiliate_link": "",
@@ -1153,7 +1153,7 @@
         },
         {
             "name": "Astrophysics for People in a Hurry",
-            "theme": "Science",
+            "theme": "Physics",
             "cover": "<img src='https://m.media-amazon.com/images/I/81G4WoQ9t8L._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "Neil deGrasse Tyson",
             "affiliate_link": "",
@@ -1163,7 +1163,7 @@
         },
         {
             "name": "Seven Brief Lessons on Physics",
-            "theme": "Science",
+            "theme": "Physics",
             "cover": "<img src='https://m.media-amazon.com/images/I/81KgHnSaHbL._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "Carlo Rovelli",
             "affiliate_link": "",
@@ -1173,7 +1173,7 @@
         },
         {
             "name": "The Elegant Universe",
-            "theme": "Science",
+            "theme": "Physics",
             "cover": "<img src='https://m.media-amazon.com/images/I/61gfUK3CZVL._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "Brian Greene",
             "affiliate_link": "",
@@ -1183,7 +1183,7 @@
         },
         {
             "name": "Siddhartha",
-            "theme": "Humanities",
+            "theme": "Spirituality",
             "cover": "<img src='https://m.media-amazon.com/images/I/61urry+xagL._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "Hermann Hesse",
             "affiliate_link": "",
@@ -1243,7 +1243,7 @@
         },
         {
             "name": "The Idea Factory",
-            "theme": "Technology",
+            "theme": "Technology+AI",
             "cover": "<img src='https://m.media-amazon.com/images/I/71WvYgQeSUL._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "Jon Gertner",
             "affiliate_link": "",
@@ -1253,7 +1253,7 @@
         },
         {
             "name": "Getting Things Done",
-            "theme": "Productivity",
+            "theme": "Self-Improvement",
             "cover": "<img src='https://m.media-amazon.com/images/I/815JZ+hNcLL._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "David Allen",
             "affiliate_link": "",
@@ -1263,7 +1263,7 @@
         },
         {
             "name": "The Master Algorithm",
-            "theme": "AI",
+            "theme": "Technology+AI",
             "cover": "<img src='https://m.media-amazon.com/images/I/91g7p3yB-SL._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "Pedro Domingos",
             "affiliate_link": "",
@@ -1273,7 +1273,7 @@
         },
         {
             "name": "Good Economics for Hard Times",
-            "theme": "Humanities",
+            "theme": "Economics",
             "cover": "<img src='https://m.media-amazon.com/images/I/71RJTTcMuVL._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "Abhijit Banerjee and Esther Duflo",
             "affiliate_link": "",
@@ -1283,7 +1283,7 @@
         },
         {
             "name": "The Upanishads",
-            "theme": "Humanities",
+            "theme": "Spirituality",
             "cover": "<img src='https://m.media-amazon.com/images/I/71dHymiLgdL._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "Eknath Easwaran",
             "affiliate_link": "",
@@ -1303,19 +1303,9 @@
         },
         {
             "name": "The Wealth of Nations",
-            "theme": "Investing",
+            "theme": "Economics",
             "cover": "<img src='https://m.media-amazon.com/images/I/71yqXZeTuxL._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "Adam Smith",
-            "affiliate_link": "",
-            "content_start_item": 0,
-            "content_end_item": 0,
-            "summarize_whole_book": "True"
-        },
-        {
-            "name": "Deep Learning",
-            "theme": "AI",
-            "cover": "<img src='https://m.media-amazon.com/images/I/A10G+oKN3LL._SY385_.jpg' style='width:100px;height:auto;'>",
-            "author": "Ian Goodfellow",
             "affiliate_link": "",
             "content_start_item": 0,
             "content_end_item": 0,
@@ -1335,7 +1325,7 @@
             "name": "Blue Ocean Strategy",
             "theme": "Business",
             "cover": "<img src='https://m.media-amazon.com/images/I/81FdVbQcaKL._SL1500_.jpg' style='width:100px;height:auto;'>",
-            "author": "W. Chan Kim & Ren\u00e9e Mauborgne",
+            "author": "W. Chan Kim & Renée Mauborgne",
             "affiliate_link": "",
             "content_start_item": 0,
             "content_end_item": 0,
@@ -1343,7 +1333,7 @@
         },
         {
             "name": "Capital in the Twenty-First Century",
-            "theme": "Humanities",
+            "theme": "Economics",
             "cover": "<img src='https://m.media-amazon.com/images/I/51JpJKAHFbL._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "Thomas Piketty",
             "affiliate_link": "",
@@ -1353,7 +1343,7 @@
         },
         {
             "name": "The Laws of Human Nature",
-            "theme": "Humanities",
+            "theme": "Psychology",
             "cover": "<img src='https://m.media-amazon.com/images/I/71OMelbI6sL._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "Robert Greene",
             "affiliate_link": "",
@@ -1366,6 +1356,86 @@
             "theme": "Self-Improvement",
             "cover": "<img src='https://m.media-amazon.com/images/I/81gTRv2HXrL._SY385_.jpg' style='width:100px;height:auto;'>",
             "author": "David Goggins",
+            "affiliate_link": "",
+            "content_start_item": "5",
+            "content_end_item": "26",
+            "summarize_whole_book": "False"
+        },
+        {
+            "name": "Poor Economics",
+            "theme": "Economics",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71xYL2Mz+xL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Abhijit Banerjee",
+            "affiliate_link": "",
+            "content_start_item": "5",
+            "content_end_item": "17",
+            "summarize_whole_book": "False"
+        },
+        {
+            "name": "The Gene",
+            "theme": "Biology",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71ZGYmVZKXL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Siddhartha Mukherjee",
+            "affiliate_link": "",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Deep Learning",
+            "theme": "Technology+AI",
+            "cover": "<img src='https://m.media-amazon.com/images/I/A10G+oKN3LL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Ian Goodfellow",
+            "affiliate_link": "",
+            "content_start_item": "4",
+            "content_end_item": "40",
+            "summarize_whole_book": "False"
+        },
+        {
+            "name": "Darwin's Dangerous Idea",
+            "theme": "Biology",
+            "cover": "<img src='https://m.media-amazon.com/images/I/71cQTHfwVXL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Daniel Dennett",
+            "affiliate_link": "",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Consciousness Explained",
+            "theme": "Biology",
+            "cover": "<img src='https://m.media-amazon.com/images/I/81sExOPm8GL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Daniel Dennett",
+            "affiliate_link": "",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "From Bacteria to Bach and Back",
+            "theme": "Biology",
+            "cover": "<img src='https://m.media-amazon.com/images/I/510fjSrzevL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Daniel Dennett",
+            "affiliate_link": "",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Intuition Pumps and Other Tools for Thinking",
+            "theme": "Social-Science",
+            "cover": "<img src='https://m.media-amazon.com/images/I/51zYLvR-dCL._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Daniel Dennett",
+            "affiliate_link": "",
+            "content_start_item": 0,
+            "content_end_item": 0,
+            "summarize_whole_book": "True"
+        },
+        {
+            "name": "Breaking the Spell",
+            "theme": "Biology",
+            "cover": "<img src='https://m.media-amazon.com/images/I/514hKlfX+9L._SY385_.jpg' style='width:100px;height:auto;'>",
+            "author": "Daniel Dennett",
             "affiliate_link": "",
             "content_start_item": 0,
             "content_end_item": 0,

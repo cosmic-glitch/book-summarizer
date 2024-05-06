@@ -50,6 +50,7 @@ if input('Want to override? [y/n]: ').lower() == 'y':
 theme = input('Enter the theme (will be automated soon): ')
 
 cfg_blk = build_json_config_block(name, theme, cover, author, affiliate_link, content_start_item, content_end_item)
+cfg_blk['summarize_whole_book'] = 'False'
 update_config(cfg_blk)
 print('Config updated')
 

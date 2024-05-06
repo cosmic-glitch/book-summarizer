@@ -7,7 +7,7 @@ cfg = json.load(open('config.json', 'r'))
 
 books = cfg['books']
 
-last_onboarded = 'The Upanishads'
+last_onboarded = 'Poor Economics'
 index = find_book_index(books, last_onboarded)
 
 print(f"{len(books)-index-1} books addded on 3rd May 2024:\n")
